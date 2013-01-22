@@ -1,0 +1,88 @@
+% options:
+% thesis=B bachelor's thesis
+% thesis=M master's thesis
+% czech thesis in Czech language
+% english thesis in English language
+% hidelinks remove colour boxes around hyperlinks
+
+\documentclass[thesis=M,czech]{FITthesis}[2012/06/26]
+
+\usepackage[utf8]{inputenc} % LaTeX source encoded as UTF-8
+
+\usepackage{graphicx} %graphics files inclusion
+% \usepackage{amsmath} %advanced maths
+% \usepackage{amssymb} %additional math symbols
+
+\usepackage{dirtree} %directory tree visualisation
+
+% % list of acronyms
+% \usepackage[acronym,nonumberlist,toc,numberedsection=autolabel]{glossaries}
+% \iflanguage{czech}{\renewcommand*{\acronymname}{Seznam pou{\v z}it{\' y}ch zkratek}}{}
+% \makeglossaries
+
+\newcommand{\tg}{\mathop{\mathrm{tg}}} %cesky tangens
+\newcommand{\cotg}{\mathop{\mathrm{cotg}}} %cesky cotangens
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+% ODTUD DAL VSE ZMENTE
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+
+\department{Katedra softwarového inženýrství}
+\title{Automatizace interakcí na sociální síti Facebook}
+\authorGN{Jakub} %(křestní) jméno (jména) autora
+\authorFN{Škvára} %příjmení autora
+\authorWithDegrees{Bc. Jakub Škvára} %jméno autora včetně současných akademických titulů
+\supervisor{Ing. Jaroslav Kuchař}
+\acknowledgements{Chtěl bych poděkovat svému vedoucímu Ing. Jaroslavu Kuchařovi, za ochotu a pomoc při psaní této diplomové práce.}
+\abstractCS{V~několika větách shrňte obsah a přínos této práce v~češtině. Po přečtení abstraktu by se čtenář měl mít čtenář dost informací pro rozhodnutí, zda chce Vaši práci číst.}
+\abstractEN{Sem doplňte ekvivalent abstraktu Vaší práce v~angličtině.}
+\placeForDeclarationOfAuthenticity{V~Praze}
+\declarationOfAuthenticityOption{1} %volba Prohlášení
+\keywordsCS{Nahraďte seznamem klíčových slov v češtině oddělených čárkou.}
+\keywordsEN{Nahraďte seznamem klíčových slov v angličtině oddělených čárkou.}
+
+\begin{document}
+
+% \newacronym{CVUT}{{\v C}VUT}{{\v C}esk{\' e} vysok{\' e} u{\v c}en{\' i} technick{\' e} v Praze}
+% \newacronym{FIT}{FIT}{Fakulta informa{\v c}n{\' i}ch technologi{\' i}}
+
+\begin{introduction}
+	%sem napište úvod Vaší práce
+\end{introduction}
+
+\chapter{Analýza a návrh}
+
+\chapter{Realizace}
+
+\begin{conclusion}
+	%sem napište závěr Vaší práce
+\end{conclusion}
+
+\bibliographystyle{csn690}
+\bibliography{mybibliographyfile}
+
+\appendix
+
+\chapter{Seznam použitých zkratek}
+% \printglossaries
+\begin{description}
+	\item[GUI] Graphical user interface
+	\item[XML] Extensible markup language
+\end{description}
+
+\chapter{Obsah přiloženého CD}
+
+\begin{figure}
+	\dirtree{%
+		.1 readme.txt\DTcomment{stručný popis obsahu CD}.
+		.1 exe\DTcomment{adresář se spustitelnou formou implementace}.
+		.1 src.
+		.2 impl\DTcomment{zdrojové kódy implementace}.
+		.2 thesis\DTcomment{zdrojová forma práce ve formátu \LaTeX{}}.
+		.1 text\DTcomment{text práce}.
+		.2 thesis.pdf\DTcomment{text práce ve formátu PDF}.
+		.2 thesis.ps\DTcomment{text práce ve formátu PS}.
+	}
+\end{figure}
+
+\end{document}
