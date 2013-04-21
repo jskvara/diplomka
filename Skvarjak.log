@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.1.22)  22 JAN 2013 18:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.1.22)  21 APR 2013 23:36
 entering extended mode
  %&-line parsing enabled.
 **Skvarjak.tex
@@ -473,20 +473,8 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 (/usr/share/texmf-texlive/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-)
-! Font T1/cmr/m/n/12=ecrm1200 at 12.0pt not loadable: Metric (TFM) file not fou
-nd.
-<to be read again> 
-                   relax 
-l.100 \fontencoding\encodingdefault\selectfont
-                                              
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-) (/usr/share/texmf/tex/latex/lm/lmodern.sty
+))
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -544,7 +532,15 @@ Sidefootvsep and sidefootheight: 14.5pt and 590.14995pt
 (./etoolbox.sty
 Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
 \etb@tempcnta=\count147
-)) (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+))
+
+LaTeX Warning: You have requested, on input line 8, version
+               `2013/05/10' of document class FITthesis,
+               but only version
+               `2012/12/03 CTU FIT standard class for theses'
+               is available.
+
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks24
 \inpenc@posthook=\toks25
@@ -803,29 +799,54 @@ Package: dirtree 2012/12/11 v0.32 package wrapper for dirtree
 \DT@baselineskip=\dimen162
 )
 File: dirtree.tex 2012/12/11 v0.32 `dirtree' (jcc)
-) (./Skvarjak.aux)
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count153
+\lst@gtempboxa=\box29
+\lst@token=\toks26
+\lst@length=\count154
+\lst@currlwidth=\dimen163
+\lst@column=\count155
+\lst@pos=\count156
+\lst@lostspace=\dimen164
+\lst@width=\dimen165
+\lst@newlines=\count157
+\lst@lineno=\count158
+\lst@maxwidth=\dimen166
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count159
+\lst@skipnumbers=\count160
+\lst@framebox=\box30
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+ (./Skvarjak.aux)
 \openout1 = `Skvarjak.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 51.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package hyperref Info: Link coloring OFF on input line 44.
+Package hyperref Info: Link coloring OFF on input line 51.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -833,56 +854,56 @@ Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count153
+\c@section@level=\count161
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 44.
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 51.
+LaTeX Info: Redefining \ref on input line 51.
+LaTeX Info: Redefining \pageref on input line 51.
 (./Skvarjak.out) (./Skvarjak.out)
 \@outlinefile=\write4
 \openout4 = `Skvarjak.out'.
 
-\AtBeginShipoutBox=\box29
+\AtBeginShipoutBox=\box31
  [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 44.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 51.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 44.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 51.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 44.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 51.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 44.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 51.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 44.
+(Font)              <12> on input line 51.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 44.
+(Font)              <8> on input line 51.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 44.
+(Font)              <6> on input line 51.
 
-<cvut-logo-bw.pdf, id=41, 91.34125pt x 69.25874pt>
+<cvut-logo-bw.pdf, id=89, 91.34125pt x 69.25874pt>
 File: cvut-logo-bw.pdf Graphic file (type pdf)
  <use cvut-logo-bw.pdf>
-Underfull \hbox (badness 10000) in alignment at lines 44--44
+Underfull \hbox (badness 10000) in alignment at lines 51--51
 [][] 
  []
 
@@ -890,30 +911,30 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 \begin{document}
+l.51 \begin{document}
                       [1 <./cvut-logo-bw.pdf>]pdfTeX warning (ext4): destinatio
 n with the same identifier (name{page.ii}) has been already used, duplicate ign
 ored
 <to be read again> 
                    \relax 
-l.44 \begin{document}
+l.51 \begin{document}
                       [2
 
 ]
 
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 44.
+(Font)              using `T1/lmr/bx/n' instead on input line 51.
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 44.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 51.
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/bx/sc' undefined
-(Font)              using `T1/lmss/bx/n' instead on input line 44.
+(Font)              using `T1/lmss/bx/n' instead on input line 51.
 
 
-Overfull \hbox (0.46567pt too wide) in paragraph at lines 44--44
+Overfull \hbox (0.46567pt too wide) in paragraph at lines 51--51
 \T1/lmr/m/n/12 Cht¥l bych pod¥ko-vat svému ve-doucímu Ing. Jaroslavu Kucha°ovi,
  za ochotu
  []
@@ -923,12 +944,12 @@ Overfull \hbox (0.46567pt too wide) in paragraph at lines 44--44
 ] [6
 
 ] [7]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 44.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 51.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 44.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 51.
  [8
 
 ] [9
@@ -936,53 +957,346 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 ] [10
 
 ]
-(./Skvarjak.toc) [11] [12
+(./Skvarjak.toc
+Overfull \hbox (2.65927pt too wide) in paragraph at lines 10--10
+ [][] [][]\T1/lmr/m/n/12 Shrnutí, výhody a nevýhody pouºití pro-gramu Se-le-niu
+m Web- 
+ []
+
+) [11] [12
 
 ] (./Skvarjak.lof) [13] [14
 
 ]
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count154
-\scratchdimen=\dimen163
-\scratchbox=\box30
-\nofMPsegments=\count155
-\nofMParguments=\count156
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count157
-\MPscratchDim=\dimen164
-\MPnumerator=\count158
-\everyMPtoPDFconversion=\toks27
-) [1
+\scratchcounter=\count162
+\scratchdimen=\dimen167
+\scratchbox=\box32
+\nofMPsegments=\count163
+\nofMParguments=\count164
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count165
+\MPscratchDim=\dimen168
+\MPnumerator=\count166
+\everyMPtoPDFconversion=\toks28
+)
+\c@lstlisting=\count167
+ [1
 
 
 ] [2
 
-] [3] [4
-
-] [5] [6
-
 ]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 75.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 77.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 77.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 77.
 
-Package hyperref Warning: Composite letter `\textasciicaron+e'
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[][] [][]\T1/lmr/m/n/10 http://www.zive.cz/bleskovky/facebook-tento-tyden-ceka-
+velka-zmena-priblizi-se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--89
+[][] [][]\T1/lmr/m/n/10 http://www.zive.cz/bleskovky/facebook-opet-v-novem-komp
+letni-zmena-okoli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
+[][] [][]\T1/lmr/m/n/10 http://computerworld.cz/internet-a-komunikace/facebook-
+chrli-dalsi-novinky-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[][] [][]\T1/lmr/m/n/10 http://www.cnews.cz/clanky/facebook-se-chysta-prepracov
+at-zpravy-budou-se-
+ []
+
+[3]
+Overfull \hbox (6.96857pt too wide) in paragraph at lines 110--120
+\T1/lmr/m/n/12 (https://developers.facebook.com/docs/concepts/login/login-archi
+tecture/). 
+ []
+
+<figures/server-side-diagram.png, id=194, 734.745pt x 525.965pt>
+File: figures/server-side-diagram.png Graphic file (type png)
+
+<use figures/server-side-diagram.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 157--157
+[][] [][]\T1/lmr/m/n/10 Variace click-jacingu, po-mocí HTML, CSS anebo JavaScri
+ptu je na stránce
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 157--157
+\T1/lmr/m/n/10 skryto face-bookové tla£ítko like a je p°ekryto jiným tla£íkem, 
+uºi-va-tel pak po
+ []
+
+
+Overfull \hbox (0.40839pt too wide) in paragraph at lines 147--159
+[]\T1/lmr/m/n/12 Facebook nepod-poruje ºád-nou ji-nou moºnost, jak ap-likaci ov
+lá-dat krom¥
+ []
+
+[4]
+Overfull \hbox (10.09996pt too wide) in paragraph at lines 160--171
+\T1/lmr/m/n/12 (http://www.girlfriendhire.com/, http://namorofake.com.br/). Moº
+nosti jsou
+ []
+
+[5 <./figures/server-side-diagram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 218--218
+[][] [][]\T1/lmr/m/n/10 asynchronní na£ítání £ástí stránek po-mocí JavaScriptu 
+anebo XML -
+ []
+
+
+Overfull \hbox (0.4369pt too wide) in paragraph at lines 216--225
+[]\T1/lmr/m/n/12 Nejv¥t²ím prob-lémem to-hoto p°ís-tupu je skute£nost, ºe face-
+book pouºívá
+ []
+
+
+Overfull \hbox (14.01686pt too wide) in paragraph at lines 216--225
+\T1/lmr/m/n/12 in-for-mací z uºi-va-tel-ských pro-fil· a podobn¥. Nap°ík-lad pr
+o zo-brazení p°ísp¥vk·
+ []
+
+[6]
+Underfull \vbox (badness 2435) has occurred while \output is active []
+
+ [7]
+[8]
+Overfull \hbox (5.56436pt too wide) in paragraph at lines 343--353
+\T1/lmr/m/n/12 vaný plu-gin) do prohlíºe£e Fire-fox, po-mocí kterého je moºné n
+ahrát konkrétní
+ []
+
+
+Overfull \hbox (29.42438pt too wide) in paragraph at lines 354--368
+\T1/lmr/m/n/12 nolo-gie celý ekosys-tém pro au-tom-a-ti-zo-vané testování po-mo
+cí we-bového prohlíºe£e.
+ []
+
+
+Overfull \hbox (2.10243pt too wide) in paragraph at lines 376--390
+[]\T1/lmr/m/n/12 Celý mech-a-nis-mus fun-guje na jen-oduchém prin-cipu. Se-le-n
+ium Web-Driver
+ []
+
+[9]
+Overfull \hbox (0.96442pt too wide) in paragraph at lines 391--406
+\T1/lmr/m/n/12 v tomto p°í-pad¥ se jedná o pro-gramy, které dokáºí ovlá-dat sam
+otný prohlíºe£
+ []
+
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 416.
+[10]
+Overfull \hbox (7.48904pt too wide) in paragraph at lines 445--451
+\T1/lmr/m/n/12 po-mocí velkého mnoºství pro-gramovacích jazyk·. Ne-jv¥t²í výhod
+ou pouºívání
+ []
+
+[11] [12]
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 57.
+(hyperref)                removing `\textasciicaron' on input line 491.
 
-No file Skvarjak.bbl.
-[7] [8
 
-] [9] [10
+Package hyperref Warning: Composite letter `\textring+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textring' on input line 491.
 
-]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 73.
+(hyperref)                removing `\textasciicaron' on input line 497.
 
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 85.
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [11]
+[13
+
+] <figures/fb-telephone-number2.jpg, id=258, 1022.82124pt x 507.8975pt>
+File: figures/fb-telephone-number2.jpg Graphic file (type jpg)
+
+<use figures/fb-telephone-number2.jpg>
+Overfull \hbox (17.01736pt too wide) in paragraph at lines 517--521
+[]\T1/lmr/m/n/12 Nejd°íve bylo pot°eba za-loºit e-mailové adresy, slouºící k vy
+tvo°ení fale²ných
+ []
+
+
+Overfull \hbox (0.63766pt too wide) in paragraph at lines 517--521
+\T1/lmr/m/n/12 portálu sez-nam.cz (jedná se v první °ad¥ o in-ter-ne-tový vyh-l
+e-dava£, e-mailové
+ []
+
+
+Overfull \hbox (0.13597pt too wide) in paragraph at lines 517--521
+\T1/lmr/m/n/12 portálu lze vytvá°et e-mailové adresy s kon-cov-kou []\T1/lmtt/m
+/n/12 @seznam.cz \T1/lmr/m/n/12 a []\T1/lmtt/m/n/12 @email.cz\T1/lmr/m/n/12 . 
+ []
+
+[14 <./figures/fb-telephone-number2.jpg>]
+Overfull \hbox (7.29396pt too wide) in paragraph at lines 538--539
+[]\T1/lmr/m/n/12 Zjistil jsem ale, ºe face-book reg-is-trace z takovýchto do£as
+-ných e-mailových
+ []
+
+
+Underfull \vbox (badness 1097) has occurred while \output is active []
+
+ [15]
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 540.
+
+
+Package hyperref Warning: Composite letter `\textring+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textring' on input line 540.
+
+[16]
+Overfull \hbox (15.97618pt too wide) in paragraph at lines 551--552
+\T1/lmr/m/n/12 ni-tion - optické rozpoznávání znak·) anebo lid-ským opisováním 
+text·. Výhodou
+ []
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+r'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 559.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+r'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 559.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 559.
+
+
+Package hyperref Warning: Composite letter `\textring+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textring' on input line 559.
+
+
+Overfull \hbox (9.2872pt too wide) in paragraph at lines 561--562
+\T1/lmr/m/n/12 P°i vymý²lení celého ex-per-i-mentu bylo hlavním cílem simulo-va
+t reálné chování
+ []
+
+
+Underfull \vbox (badness 1320) has occurred while \output is active []
+
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 587--587
+[][] [][]\T1/lmr/m/n/10 Open source re-la£ní databáze, kterou vlastní spole£nos
+t Or-a-cle, viz
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 612--612
+[][] [][]\T1/lmr/m/n/10 Facebook v roce 2010 vyv-inul vlastní NoSQL databázi na
+z-vanou Cas-san-
+ []
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+e'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 614.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+
+Package hyperref Warning: Composite letter `\textring+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textring' on input line 621.
+
+[19]
+Overfull \hbox (0.5047pt too wide) in paragraph at lines 655--656
+\T1/lmr/m/n/12 zpra-cov-áním textu. Uk-ládání textu ko-men-tá°· by mohlo být uº
+ite£né, pokud
+ []
+
+
+Underfull \vbox (badness 2134) has occurred while \output is active []
+
+ [20]
+[21] <figures/confirm-friendship.png, id=294, 498.86375pt x 165.61874pt>
+File: figures/confirm-friendship.png Graphic file (type png)
+
+<use figures/confirm-friendship.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (27.36763pt too wide) in paragraph at lines 696--697
+\T1/lmr/m/n/12 moºnost n¥koho ²´ouch-nout (poke). Funk£nost tla£ítka ²´ouch-nou
+t je jednoduchá.
+ []
+
+[22]
+Overfull \hbox (3.96161pt too wide) in paragraph at lines 698--699
+\T1/lmr/m/n/12 Jedná se totiº o hlavní moºnost, jak dát na face-booku o sob¥ v¥
+d¥t. Frekvence
+ []
+
+
+Underfull \vbox (badness 1237) has occurred while \output is active []
+
+ [23 <./figures/confirm-friendship.png>] [24]
+
+Package hyperref Warning: Composite letter `\textasciicaron+e'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 712.
+
+No file Skvarjak.bbl.
+[25
+
+] [26
+
+]
+
+Package hyperref Warning: Composite letter `\textring+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textring' on input line 725.
+
+[27]
+Overfull \hbox (7.0141pt too wide) in paragraph at lines 740--741
+[]\T1/lmr/m/n/12 - P°ísp¥vek na svou face-bookovou ze¤ od uºi-vatel· (Face-book
+ nabádá
+ []
+
+[28]
+
+Package hyperref Warning: Composite letter `\textasciicaron+r'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 745.
+
+[29
+
+]
 \tf@toc=\write5
 \openout5 = `Skvarjak.toc'.
 
@@ -995,24 +1309,25 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 8991 strings out of 495061
- 122942 string characters out of 1182621
- 239631 words of memory out of 3000000
- 12010 multiletter control sequences out of 15000+50000
- 65250 words of font info for 43 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 49i,13n,26p,1092b,341s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 10712 strings out of 495061
+ 145574 string characters out of 1182621
+ 275653 words of memory out of 3000000
+ 13649 multiletter control sequences out of 15000+50000
+ 85577 words of font info for 56 fonts, out of 3000000 for 9000
+ 32 hyphenation exceptions out of 8191
+ 49i,13n,32p,1092b,1754s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/publ
-ic/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy1
-0.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Skvarjak.pdf (25 pages, 240951 bytes).
+ic/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share
+/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/
+lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on Skvarjak.pdf (43 pages, 492903 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 62 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 393 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 
