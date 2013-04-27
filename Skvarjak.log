@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.1.22)  24 APR 2013 22:04
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.1.22)  27 APR 2013 10:37
 entering extended mode
  %&-line parsing enabled.
 **Skvarjak.tex
@@ -1171,130 +1171,142 @@ Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                removing `\textasciicaron' on input line 327.
 
 
+Overfull \hbox (3.81941pt too wide) in paragraph at lines 333--334
+\T1/lmr/m/n/12 jazyk ex-is-tuje kval-itní frame-work jmenu-jící se Net-te-Frame
+-work ([]\T1/lmtt/m/n/12 nette.org\T1/lmr/m/n/12 ),
+ []
+
+
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 331.
+(hyperref)                removing `\textring' on input line 336.
 
+[17
 
-Overfull \hbox (3.86496pt too wide) in paragraph at lines 337--338
+]
+Overfull \hbox (3.86496pt too wide) in paragraph at lines 342--343
 []\T1/lmr/m/n/12 Facebook je celosv¥-tová so-ciální sí´ a je tedy p°eloºen do v
 elkého mnoºství
  []
 
 
-Overfull \hbox (7.75287pt too wide) in paragraph at lines 337--338
+Overfull \hbox (7.75287pt too wide) in paragraph at lines 342--343
 \T1/lmr/m/n/12 bookové ap-likace ([]\T1/lmtt/m/n/12 https://www.facebook.com/?a
 pp=1&sk=translations\T1/lmr/m/n/12 ),
  []
 
+[18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 1122) has occurred while \output is active []
-
- [17
-
-]
-[18] [19] <figures/time-difference.png, id=310, 500.87125pt x 321.2pt>
+ [19]
+<figures/time-difference.png, id=310, 500.87125pt x 321.2pt>
 File: figures/time-difference.png Graphic file (type png)
 
-<use figures/time-difference.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (13.9575pt too wide) in paragraph at lines 386--387
+<use figures/time-difference.png> [20]
+Overfull \hbox (13.9575pt too wide) in paragraph at lines 391--392
 \T1/lmr/m/n/12 tusu a odpoví-da-jících ko-men-tá°· pod ním. Tento prob-lém bude
  pravd¥podobn¥
  []
 
-[20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21 <./figures/time-difference.png (PNG copy)>]
-Overfull \hbox (3.34462pt too wide) in paragraph at lines 400--401
+[21 <./figures/time-difference.png (PNG copy)>]
+Overfull \hbox (3.34462pt too wide) in paragraph at lines 405--406
 []\T1/lmr/m/n/12 B¥hem b°ezna 2013 face-book oznámil novou verzi pro-filové str
 ánky (time-
  []
 
 
-Overfull \hbox (33.65982pt too wide) in paragraph at lines 400--401
+Overfull \hbox (33.65982pt too wide) in paragraph at lines 405--406
 \T1/lmr/m/n/12 line) [todo citace http://newsroom.fb.com/News/584/Improvements-
 to-Timeline].
  []
 
+[22] [23] [24]
+Overfull \hbox (11.6675pt too wide) in paragraph at lines 463--464
+[]\T1/lmr/m/n/12 yearly - d·leºité mezníky v ºiv-ot¥ uºi-vatele se°azené po-dle
+ data (narození
+ []
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22]
-[23] <figures/confirm-friendship.png, id=338, 498.86375pt x 165.61874pt>
-File: figures/confirm-friendship.png Graphic file (type png)
-
-<use figures/confirm-friendship.png>
-Overfull \hbox (27.36763pt too wide) in paragraph at lines 454--455
+[25]
+Overfull \hbox (27.36763pt too wide) in paragraph at lines 486--487
 \T1/lmr/m/n/12 moºnost n¥koho ²´ouch-nout (poke). Funk£nost tla£ítka ²´ouch-nou
 t je jednoduchá.
  []
 
-[24 <./figures/confirm-friendship.png>]
-Overfull \hbox (3.96161pt too wide) in paragraph at lines 456--457
-\T1/lmr/m/n/12 Jedná se totiº o hlavní moºnost, jak dát na face-booku o sob¥ v¥
-d¥t. Frekvence
+[26]
+Overfull \hbox (11.86392pt too wide) in paragraph at lines 491--492
+[]\T1/lmr/m/n/12 postStatus(text, [at-tache-ment]) - p°idá na ze¤ uºi-vatele st
+a-tus (parametr
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (2.59708pt too wide) in paragraph at lines 494--495
+\T1/lmr/m/n/12 booku, parame-trem je id události, druhým parame-trem je ú£ast, 
+moºné
+ []
 
- [25]
-[26]
+
+Overfull \hbox (13.85382pt too wide) in paragraph at lines 495--496
+[]\T1/lmr/m/n/12 inviteEvent(id) - poz-vat v²echny face-bookové p°átele na udál
+ost, parame-
+ []
+
+
+Overfull \hbox (6.90468pt too wide) in paragraph at lines 500--502
+\T1/lmr/m/n/12 http://www.insidefacebook.com/2013/04/09/facebook-puts-limits-on
+-event-
+ []
+
+[27] [28]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 474.
+(hyperref)                removing `\textring' on input line 510.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 474.
+(hyperref)                removing `\textasciicaron' on input line 510.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 477.
+(hyperref)                removing `\textasciicaron' on input line 513.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 477.
+(hyperref)                removing `\textring' on input line 513.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 483.
+(hyperref)                removing `\textasciicaron' on input line 519.
 
-[27
+[29
 
-] <figures/fb-telephone-number2.jpg, id=358, 1022.82124pt x 507.8975pt>
+] <figures/fb-telephone-number2.jpg, id=366, 1022.82124pt x 507.8975pt>
 File: figures/fb-telephone-number2.jpg Graphic file (type jpg)
 
 <use figures/fb-telephone-number2.jpg>
-Overfull \hbox (17.01736pt too wide) in paragraph at lines 503--507
+Overfull \hbox (17.01736pt too wide) in paragraph at lines 539--543
 []\T1/lmr/m/n/12 Nejd°íve bylo pot°eba za-loºit e-mailové adresy, slouºící k vy
 tvo°ení fale²ných
  []
 
 
-Overfull \hbox (0.63766pt too wide) in paragraph at lines 503--507
+Overfull \hbox (0.63766pt too wide) in paragraph at lines 539--543
 \T1/lmr/m/n/12 portálu sez-nam.cz (jedná se v první °ad¥ o in-ter-ne-tový vyh-l
 e-dava£, e-mailové
  []
 
 
-Overfull \hbox (0.13597pt too wide) in paragraph at lines 503--507
+Overfull \hbox (0.13597pt too wide) in paragraph at lines 539--543
 \T1/lmr/m/n/12 portálu lze vytvá°et e-mailové adresy s kon-cov-kou []\T1/lmtt/m
 /n/12 @seznam.cz \T1/lmr/m/n/12 a []\T1/lmtt/m/n/12 @email.cz\T1/lmr/m/n/12 . 
  []
 
-[28 <./figures/fb-telephone-number2.jpg>] [29]
-Overfull \hbox (7.29396pt too wide) in paragraph at lines 524--525
+[30 <./figures/fb-telephone-number2.jpg>] [31]
+Overfull \hbox (7.29396pt too wide) in paragraph at lines 560--561
 []\T1/lmr/m/n/12 Zjistil jsem ale, ºe face-book reg-is-trace z takovýchto do£as
 -ných e-mailových
  []
@@ -1302,15 +1314,15 @@ Overfull \hbox (7.29396pt too wide) in paragraph at lines 524--525
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 526.
+(hyperref)                removing `\textasciicaron' on input line 562.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 526.
+(hyperref)                removing `\textring' on input line 562.
 
-[30]
-Overfull \hbox (15.97618pt too wide) in paragraph at lines 537--538
+[32]
+Overfull \hbox (15.97618pt too wide) in paragraph at lines 573--574
 \T1/lmr/m/n/12 ni-tion - optické rozpoznávání znak·) anebo lid-ským opisováním 
 text·. Výhodou
  []
@@ -1318,65 +1330,74 @@ text·. Výhodou
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 545.
+(hyperref)                removing `\textasciicaron' on input line 581.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 545.
+(hyperref)                removing `\textasciicaron' on input line 581.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 545.
+(hyperref)                removing `\textasciicaron' on input line 581.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 545.
+(hyperref)                removing `\textring' on input line 581.
 
 
-Overfull \hbox (9.2872pt too wide) in paragraph at lines 547--548
+Overfull \hbox (9.2872pt too wide) in paragraph at lines 583--584
 \T1/lmr/m/n/12 P°i vymý²lení celého ex-per-i-mentu bylo hlavním cílem simulo-va
 t reálné chování
  []
 
-[31] [32]
+[33] <figures/confirm-friendship.png, id=385, 498.86375pt x 165.61874pt>
+File: figures/confirm-friendship.png Graphic file (type png)
+
+<use figures/confirm-friendship.png>
+Overfull \hbox (3.96161pt too wide) in paragraph at lines 612--613
+\T1/lmr/m/n/12 Jedná se totiº o hlavní moºnost, jak dát na face-booku o sob¥ v¥
+d¥t. Frekvence
+ []
+
+[34 <./figures/confirm-friendship.png>] [35] [36
+
+]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 563.
+(hyperref)                removing `\textasciicaron' on input line 625.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 571.
+(hyperref)                removing `\textasciicaron' on input line 633.
 
-[33
-
-]
+[37]
 No file Skvarjak.bbl.
-[34]
+[38]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 588.
+(hyperref)                removing `\textring' on input line 650.
 
-[35
+[39
 
 ]
-Overfull \hbox (7.0141pt too wide) in paragraph at lines 602--603
+Overfull \hbox (7.0141pt too wide) in paragraph at lines 664--665
 []\T1/lmr/m/n/12 - P°ísp¥vek na svou face-bookovou ze¤ od uºi-vatel· (Face-book
  nabádá
  []
 
-[36]
+[40]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 608.
+(hyperref)                removing `\textasciicaron' on input line 670.
 
-[37
+[41
 
 ]
 \tf@toc=\write5
@@ -1391,8 +1412,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10753 strings out of 495061
- 146177 string characters out of 1182621
+ 10759 strings out of 495061
+ 146237 string characters out of 1182621
  277041 words of memory out of 3000000
  13658 multiletter control sequences out of 15000+50000
  85577 words of font info for 56 fonts, out of 3000000 for 9000
@@ -1407,9 +1428,9 @@ lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Skvarjak.pdf (51 pages, 528217 bytes).
+Output written on Skvarjak.pdf (55 pages, 537627 bytes).
 PDF statistics:
- 471 PDF objects out of 1000 (max. 8388607)
- 115 named destinations out of 1000 (max. 500000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
  202 words of extra memory for PDF output out of 10000 (max. 10000000)
 

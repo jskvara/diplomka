@@ -326,7 +326,12 @@ Facebook v roce 2010 vyvinul vlastní NoSQL databázi nazvanou Cassandra (http:/
 
 \section{Rozdělení aplikace}
 
+\subsection{Architektura celé aplikace}
+
 Aplikace sloužící pro otestování celého experimentu má dvě základní funkce. První z nich je sbírání dat o uživatelích facebooku z jejich profilů a inforamcí na jejich účtech. Druhou funkcí je ovládní fiktivních účtů, to znamená, nahrávání dat na facebook a interakce s dalšími uživateli. Data uživatelů z facebooku slouží k~analýze a k~dalšímu porovnání.
+
+Jako programovací jazyk bylo pro celou aplikaci zvoleno PHP. Pro tento jazyk existuje kvalitní framework jmenující se NetteFramework (\verb|nette.org|), který se hodí především na menší aplikace. Jedná se o MVP (Model - View - Presenter) framework z dílny českého autora. Tento framework se stará především o zpracování webových formulářů a zpracování požadavků webového prohlížeče, zpracování HTML šablon a celkovou architekturu celé aplikace. Více informací o tomto frameworku je k dispozici v oficiální dokumentaci (\verb|doc.nette.org|). Pro webové aplikace, které jsou rozsahem podobné jako je naše experimentální aplikace je tento framework ideální.
+
 
 \section{Stahování informací z facebookových profilů}
 
@@ -419,7 +424,7 @@ Pro účely experimentu byla u statusů ukládána následující data získaná
   \item timestamp - čas vložení statusu
 \end{itemize}
 
-Dále byli ukládáni do databáze všichni přátelé. Struktura těchto dat měla byla následující:
+Dále byli ukládáni do databáze všichni přátelé. Struktura těchto dat byla následující:
 
 \begin{itemize}
   \item name - Uživatelské jméno na profilu
@@ -430,45 +435,74 @@ Dále byli ukládáni do databáze všichni přátelé. Struktura těchto dat m�
   \item downloaded - čas stažení informace
 \end{itemize}
 
-[todo stahovane 3 tabulka]
+Poslední stahovanou kolekcí do databáze MongoDb byly profily jednotlivých přátel našich profilů. Jedná se o informace o osobě, které o sobě každý na facebooku může vyplnit. Ukládaná data do této databáze jsou následující:
 
+\begin{itemize}
+  \item user - Uživatelské jméno profilu
+  \item friend - zda se jedná o přímého přítele nebo ne
+  \item friendsCount - počet všech přátel stahovaného účtu, pokud to bylo možné z profilu zjistit
+  \item photosCount - počet všech fotek stahovaného účtu, pokud to bylo možné z profilu zjistit
+  \item likesCount - počet všech like skupin stahovaného účtu, pokud to bylo možné z profilu zjistit
+  \item eduwork - pole informací o vystudované škole a zaměstnání
+  \item relationship - informace o vztahu účtu
+  \item Bio - popis na profilu
+  \item Birthday - datum narození 
+  \item Gender - pohlaví
+  \item Interested In - o které pohlaví se daný účet zajímá
+  \item Hometown - rodné město
+  \item Current City - město, ve kterém daný účet právě žije
+  \item Languages - jazyky, kterými účet umí mluvit
+  \item Relationship Status - zda je daný účet ve vztahu
+  \item relationship - s kým je daný účet v jakém typu vztahu
+  \item Religious Views - náboženské vyznání
+  \item Mobile Phones - telefonní čísla
+  \item Address - adresa
+  \item Email - e-mail
+  \item Quote - oblíbené citace
+  \item Screen Name - kontakty na různé komunikační kanály (Skype, Icq, ...)
+  \item yearly - důležité mezníky v životě uživatele seřazené podle data (narození apod.)
+  \item downloaded - čas stažení profilu
+\end{itemize}
+[todo kontrola]
+
+Všechny údaje, které začínají velkým písmenkem jsou parsovány přímo z facebookové stránky. Jména klíče se tedy shodují s názvy oddílů na facebookové stránce. Začínají tedy velkými písmeny. Pro databázi MongoDb není ve velikosti písmen u klíčů žádný problém.
+
+Některé z těchto informací nemusí být na profilech dostupné. Záleží vždy na konkrétním uživateli facebooku, zda je ochoten o sobě tyto informace prozradit a zveřejnit.
+
+Jediná povinná informace, která se zadává již při registraci na facebooku je pohlaví, takže pohlaví se na stránce s osobními informacemi o uživateli zobrazí vždy. Počet zobrazených informací na této stránce se navíc může lišit pro uživatele, které mají profil v přátelích a pro uživatel, kteří jsou pro profil cizí. Každá sekce má své vlastní nastavení viditelnosti. Možnosti viditelnosti jsou: veřejné (viditelné pro všechny), přátelé (viditelné jen pro přátele), jen já (není viditelné pro nikoho kromě uživatele samotného) a vlastní nastavení (lze nastavit kteří konkrétní uživatelé nebo skupiny uživatelů mohou údaj vidět a pro které uživatele nebo skupiny je údaj naopak neviditelný neviditelný).
+
+Nová verze facebookvého vzhedu timeline zavedla na stránce s osobními informacemi nové sekce jako jsou: Hudba, Filmy, Seriály, Knihy, Místa, Like, Skupiny, Fitness a Poznámky. Protože byla aplikace nastavena pro starší verzi facebookové timeline, nepřidával jsem do stahování tyto informace, jelikož některé účty měly ještě starou verzi timeline a získávané informace by byly tudíž nekonzistentní.
 
 \section{Nahrávání dat na facebookové profily}
 
-Druhá část aplikace pro experiment byla určena pro nahrávání dat na fiktivní facebookvé profily. Hlavním cílem pro přidávání dat na fiktivíní profily byla simulace chování reálných uživatelů a zvýšení věrohodnosti účtů. Na facebooku je velké množství možností k interakci s ostatními uživateli. Nejdůležitějším prvkem na facebooku je zeď se statusy přátel. Statusy je možné komentovat, likovat a sdílet (poslat na svou zeď pro zviditelnění svým přátelům). 
+\subsection{Možné způsoby interakce na facebooku}
 
-Kromě statusů lze na facebooku komunikovat pomocí zpráv. Systém je podobný jako u e-mailových zpráv s tím rozdílem, že pomocí zpráv lze komunikovat pouze  v rámci facebooku. Dalším komunikačním kanálem je realtimový chat. Facebookový chat je propojen se zprávami, takže veškeré zprávy, které jsou poslány přes chat, jsou viditelné i ve zprávách. Výhoda chatu oproti zprávám je, že  můžeme vidět, kteří uživatelé jsou právě online a zda si zaslanou zprávu přečetli.
+Druhá část aplikace pro experiment byla určena pro nahrávání dat na facebookvé profily. Hlavním cílem pro přidávání dat na profily byla simulace chování reálných uživatelů a zvýšení věrohodnosti účtů. Na facebooku je velké množství možností k interakci s ostatními uživateli. Nejdůležitějším prvkem na facebooku je zeď se statusy přátel. Statusy je možné komentovat, likovat a sdílet (share = poslat na svou zeď pro zviditelnění svým přátelům). 
 
-Hlavím cílem interakce na facebooku byla věrohodnost pro ostatní facebookové uživatele. Důležité tedy bylo zautomatizovat přidávání přátel na facebooku. Ze začátku jsem po zaregistrování nového profilu plánoval přidávat pokaždé sedm přátel. Facebook ale při přidávání většího množství přátel (většinou okolo pěti, ale někdy i méně) zobrazil potvrzovací okno \ref{fig:confirmFriendship}. Ustálil jsem tedy po tomto zjištění počet přidávaných přátel na pět za jedno přihlášení. [todo ...]
+Kromě statusů lze na facebooku komunikovat pomocí zpráv. Systém je podobný jako u e-mailových zpráv s tím rozdílem, že pomocí zpráv lze komunikovat pouze  v rámci facebooku. Zprávy jsou viditelné pouze pro uživatele přidané do komunikace, stejně jako je tomu u klasických e-mailových zpráv. 
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[width=5in]{figures/confirm-friendship.png}
-\caption{Potvrzení přidání osoby do přátel na facebooku}
-\label{fig:confirmFriendship}
-\end{center}
-\end{figure}
-= ziskavani prvnich pratel
-
-= neznami mezi sebou
-
+Dalším komunikačním kanálem je chat, který probíhá v reálném čase. Facebookový chat je propojen se zprávami, takže veškeré informace, které jsou poslány přes chat, jsou viditelné i ve zprávách. Výhoda chatu oproti zprávám je, že  můžeme vidět, kteří uživatelé jsou právě online a zda si zaslanou zprávu již přečetli. Facebookový chat funguje pomocí otevřeného protokolu XMPP (Extensible Messaging and Presence Protocol). Tento protokol se používá pro komunikaci pomocí takzvaného Jabberu, takže pro používání facebookového chatu lze využít jakýkoliv program podporující Jabber.
 
 Další možností, jak na sebe na facebooku upozornit určitou osobu je možnost někoho šťouchnout (poke). Funkčnost tlačítka šťouchnout je jednoduchá. Pokud vás někdo šťouchne, přijde vám upozornění a můžete šťouchnutí opětovat. Šťouchnutí je znázorněno ikonou lidské ruky s napřaženým ukazováčkem.
 
-Pro experiment jsem sdílení omezil na přidávání statusů na svou zeď. Jedná se totiž o hlavní možnost, jak dát na facebooku o sobě vědět. Frekvence přidávání statusů byla nastavena na jeden status za přihlášení. 
+Při implementaci jsem se soustředil především na automatické nahrávání statusů na uživatelské profily. V implementované aplikaci je sekce Tasks (úkoly), kde je možné nastavit jaké akce se mají pro které profily provést. V aplikaci jsou implementovány následující automatické akce publikování na facebook. Každá akce má jméno a paramtry.
 
-Obsah vkládaných statusů byl obecný a neutrální. Jednalo se většinou o citáty a výroky známých i neznámých osobností na internetu, vtipy a neutrální a spontánní komentáře aktuálního dění (například o počasí). Jako zdroj pro statusy citátů sloužila webová stránka: \verb|citaty.net| a jako zdroj vtipných statusů sloužily stránky: \verb|www.vtipy.net|, \verb|vysmatej.cz| a \verb|vtipy.peoplelovepeople.com|. Snažil jsem se vyhýbat rasistickým a politickým vtipům, abych nepobouřil některého z přidaných přátel na facebooku. Spontánní texty statusů jsem vymýšlel sám nebo jsem se inspiroval statusy na zdi ostatních fiktivních účtů.
+\begin{itemize}
+  \item postStatus(text, [attachement]) - přidá na zeď uživatele status (parametr text), pokud je určena i příloha (attachement), což může být obrázek, video nebo odkaz, tak se vloží na facebook jako speciální objekt i s popisem
+  \item likeGroup(id) - přidat se ke skupině (Group nebo Page), parametrem je id skupiny 
+  \item addFriend(id) - požádá konkrétního uživatele o přátelství na facebooku, parametrem je id uživatele
+  \item rsvpEvent(id, [rsvpType]) - přidat se ke konkrétní události na facebooku, parametrem je id události, druhým parametrem je účast, možné hodnoty jsou: attend (účastnit se), maybe (možná), decline (zamítnout účast), pokud není druhý parametr uveden, jako výchozí se bere možnost attend
+  \item inviteEvent(id) - pozvat všechny facebookové přátele na událost, parametrem je id události
+\end{itemize}
 
-Ostatní typy možnosti komunikace na facebooku nebyly automaticky zpracovávány. Po přihlášení k účtu, stažení informací a spuštění automatizovaných akcí jsem vždy ručně kontroloval co se na facebookovém účtu děje. Ve většině případů se u účtu zobrazovaly notifikace o potvrzení žádostí o přátelství a několik zpráv o tom, zda náš fiktivní účet zná osobu, které byla odeslána žádost o přátelství a občas i šťouchnutí.
+Ostatní typy možnosti komunikace na facebooku nebyly automaticky zpracovávány. Nebylo by složité doimplementovat některé další funkce jako šťouchnutí všech přátel, ale pro tento experiment jsem se chtěl zaměřit na tyto hlavní funkce. 
 
-Facebookvé zprávy nebyly automaticky zpracovávány. Zpracovávání by totiž nepřinášelo přidanou hodnotu k našemu experimentu a zpracovávání textu by bylo složité, jak už bylo zmíněno dříve. Na žádné zprávy jsem nikdy neodpovídal. Teoreticky by bylo možné připravit univerzální odpověď na otázku, zda se dané facebookové účty znají. Například vymyšlení univerzálního místa, kde se mohly dané osoby setkat - škola, práce, apod., anebo přiznání, že se účty neznají). Pak by ale zcela určitě pokračovalo další dotazování pomocí facebookových zpráv, odkud se dané účty znají anebo proč byla odeslána žádost o přátelství na facebooku. Nejen, že by takovéto zpracovávání zabralo mnoho času a nebylo by možné plně automatizovat, ale někdy by mohlo takovéto chování být i kontraproduktivní.
+Facebook navíc začal od dubna 2013 povolovat maximálně pouze 100 pozvaných uživatelů na událost najednou a každá událost může mít maximálně 300 nevyřízených pozvánek. Facebook tak nutí organizátory akcí vybírat jen hosty, které bude daná akce zajímat a budou se chtít účastnit.
+[todo http://www.insidefacebook.com/2013/04/09/facebook-puts-limits-on-event-invites/, https://www.facebook.com/help/202545109787461/]
 
-= spousteno lokalne
+Celá aplikace byla spouštěna lokálně na mém počítači. Teoreticky by se dalo vše nahrát na vzdálený server a ovládat přes internet, ale tím bychom ztratili výhodu kontroly prováděných operací v prohlížeči za použití programu Selenium WebDriver. Existují i internetové služby, které nabízejí pornájem výpočetního času prohlížečů, taže lze mít celou aplikaci lokálně a spouštět program Selenium WebDriver přes internet vzdáleně. Problém je ale stejný jako v předchozím případě.
 
-
-- architektura
-
-Chovani uzivatelu + Metriky
+Pokud by se aplikace rozrostla anebo by ji použávalo více uživatelů, pravděpodobně by se přenesení na vzdálený server vyplatilo. Přineslo by to ale problémy s nutností správy serveru a ošetřování neočekávaných stavů v aplikaci.
 
 
 
@@ -557,7 +591,33 @@ Faktory ovlivňující vyplněnost profilu:
 - 5 levelu
 - ucty se navzajem neznaji
 
+Chovani uzivatelu + Metriky
 
+
+Hlavím cílem interakce na facebooku byla věrohodnost pro ostatní facebookové uživatele. Důležité tedy bylo zautomatizovat přidávání přátel na facebooku. Ze začátku jsem po zaregistrování nového profilu plánoval přidávat pokaždé sedm přátel. Facebook ale při přidávání většího množství přátel (většinou okolo pěti, ale někdy i méně) zobrazil potvrzovací okno \ref{fig:confirmFriendship}. Ustálil jsem tedy po tomto zjištění počet přidávaných přátel na pět za jedno přihlášení. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/confirm-friendship.png}
+\caption{Potvrzení přidání osoby do přátel na facebooku}
+\label{fig:confirmFriendship}
+\end{center}
+\end{figure}
+= ziskavani prvnich pratel
+
+= neznami mezi sebou
+
+
+
+Pro experiment jsem sdílení omezil na přidávání statusů na svou zeď. Jedná se totiž o hlavní možnost, jak dát na facebooku o sobě vědět. Frekvence přidávání statusů byla nastavena na jeden status za přihlášení. 
+
+Obsah vkládaných statusů byl obecný a neutrální. Jednalo se většinou o citáty a výroky známých i neznámých osobností na internetu, vtipy a neutrální a spontánní komentáře aktuálního dění (například o počasí). Jako zdroj pro statusy citátů sloužila webová stránka: \verb|citaty.net| a jako zdroj vtipných statusů sloužily stránky: \verb|www.vtipy.net|, \verb|vysmatej.cz| a \verb|vtipy.peoplelovepeople.com|. Snažil jsem se vyhýbat rasistickým a politickým vtipům, abych nepobouřil některého z přidaných přátel na facebooku. Spontánní texty statusů jsem vymýšlel sám nebo jsem se inspiroval statusy na zdi ostatních fiktivních účtů.
+
+
+ Po přihlášení k účtu, stažení informací a spuštění automatizovaných akcí jsem vždy ručně kontroloval co se na facebookovém účtu děje. Ve většině případů se u účtu zobrazovaly notifikace o potvrzení žádostí o přátelství a několik zpráv o tom, zda náš fiktivní účet zná osobu, které byla odeslána žádost o přátelství a občas i šťouchnutí.
+
+
+Facebookvé zprávy nebyly automaticky zpracovávány. Zpracovávání by totiž nepřinášelo přidanou hodnotu k našemu experimentu a zpracovávání textu by bylo složité, jak už bylo zmíněno dříve. Na žádné zprávy jsem nikdy neodpovídal. Teoreticky by bylo možné připravit univerzální odpověď na otázku, zda se dané facebookové účty znají. Například vymyšlení univerzálního místa, kde se mohly dané osoby setkat - škola, práce, apod., anebo přiznání, že se účty neznají). Pak by ale zcela určitě pokračovalo další dotazování pomocí facebookových zpráv, odkud se dané účty znají anebo proč byla odeslána žádost o přátelství na facebooku. Nejen, že by takovéto zpracovávání zabralo mnoho času a nebylo by možné plně automatizovat, ale někdy by mohlo takovéto chování být i kontraproduktivní.
 
 
 %\begin{conclusion}
