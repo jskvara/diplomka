@@ -70,7 +70,7 @@
 FIT
 = co je fb = soc sit apod
 - vse je popisovano k datu duben 2013, muze se menit a meni,
-
+- etika = ovladani v pohode?
 
 
 \chapter{Analýza}
@@ -330,7 +330,9 @@ Facebook v roce 2010 vyvinul vlastní NoSQL databázi nazvanou Cassandra (http:/
 
 Aplikace sloužící pro otestování celého experimentu má dvě základní funkce. První z nich je sbírání dat o uživatelích facebooku z jejich profilů a inforamcí na jejich účtech. Druhou funkcí je ovládní fiktivních účtů, to znamená, nahrávání dat na facebook a interakce s dalšími uživateli. Data uživatelů z facebooku slouží k~analýze a k~dalšímu porovnání.
 
-Jako programovací jazyk bylo pro celou aplikaci zvoleno PHP. Pro tento jazyk existuje kvalitní framework jmenující se NetteFramework (\verb|nette.org|), který se hodí především na menší aplikace. Jedná se o MVP (Model - View - Presenter) framework z dílny českého autora. Tento framework se stará především o zpracování webových formulářů a zpracování požadavků webového prohlížeče, zpracování HTML šablon a celkovou architekturu celé aplikace. Více informací o tomto frameworku je k dispozici v oficiální dokumentaci (\verb|doc.nette.org|). Pro webové aplikace, které jsou rozsahem podobné jako je naše experimentální aplikace je tento framework ideální.
+Jako programovací jazyk bylo pro celou aplikaci zvoleno PHP. Pro tento jazyk existuje kvalitní framework jmenující se NetteFramework (\verb|nette.org|), který se hodí především na menší aplikace. Jedná se o MVP (Model - View - Presenter) framework z dílny českého autora. Tento framework se stará především o zpracování webových formulářů a zpracování požadavků webového prohlížeče, zpracování HTML šablon a celkovou architekturu celé aplikace. Více informací o tomto frameworku je k dispozici v oficiální dokumentaci (\verb|doc.nette.org|). 
+
+Pro webové aplikace, které jsou rozsahem podobně velké jako je naše experimentální aplikace je tento framework ideální. Na internetu se dá najít velké množství návodů k tomuto frameworku v českém jazyce a existuje i početná česká komunita, která se tímto frameworkem zabývá a pomáhá s vývojem. 
 
 
 \section{Stahování informací z facebookových profilů}
@@ -504,29 +506,26 @@ Celá aplikace byla spouštěna lokálně na mém počítači. Teoreticky by se 
 
 Pokud by se aplikace rozrostla anebo by ji použávalo více uživatelů, pravděpodobně by se přenesení na vzdálený server vyplatilo. Přineslo by to ale problémy s nutností správy serveru a ošetřování neočekávaných stavů v aplikaci.
 
+= pridavani pratel = 10, tasks screen
+
 
 
 
 \chapter{Průběh experimentu}
 
--stahovani friend - friend dat
 \section{První generace facebookových účtů}
 
-Před samotným startem celého experimentu jsem potřeboval otestovat, jak přibližně bude vše fungovat a jak se budou účty přibližně chovat. Založil jsem proto na facebooku pět testovacích účtů, které jsem nazval \textbf{první generace}. Pomocí těchto účtů jsem zjišťoval omezení i zádrhele celého experimentu a jak by vše mělo fungovat. Pomocí těchto účtů jsem vyvíjel aplikaci pro automatické stahování a nahrávání dat na facebook (více podrobně bude celý mechanismus popsán později).
+Před samotným startem celého experimentu jsem potřeboval otestovat, jak přibližně bude vše fungovat a jak se budou účty přibližně chovat. Založil jsem proto na facebooku pět testovacích účtů, které jsem nazval \textbf{první generace}. Pomocí těchto účtů jsem zjišťoval omezení i zádrhele celého experimentu a jak by vše mělo fungovat. Pomocí těchto účtů jsem vyvíjel aplikaci pro automatické stahování a nahrávání dat na facebook (viz předchozí kapitola).
 
-Pomocí první generace jsem ověřil, že facebook nekontroluje, pokud se z jedné IP adresy přihlašuje více účtů. Je to i logické, jelikož v institucích jako jsou školy, knihovny a podobně se může k facebooku přihlašovat více účtů, které jsou k internetu připojeny skrze jednu
+Pomocí první generace jsem ověřil, že facebook nekontroluje, pokud se z jedné IP adresy přihlašuje velké množství účtů. Denně jsem se přihlašoval k sedmi různým facebookovým účtům a nikdy jsem nenarazil na žádný probém. Je to i logické, jelikož v institucích jako jsou školy, knihovny a podobně se může k facebooku přihlašovat velké množství účtů, které jsou k internetu připojeny skrze jednu IP~adresu\footnote{IP adresa - číselná adresa počítače, pomocí které se připojuje k internetu}, přes kterou jsou instituce připojovány k internetu.
 
 \section{Příprava experimentu}
 
 \subsection{Zakládání e-mailových adres}
 
-Před samotným experimentem bylo potřeba založit facebookové účty pomocí kterých se bude experiment realizovat.
-Zakládání falešných účtů bylo poměrně složité, jelikož jsem chtěl původně spustit celý experiment v jeden den. 
-Facebook při vytváření nového účtu kontroluje vždy 
-IP~adresu\footnote{IP adresa - číselná adresa počítače, pomocí které se připojuje k internetu} počítače a nedovolí ze stejné IP adresy založit více než jeden účet denně. 
-Pokud se někdo pokusí založit více než jeden účet, zobrazí se na facebooku obrazovka s nutností opsat kontrolní 
-CAPTCHA\footnote{CAPTCHA - jedná se o ochranu internetových stránek proti robotům, nejčastěji je realizovaná nutností opisání textu z deformovaného obrázku} obrázek a po úspěšném opsání facebook zobrazí stránku (viz obrázek \ref{fig:fbTelephoneNubmer}) s polem pro zadání telefonního čísla, na které má být zaslán aktivační kód.
-Nepokoušel jsem se pak už dále dostat přes tento krok, jelikož telefonní čísla se složitě shání a jedná se o osobní údaj, který jsem nechtěl facebooku sdělovat.
+Před samotným provedením experimentu bylo potřeba založit facebookové účty pomocí kterých se bude celý experiment realizovat. Zakládání falešných účtů bylo poměrně složité, jelikož jsem chtěl původně spustit celý experiment v jeden den. Facebook při vytváření nového účtu kontroluje vždy IP~adresu počítače a nedovolí ze stejné IP adresy založit více než jeden účet denně. 
+
+Pokud se někdo pokusí založit více než jeden účet, zobrazí se na facebooku obrazovka s nutností opsat kontrolní CAPTCHA\footnote{CAPTCHA - jedná se o ochranu internetových stránek proti robotům, nejčastěji je realizovaná nutností opisání textu z deformovaného obrázku} obrázek a po úspěšném opsání facebook zobrazí stránku (viz obrázek \ref{fig:fbTelephoneNubmer}) s polem pro zadání telefonního čísla, na které má být zaslán aktivační kód. Nepokoušel jsem se pak už dále dostat přes tento krok, jelikož telefonní čísla se složitě shání a jedná se o osobní údaj, který jsem nechtěl facebooku sdělovat.
 
 \begin{figure}[h]
 \begin{center}
@@ -536,65 +535,104 @@ Nepokoušel jsem se pak už dále dostat přes tento krok, jelikož telefonní �
 \end{center}
 \end{figure}
 
-Nejdříve bylo potřeba založit e-mailové adresy, sloužící k vytvoření falešných účtů na facebooku. 
-Všechny e-mailové adresy byly založeny na české doméně a měly koncovku \verb|.cz|, protože jsem chtěl provést experiment na uživatelích facebooku z České republiky, aby bylo vše věrohodnější.
-Pro vytváření e-mailových adres jsem použil především bezplatnou e-mailovou službu od portálu seznam.cz (jedná se v první řadě o internetový vyhledavač, e-mailové schránky jsou provozovány jako jedna z doplňkových služeb). 
-Na tomto portálu lze vytvářet e-mailové adresy s koncovkou \verb|@seznam.cz| a \verb|@email.cz|.
+Nejdříve bylo potřeba pro všechny facebookové účty založit e-mailové adresy, sloužící k vytvoření falešných účtů na facebooku. Všechny e-mailové adresy byly založeny na české doméně a měly koncovku \verb|.cz|, protože jsem chtěl provést experiment na uživatelích facebooku z České republiky, aby bylo vše věrohodnější a abych se mohl kvalitněji zaměřit na určitou skupinu na facebooku. 
 
-Pro každý falešný účet na facebooku jsem nejdříve připravil náhodné jméno a příjmení. 
-Hlavním požadavkem na jméno bylo, aby bylo co nejvíce náhodné, ale zároveň i uvěřitelné. 
-Nechtěl jsem proto vytvářet nová jména, ale raději využít již existující.
-Ve velkém množství případů se jednalo o spojení různých křestních jmen a příjmení získaných ze stažených facebookových profilů.
-U některých jmen byl změněn i rod příjmení.
-Nadále jsem pro vytváření jmen použil službu \verb|www.zlatestranky.cz|\footnote{Jedná se o internetový seznam telefonních čísel fyzických a právnických osob v České republice} (v současné době stránky obsahují pouze seznam právnických osob a změnila se grafika celých stránek, ale v době kdy jsem účty zakládal byl na stránkách i seznam fyzických osob).
+Pro vytváření e-mailových adres jsem použil především bezplatnou e-mailovou službu od portálu seznam.cz (jedná se v první řadě o internetový vyhledavač, e-mailové schránky jsou provozovány jako jedna z doplňkových služeb). Na tomto portálu lze vytvářet e-mailové adresy s koncovkou \verb|@seznam.cz| a \verb|@email.cz|.
 
-Struktura e-mailových adres byla následující: \verb|jmenoprijmeni@domena|. Přednost měla doména \verb|seznam.cz|, pokud byla e-mailová adresa s tímto jménem již zabraná, použil jsem doména \verb|email.cz| a pokud nebyla k dispozici ani tato e-mailová schránka, tak se za jméno vložila číslice (například: jannovak5@seznam.cz) anebo byla použita modifikace křestního jména (domácký výraz, zdrobnělina a podobně).
+Pro každý falešný účet na facebooku jsem nejdříve připravil náhodné jméno a příjmení. Hlavním požadavkem na jméno bylo, aby bylo co nejvíce náhodné, ale zároveň i uvěřitelné. Nechtěl jsem proto vytvářet nová jména, ale raději využít již existující. Ve velkém množství případů se jednalo o spojení různých křestních jmen a příjmení získaných ze dříve stažených facebookových profilů. U~některých jmen byl změněn i rod příjmení. Nadále jsem pro vytváření jmen použil službu \verb|www.zlatestranky.cz|\footnote{Jedná se o internetový seznam telefonních čísel fyzických a právnických osob v České republice} (v současné době stránky obsahují pouze seznam právnických osob a změnila se grafika celých stránek, ale v době kdy jsem účty zakládal byl na stránkách i seznam fyzických osob). V dnešní době by bylo možné použít některý podobný internetový seznam fyzických osob.
 
-Při vytváření e-mailových adres jsem na žádná omezení nenarazil. Webových stránek nabízejících bezplatně e-mailové adresy je velké množství a to i pokud potřebujeme e-mailovou adresu pouze z české domény. Po úspěšné registraci na facebook bylo vždy potřeba aktivovat pomocí e-mailu. Facebook ihned po registraci zašle na e-mail zadávaný při registraci zprávu s odkazem. Aktivace účtu probíhá otevřením ověřovacího odkazu z e-mailu.
+Struktura e-mailových adres byla následující: \verb|jmenoprijmeni@domena|. Přednost měla doména \verb|seznam.cz|, pokud byla e-mailová adresa s tímto jménem již zabraná, použil jsem doménu \verb|email.cz| a pokud nebyla k dispozici ani tato e-mailová schránka, tak se za jméno vložila číslice (například: \verb|jannovak5@seznam.cz|) anebo byla použita modifikace křestního jména (domácký výraz, zdrobnělina a podobně).
 
-Facebook poté na zadaný e-mail posílá upozornění na různé aktivity, které se na facebooku dějí (například žádost o přátelství, zaslání zprávy apod.). Typy zasílaných zpráv z facebooku lze nastavit v uživatelském nastavení. Pro experiment byly e-mailové adresy důležité pouze pro povolení facebookového účtu.
+Při vytváření e-mailových adres jsem na žádná omezení nenarazil. Webových stránek nabízejících bezplatně e-mailové adresy je velké množství a to i pokud potřebujeme e-mailovou adresu pouze z české domény. Po úspěšné registraci na facebook bylo vždy potřeba aktivovat facebookový účet pomocí e-mailu. Facebook ihned po odeslání registračního formuláře zašle na e-mail zadávaný při registraci zprávu s ověřovacím odkazem. Aktivace účtu probíhá otevřením ověřovacího odkazu z e-mailu. Facebook tak kontroluje existenci a funkčnost této e-mailové schránky.
 
-\subsection{Internetové služby poskytující dočasné e-mailové schránky}
-Před začátkem experimentu jsem uvažoval nad použitím některé ze služeb pro dočasné e-mailové adresy. Jedná se o služby, které vám při návštěvě vygenerují náhodnou e-mailovou adresu (například:\newline \verb|e1461664@rmqkr.net|). Takovéto e-mailové adresy fungují jen po omezeně dlouhou dobu a všechy e-mailové zprávy, které jsou odeslány na tuto adresu se zobrazí přímo na navštívené stránce (pouze pro návštěvníka, pro kterého byla daná e-mailová adresa vygenerována). Příklady dočasných e-mailových služeb: \verb|http://10minutemail.com/|, \verb|http://mailinator.com/|,\newline \verb|https://meltmail.com/| a další.
+Facebook po úspěšné registraci na zadanou e-mailovou adresu posílá upozornění na různé aktivity, které se na facebooku dějí (například přijatá žádost o přátelství, obdržení facebookové zprávy, označení na fotce a podobně). Všechny možné typy zasílaných zpráv z facebooku lze nastavit v uživatelském nastavení. Pro experiment byly e-mailové adresy důležité pouze pro registraci facebookového účtu.
 
-Zjistil jsem ale, že facebook registrace z takovýchto dočasných e-mailových adres blokuje a po registraci je potřeba zadat telefonní číslo, na které příjde ověřovací kód, stejně jako při registraci více účtů z jedné IP adresy. Také se mi nepodařilo najít službu s dočasnými e-mailovými adresami, které by obsahovly doménu s koncovkou \verb|.cz|. Použil jsem proto služby českých e-mailových serverů. Hlavní výhodou je to, že k e-mailovým schránkám budu mít přístup i později a nebude problém pokud by bylo potřeba dohledat některé informace posílané e-mailem (například zapomenuté heslo nebo důvod zablokování facebookového účtu).
+\subsection{Internetové služby poskytující dočasné a veřejné e-mailové schránky}
+
+Před začátkem experimentu jsem uvažoval nad použitím některé ze služeb poskytujících dočasné nebo veřejné e-mailové adresy. Jedná se o služby, které vám při návštěvě vygenerují náhodnou e-mailovou adresu (například:\newline \verb|e1461664@rmqkr.net|). Takovéto e-mailové adresy fungují většinou jen po omezeně dlouhou dobu (v řádu několika desítek minut až hodin) a všechy e-mailové zprávy, které jsou odeslány na tuto adresu se zobrazí přímo na navštívené stránce veřejně (u dočasných e-mailů jen pro návštěvníka, pro kterého byla daná e-mailová adresa vygenerována).
+
+Takovéto internetové služby slouží především jako ochrana proti e-mailové nevyžádané poště (takyvaný spam) a pro registraci na pochybné internetové služby. Po uplynutí časového intervalu je e-mailová adresa zrušena.
+
+Příklady dočasných a veřejných e-mailových služeb:
+
+\begin{itemize}
+  \item \verb|10minutemail.com| - vytvoří náhodnou e-mailovou adresu na různých doménách platnou 10 minut, tato doba lze postupně prodlužovat, vždy o dalších 10 minut
+  \item \verb|mailinator.com| - možnost vygenerovat si jakoukoliv e-mailovou adresu na doméně \verb|mailinator.com| nebo \verb|spamherelots.com|, k této e-mailové schránce může přistupovat kdokoli, ale 
+  \item \verb|meltmail.com| - funguje tak, že po omezenou časovou dobu přeposílá veškeré e-maily zaslané na vygenerovanou adresu na zadaný e-mail, platnost vygenerovaných e-mailových adres může být 3, 6, 12 a 24 hodin
+\end{itemize}
+
+Zjistil jsem ale, že facebook registrace z takovýchto e-mailových adres blokuje a po registraci je ihned potřeba zadat telefonní číslo, na které příjde ověřovací kód, stejně jako při registraci více účtů z jedné IP adresy. Dále se mi nepodařilo najít službu s dočasnými e-mailovými adresami, které by obsahovly doménu s koncovkou \verb|.cz|. Použil jsem proto služby českých e-mailových serverů. Hlavní výhodou je to, že k e-mailovým schránkám budu mít přístup i později a nebude problém pokud by bylo potřeba dohledat některé informace posílané e-mailem (například zapomenuté heslo nebo důvod zablokování facebookového účtu).
 
 \section{Problémy se zakládáním facebookových účtů}
 
-Zakládal jsem tedy profily na facebooku již dopředu, abych mohl experiment spustit najednou ve stejný čas. 
-Bohužel se mi ale stalo to, že dříve založené účty na facebooku byly neaktivní a když jsem se k nim přihlásil po nějáké době, tak facebook požadoval zadání telefonního čísla, pro ověření totožnosti uživatele (stejně jako pokud se pokoušíme zaregistrovat více účtů denně z jedné IP adresy). Problém byl v tom, že facebook bere účty jako věrohodné až   pokud má několik přátel a vyvíjí aktivitu na facebooku.
+Profily na facebooku tedy byly zakládány již dopředu, abych mohl být experiment spuštěn najednou ve stejný čas. Bohužel se ale stalo to, že dříve založené účty na facebooku byly neaktivní a když jsem se k nim přihlásil po delší době, tak facebook požadoval zadání telefonního čísla, pro ověření totožnosti uživatele (stejně jako pokud se pokoušíme zaregistrovat více účtů denně z jedné IP adresy). Problém byl v tom, že facebook bere účty jako věrohodné až pokud má přidáno několik přátel a vyvíjí aktivitu na facebooku. 
 
 Stalo se tedy to, že jsem zakládal účty, aktivoval jsem je pomocí e-mailové adresy, ale už na účtech nebylá žádná další aktivita. Když jsem se poté v den spouštění experimentu k účtům vrátil, tak se mi objevilo textové pole s prosbou o ověření účtu zadáním telefonního čísla. Musel jsem tedy spustit experiment jen s funkčními účty s tím, že jsem po spuštění experimentu zakládal další nové účty.
 
-Teoreticky by bylo možné celý proces zakládání účtů plně zautomatizovat. E-mailové adresy pro registrované účty by šlo jenoduše zařídit na vlastní doméně nastavením doménového koše. To znamená, že veškeré e-maily, které byly odeslané na adresu naší domény budou doručeny na jednu konkrétní e-mailovou adresu. Získáme tak teoreticky neomezené množství e-mailů k registraci na facebook.
+Všechny facebookové účty jsem zakládal ručně, protože jsem se nechtěl v experimentu zabývat automatizací tohoto procesu. Celý experiment by šel rozšířit o tuto funkčnost, ale složitost tohoto problému je poměrně velká a v následující kapitole popisuji, jak by šlo zakládání facebookových účtů teoreticky plně zautomatizovat.
 
-Dále by se musel vyřešit problém s registrací z jedné IP adresy denně. Toto omezení by šlo obejít použitím několika spolehlivých proxy serverů\footnote{Proxy server - server, prostřednictvím kterého se lze připojit k internetu, výhodou je že není vidět naše IP adresa, ale IP adresa proxy serveru, seznam proxy serverů lze nalézt na internetu, například - http://www.hidemyass.com/proxy-list/}, přes které by byly falešné účty registrovány. Rychlost registrovaných účtů na facebooku denně by se odvíjela od počtu využívaných proxy serverů. 
+\section{Skupiny facebookových účtů pro experiment}
 
-Pravděpodobně by se muselo vyřešit i opisování kontrolního CAPTCHA kódu, pokud facebook detekuje podezřelou robotickou činnost. Na internetu ale fungují služby, které umí za poplatek řešit opisování CAPTCHA obrázků\footnote{http://decaptchablog.com/decaptcher-services}. Vše funguje automaticky pomocí OCR (Optical character recognition - optické rozpoznávání znaků) anebo lidským opisováním textů. Výhodou takovýchto služeb je, že si lze vše pronajmout a nemusíme se starat o nic jiného.
+Při vymýšlení celého experimentu bylo hlavním cílem simulovat reálné chování uživatelů na facebooku. Chtěl jsem také vyzkoušet různé strategie přidávání přátel. Na začátku experimentu jsem tedy rozdělil všechny účty do pěti kategoríí podle vyplněnosti profilu. Každá kateogie měla známku od 1 do 5, přičemž známka 1 znamená, že profil je nevyplněný a známka 5 znamená, že profil je zcela vyplněný. Hlavní motivací pro takovéto rozdělení je, že více vyplněné facebookové profily by měly být pro ostatní návštěvníky věrohodnější a lidé by si je měli teoreticky více přidávat.
 
-Pravděpodobně by bylo potřeba řešit i jiné problémy spojené s automatickým zakládáním facebookových profilů, které by se objevily při hlubším bádání nad problémem. Každopádně se ale určitě jedná o velmi zajímavé téma, které by šlo zpracovat více do hloubky. Protože by rozsah takovéhoto rozpracování pravděpodobně vydal na samostatnou diplomovou práci. Já jsem pro svůj experiment potřeboval pouze omezený počet facebookových účtů, takže jsem všechny účty zakládal ručně.
+Na následujícím seznamu jsou faktory ovlivňující vyplněnost profilu:
 
-[todo]
-- etika = ovladani v pohode?
-- seznam uzivatelu = jen data
+\begin{itemize}
+  \item profilová a úvodní fotka
+  \item vyplněny informace na stránce o sobě - především město ve kterém osoba právě žije, datum narození a oblíbené citáty
+  \item vlžené statusy na profilu
+  \item veřejná viditelnost informací na profilu
+\end{itemize}
 
-\section{Strategie přidávání přátel k falešným účtům}
+Profily, které měly úroveň vyplněnosti na profilu 1, neměly použitou ani jednu z možností uvedených výše. Profily s úrovní 1 měly náhodně vybranou jednu z výše zmíněných možností zatraktivnění profilu. Profily s úrovní 5 měly vyplněny všechy výše zmíněné možnosti.
 
-Při vymýšlení celého experimentu bylo hlavním cílem simulovat reálné chování uživatelů na facebooku. Chtěl jsem také vyzkoušet různé strategie přidávání přátel. Na začátku experimentu jsem tedy rozdělil všechny účty do pěti kategoríí podle vyplněnosti profilu. Každá kateogie měla známku od 1 do 5, přičemž známka 1 znamená, že profil je nevyplněný a známka 5 znamená, že profil je velmi vyplněný. Hlavní motivací pro takovéto rozdělení je, že více vyplněné facebookové profily by měly být pro ostatní návštěvníky věrohodnější.
+K získání fotografií k profilům posloužily internetové seznamky a sociální sítě. Z českého prostředí se jednalo především o stránky: \verb|libimseti.cz| a \verb|www.lide.cz|. Ze zahraničních webů posloužila nejlépe internetová stránka \verb|www.myspace.com|. Výhodou těchto stránek je, že lze vybírat profily podle pohlaví a věku, což bylo ideální protože bylo jednoduché najít profilové fotky odpovídající pohlaví a věku jakéhokoliv facebookového profilu. Veškeré obrázky jsou navíc veřejně dostupné bez nutnosti přihlášení na zmíněné služby.
 
-Faktory ovlivňující vyplněnost profilu:
+\subsection{Strategie přidávání prvních přátel na facebooku}
 
-- profilový obrázek a  
+Pro experimentální facebookové účty jsem pro experiment vytvořil pět různých strategií přidávání nových přátel. Cílem bylo otestovat, jak úspěšné strategie budou a zda bude rozíl v počtu přidaných přátel mezi různými stretegiemi. 
 
-- foto
-- 5 skupin
-- 5 levelu
-- ucty se navzajem neznaji
+Strategie pro přidávání nových přátel:
 
-Chovani uzivatelu + Metriky
+\begin{itemize}
+  \item \textbf{many friends} - přidávání osob s vysokým počtem přátel na facebooku
+  \item \textbf{fake profiles} - přidávání falešných facebookových profilů
+  \item \textbf{facebook suggestions} - přidávání profilů na facebooku, které nabídne facebook 
+  \item \textbf{mutual friends} - přidávání profilů s největším počtem společných přátel
+  \item \textbf{facebook groups} - přidívání skupin na facebooku a následné přidávání profilů, které mají skupiny v oblíbených
+\end{itemize}
 
+Všechny experimentální účty byly zařazeny do jedné z těchto pěti skupin. Toto rozdělení profilů bylo ještě navíc zkombinováno se skupinami vyplněností profilů popsaných výše. V každé skupině bylo tedy vždy pět účtů s různou skupinou vyplněnosti. Vzniknul tak soubor pětadvaceti facebookových profilů, z nichž každý byl zařazen do jiné skupiny vyplněnosti a také rozdílně skupiny pro přidávání nových přátel.
 
-Hlavím cílem interakce na facebooku byla věrohodnost pro ostatní facebookové uživatele. Důležité tedy bylo zautomatizovat přidávání přátel na facebooku. Ze začátku jsem po zaregistrování nového profilu plánoval přidávat pokaždé sedm přátel. Facebook ale při přidávání většího množství přátel (většinou okolo pěti, ale někdy i méně) zobrazil potvrzovací okno \ref{fig:confirmFriendship}. Ustálil jsem tedy po tomto zjištění počet přidávaných přátel na pět za jedno přihlášení. 
+U některých profilů zařazených do určitých skupin přidávání nových přátel na facebooku bylo nutné zezačátku přidat některé uživatele. Jednalo se o skupiny many friends a mutual friends aby se mohli použít již existující přátelé u profilu. U těchto skupin byly první uživatelé přidáni z některé náhodně vybrané skupiny na facebooku. 
+
+K přidávání prvních přátel jse využil facebookové pluginy, které jsou veřejně dostupné na některých internetových stánkách. Jená se o takzyvaný facebook like box [todo https://developers.facebook.com/docs/reference/plugins/like-box/], kde jsou zobrazeny profilové fotky a odkazy na facebookové profily uživatelů, kteří mají danou stránku v oblíbených. Využil jsem tedy takto veřejně dostupné náhodné facebookvé profily a přidával je k experimentálním účtům ve dříve zmíněných skupinách skupinách.
+
+V původním plánu bylo využití událostí a her na facebooku pro přidávání nových přátel, ale po vyzkoušení na první generaci jsem tento způsob zavrhnul. Prvotní myšlenka byla taková, že se experimentální účet bude přidávat na facebookvé události a bude si postupně přidávat účastníky akcí. Po vyzkoušení jsem ale zjistil, že je k tomuto účelu lepší využít facebookové skupiny. Velké množství událostí s velkým množstvím účastníků zakládají kluby nebo organizace a ty mají založeny své facebookové skupiny.
+
+Využití facebookových her pro přidávání nových přátel by mohlo být velmi zajímavé, jelikož ve hrách existují různé výhody za zaslání pozvánek facebookovým přátelům a někdy můžete přátele na facebooku požádat, aby vám poslali některé vylepšení nebo s nimi vyměňovat suroviny. Čím více přátel na facebooku do hry tedy účet pozve, tím větší výhody ve hře získává. Při hraní her bývá běžné, že si uživatelé zakládají na facebooku nové účty jen aby mohli získat tyto výhody ve hrách.
+
+Bohužel má ale každá hra jiné ovládání a velké množství her je napsáno v technologii Adobe Flash\footnote{Adobe Flash - http://www.adobe.com/products/flash.html} nebo podobných, které nejsou přístupné přes HTML zdrojový kód stránky a nešel by tedy pro interakci s nimi použít program Selenium WebDriver. Musel jsem tedy od tohoto záměru upustit, ale jedná se o zajímavý segment, kde by se mohly účty sami doporučovat a posílat pozvánky na facebooku.
+
+Je důležité zmínit, že žádné dva experimentální účty nebyly sobě navzájem přáteli na facebooku. Ani se nestalo, že by se některé účty přátelily na facebooku se stejnými lidmi. V pozdější fázi některé aktivní facebookvé účty se staly přáteli více experimentálních účtů, ale záměr byl co nejvíce simulovat chování reálných uživatelů a aby byly počáteční přátelé účtů co nejvíce náhodní.
+
+Celkově jsem kvůli problémům se zakládáním facebookých účtů pracoval s 25 experimentálními účty. K~experimentálním účtům jsem se přihlašoval vždy jednou za tři až čtyři dny. [TODO ...]
+
+\subsection{Fáze experimentu}
+
+Tato strategie byla využívána ze začátku experimentu, když bylo potřeba nabrat určitou základnu přátel na facebooku, aby profil vypadal pro ostatní facebookové uživatel jako aktivní. Tato fáze trvala dva a půl týdne a hlavním cílem bylo získat přátele, kteří budou ochotní přijmout pozvánku na přátelství na facebooku od experimentálních účtů. 
+
+V pozdější fázi experimentu byla využívána pouze strategie facebook suggestions. Tato stragtegie totiž počítala s přidanými přáteli k experimentálnímu účtu a pracovala hlavně se společnými a naposledy přidanými přáteli.
+
+Celý experiment probíhal tak, že jsem všechny
+
+\subsection{Četnost přidávání přátel}
+
+Hlavím cílem interakce na facebooku byla věrohodnost pro ostatní facebookové uživatele. Ze začátku jsem po zaregistrování nového profilu plánoval přidávat pokaždé přibližně sedm až osm přátel. Když se zaregistruje nový uživatel na facebook, tak nemá skoro žádné možnosti využití, dokud nemá některé přátele, většina uživatelů se tak snaží zpočátku přidávat více přátel. 
+
+Facebook ihned po registraci nového profilu nabízí možnost stáhnutí kontkatů z e-mailu, z programu Skype nebo z progamu ICQ za účelem nalezení nových přtel na facebooku. Vše funguje jednoduše tak, že stažené kontaktní údaje se porovnávají s registrovanými uživateli facebooku a pokud se najde shoda, tak facebook nabídne tyto účty ke zpřátelení.
+
+Facebook ale při přidávání většího množství přátel (většinou okolo pěti, ale někdy i méně) zobrazil potvrzovací okno \ref{fig:confirmFriendship}. Jedná se o potvrzení, zda známe daný facebookový účet i v reálu. Tento dialog stačí potvrdit Ustálil jsem tedy po tomto zjištění počet přidávaných přátel na pět za jedno přihlášení.
 
 \begin{figure}[h]
 \begin{center}
@@ -603,11 +641,18 @@ Hlavím cílem interakce na facebooku byla věrohodnost pro ostatní facebookov�
 \label{fig:confirmFriendship}
 \end{center}
 \end{figure}
-= ziskavani prvnich pratel
 
-= neznami mezi sebou
+Počet pěti nových žádostí o přátelství jsem ponechal u každého účtu až do konce experimentu. Pokud se ale stalo, že náš účet obdržel některé žádosti o přátelství, tak byly všechny přijaty. Počet nově přidaných přátel za jedno přihlášení se pak snižoval o počet přijatých žádostí o přátelství. Pokud počet nových žádostí o přátelství překročil pět, tak už nebyly přidáváni další nové profily.
+
+Snažil jsem se, aby nově přidávání přátelé byli české národnosti. Hlavním důvodem bylo, aby přidané profily rozumněli publikovaným statusům a aby byly požadavky o přátelství realističtější. Při testování první generace se mi stalo, že po přidání několika účtů s arabskými jmény mi facebook začal nabízet pouze arabské přátele. Někteří přijetí o přátelství přijali, ale většinou jen ze zvědavosti a daný účet začal dostávat pozvánky na facebookové skupiny s arabskými názvy. Proto jsem se při experimentu snažil přidávat pouze facebookové uživatele z České republiky.
 
 
+
+= vysvetlit prihlaseni
+= unfriendnuti, zamitnuti pratelstvi
+- stahovani friend - friend dat
+- Chovani uzivatelu + Metriky
+= zdany zablokovany
 
 Pro experiment jsem sdílení omezil na přidávání statusů na svou zeď. Jedná se totiž o hlavní možnost, jak dát na facebooku o sobě vědět. Frekvence přidávání statusů byla nastavena na jeden status za přihlášení. 
 
@@ -624,6 +669,18 @@ Facebookvé zprávy nebyly automaticky zpracovávány. Zpracovávání by totiž
 %\end{conclusion}
 \chapter{Z{\' a}v{\v e}r}
 
+\section{Možné způsoby rozšíření a pokračování v experimentu}
+
+\subsection{Automatizace zakládání facebookových účtů}
+Teoreticky by bylo možné celý proces zakládání účtů plně zautomatizovat. E-mailové adresy pro registrované účty by šlo jenoduše zařídit na vlastní doméně nastavením doménového koše. To znamená, že veškeré e-maily, které byly odeslané na adresu naší domény budou doručeny na jednu konkrétní e-mailovou adresu. Získáme tak teoreticky neomezené množství e-mailů k registraci na facebook. Otázkou je, zda by facebooku nevadila stejná doména, ale některé firmy a školy vytvářejí pro své zaměstnance a studenty e-mailové adresy s doménou instituce, takže by to nemělo ničemu vadit.
+
+Dále by se musel vyřešit problém s registrací z jedné IP adresy denně. Toto omezení by šlo obejít použitím několika spolehlivých proxy serverů\footnote{Proxy server - server, prostřednictvím kterého se lze připojit k internetu, výhodou je že není vidět naše IP adresa, ale IP adresa proxy serveru, seznam proxy serverů lze nalézt na internetu, například - http://www.hidemyass.com/proxy-list/}, přes které by byly falešné účty registrovány. Množství registrovaných účtů na facebooku denně by se odvíjelo od počtu využívaných proxy serverů. Čím více, tím lépe.
+
+Pravděpodobně by se musel vyřešit i problém s opisováním, kontrolního CAPTCHA kódu, pokud facebook detekuje podezřelou robotickou činnost. Na internetu ale fungují služby, které umí za poplatek řešit opisování CAPTCHA obrázků\footnote{http://decaptchablog.com/decaptcher-services}. Vše funguje automaticky pomocí OCR (Optical character recognition - optické rozpoznávání znaků) anebo lidským opisováním textů. Výhodou takovýchto služeb je, že si lze vše pronajmout a nemusíme se starat o nic jiného. 
+
+Na druhou stranu, by se ani problém s nutností řešit opisování kontrolních kódů z obrázků řešit nemusel. Ve většině případů totiž po zobrazení stránky s opsáním kontrolního CAPTCHA kódu následovala stránka s nutností zadat telefonní číslo a přes tento krok by bylo příliš složité se hromadně dostávat.
+
+Pravděpodobně by bylo potřeba řešit i jiné problémy spojené s automatickým zakládáním facebookových profilů, které by se objevily při hlubším bádání nad problémem. Každopádně se ale určitě jedná o velmi zajímavé téma, které by šlo zpracovat více do hloubky. Protože by rozsah takovéhoto rozpracování pravděpodobně vydal na samostatnou diplomovou práci. Já jsem pro svůj experiment potřeboval pouze omezený počet facebookových účtů, takže jsem všechny účty zakládal ručně.
 
 \section{Vyhodnocení}
 - Grafy
