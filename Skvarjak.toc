@@ -34,12 +34,14 @@
 \contentsline {section}{\numberline {4.3}Probl\IeC {\'e}my se zakl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i }m facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u}}{33}{section.4.3}
 \contentsline {section}{\numberline {4.4}Skupiny facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u} pro experiment}{33}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Strategie p\IeC {\v r}id\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } prvn\IeC {\'\i }ch p\IeC {\v r}\IeC {\'a}tel na facebooku}{34}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}F\IeC {\'a}ze experimentu}{36}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}\IeC {\v C}etnost p\IeC {\v r}id\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } p\IeC {\v r}\IeC {\'a}tel}{37}{subsection.4.4.3}
-\contentsline {chapter}{\chapternumberline {5}Z{\' a}v{\v e}r}{41}{chapter.5}
-\contentsline {section}{\numberline {5.1}Mo\IeC {\v z}n\IeC {\'e} zp\IeC {\r u}soby roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i } a pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } v experimentu}{41}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Automatizace zakl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u}}{41}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Vyhodnocen\IeC {\'\i }}{42}{section.5.2}
-\contentsline {section}{\numberline {5.3}Mo\IeC {\v z}nosti pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } experimentu}{42}{section.5.3}
-\contentsline {appendix}{\chapternumberline {A}Slovn\IeC {\'\i }k pou\IeC {\v z}it\IeC {\'y}ch pojm\IeC {\r u} a zkratek}{45}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD}{47}{appendix.B}
+\contentsline {subsection}{\numberline {4.4.2}F\IeC {\'a}ze experimentu}{37}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}\IeC {\v C}etnost p\IeC {\v r}id\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } p\IeC {\v r}\IeC {\'a}tel}{38}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Nahr\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } status\IeC {\r u} k experiment\IeC {\'a}ln\IeC {\'\i }m \IeC {\'u}\IeC {\v c}t\IeC {\r u}m na facebooku}{40}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Zaj\IeC {\'\i }mavosti na kter\IeC {\'e} jsem b\IeC {\v e}hem experimentu narazil}{41}{subsection.4.4.5}
+\contentsline {chapter}{\chapternumberline {5}Z{\' a}v{\v e}r}{49}{chapter.5}
+\contentsline {section}{\numberline {5.1}Mo\IeC {\v z}n\IeC {\'e} zp\IeC {\r u}soby roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i } a pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } v experimentu}{49}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Automatizace zakl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u}}{49}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Vyhodnocen\IeC {\'\i }}{50}{section.5.2}
+\contentsline {section}{\numberline {5.3}Mo\IeC {\v z}nosti pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } experimentu}{50}{section.5.3}
+\contentsline {appendix}{\chapternumberline {A}Slovn\IeC {\'\i }k pou\IeC {\v z}it\IeC {\'y}ch pojm\IeC {\r u} a zkratek}{53}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD}{55}{appendix.B}

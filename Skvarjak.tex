@@ -33,6 +33,22 @@
 \hyphenation{zpra-co-vá-ní}
 \hyphenation{po-li-tic-kým}
 \hyphenation{na-pří-klad}
+\hyphenation{nej-pou-ží-va-něj-ších}
+\hyphenation{tak-zvaným}
+\hyphenation{ka-te-go-rií}
+\hyphenation{cho-vá-ní}
+\hyphenation{Veš-ke-ré}
+\hyphenation{re-gis-tra-ci}
+\hyphenation{po-zi-tiv-ně}
+\hyphenation{pou-ží-vá}
+\hyphenation{ov-lá-dá-ní}
+\hyphenation{u-dě-lo-vá-ní}
+\hyphenation{no-vé-mu}
+\hyphenation{růz-no-ro-dé}
+\hyphenation{Naš-těs-tí}
+\hyphenation{ne-pot-vr-ze-ných}
+\hyphenation{pot-vr-ze-ných}
+
 
 
 \department{Katedra softwarového inženýrství}
@@ -82,12 +98,12 @@ Před začátkem celého experimentu jsem prošel různé možnosti, kterými by
 \subsection{Rozhraní internetové stránky facebook}
 Pro interakci s facebookem používá většina uživatelů webové rozhraní, které je na webové adrese \verb|www.facebook.com|. Toto rozhraní je upraveno pomocí techniky takzvaného responzivního designu\footnote{http://en.wikipedia.org/wiki/Responsive\_web\_design} pro různé typy zařízení, takže se zobrazuje jedno rozhraní stránky pro monitory osobních počítačů s velkým rozlišením a odlišný design pro chytré telefony a tablety s malými displeji a s~nízkým rozlišením. Většina uživatelů je na toto rozhraní zvyklá a to i přesto, že jej facebook často drasticky mění bez možnosti návratu ke starší verzi designu. 
 
-Dříve se kvůli změnám rozhraní nejednou zvedla velká vlna nevole (například změna osobních profilů v roce [todo citace] 2009\footnote{http://www.zive.cz/bleskovky/facebook-tento-tyden-ceka-velka-zmena-priblizi-se-twitteru/sc-4-a-146045/default.aspx}, změna zobrazení facebookové zdi v~roce  2010\footnote{http://www.zive.cz/bleskovky/facebook-opet-v-novem-kompletni-zmena-okoli-zdi/sc-4-a-150779/default.aspx}, zavedení timeline v roce 2011\footnote{http://computerworld.cz/internet-a-komunikace/facebook-chrli-dalsi-novinky-rozsiruje-moznosti-profilu-43866} anebo přepracování zpráv v roce 2012\footnote{http://www.cnews.cz/clanky/facebook-se-chysta-prepracovat-zpravy-budou-se-vice-podobat-e-mailu}). Nyní se kvůli těmto problémům snaží facebook oznamovat předem veřejnosti výhody a nové možnosti úprav designu a zapíná nové funkce postupně s možností dočasně používat starou verzi.  
+Dříve se kvůli změnám rozhraní nejednou zvedla velká vlna nevole (například změna osobních profilů v roce [todo citace] 2009\footnote{http://www.zive.cz/bleskovky/facebook-tento-tyden-ceka-velka-zmena-priblizi-se-twitteru/sc-4-a-146045/default.aspx}, změna zobrazení facebookové zdi v~roce  2010\footnote{http://www.zive.cz/bleskovky/facebook-opet-v-novem-kompletni-zmena-okoli-zdi/sc-4-a-150779/default.aspx}, zavedení timeline v roce 2011\footnote{http://computerworld.cz/internet-a-komunikace/facebook-chrli-dalsi-novinky-rozsiruje-moznosti-profilu-43866} anebo přepracování zpráv v roce 2012\footnote{http://www.cnews.cz/clanky/facebook-se-chysta-prepracovat-zpravy-budou-se-vice-podobat-e-mailu}). Nyní se kvůli těmto problémům facebook snaží oznamovat předem veřejnosti výhody a nové možnosti úprav designu a zapíná nové funkce postupně s možností dočasně používat starou verzi.  
 
 \subsection{Facebook Graph API}
 Druhou možností, jak používat facebook jsou aplikace. Většinou se jedná o aplikace pro chytré telefony, tablety a další zařízení. Tyto aplikace komunikují s facebookem pomocí takzvaného \textbf{Graph API}\footnote{https://developers.facebook.com/docs/reference/apis/}. [todo citace] Jedná se o RESTové webové rozhraní.
 
-Přihlašování ke Graph API se provádí následujícím způsobem. Každá aplikace má přiřazen svůj vlastní veřejný klíč (API Key), sloužící jako jednoznačný identifikátor (ID) aplikace a dále tajný neveřejný klíč (takzvaný APP Secret), pomocí kterého se k aplikaci příhlašuje. Každý uživatel, který chce aplikaci používat, musí danou aplikaci schválit na svém facebookovém profilu a povolit oprávnění, jaká data může aplikace číst a měnit.
+Přihlašování ke Graph API se provádí následujícím způsobem. Každá aplikace má přiřazen svůj vlastní veřejný klíč (API Key), sloužící jako jednoznačný identifikátor (ID) aplikace a dále tajný neveřejný klíč (takzvaný APP Secret), pomocí kterého se k aplikaci přihlašuje. Každý uživatel, který chce aplikaci používat, musí danou aplikaci schválit na svém facebookovém profilu a povolit oprávnění, která data může aplikace číst a měnit.
 
 Celý proces přihlašování k facebooku používá OAuth autorizaci\footnote{http://oauth.net/}\footnote{https://developers.facebook.com/docs/howtos/login/server-side-login/}, při které je uživatel aplikace přesměrován na stránky facebooku, zde se musí uživatel příhlásit a při prvním použití aplikace povolit přístup dané aplikaci k uživatelovu profilu a datům. Poté je uživatel přesměrován na naše stránky a aplikace dostane token, pomocí kterého se identifikuje při každé další komunikaci s REST rozhraním  (jak je vidět na obrázku \ref{fig:oAuthDiagram}). Podrobnější popis příhlašování se všemi detaily je popsán na stránkách facebooku v dokumentaci \newline(https://developers.facebook.com/docs/concepts/login/login-architecture/). 
 
@@ -100,13 +116,13 @@ Celý proces přihlašování k facebooku používá OAuth autorizaci\footnote{h
 \end{center}
 \end{figure}
 
-Existují různé knihovny pro práci s facebook Graph API, liší se hlavně použitou platformou (Google Android, Apple iOS, ...) a programovacím jazkem (serverové: PHP, Java, apod., klientské: JavaScript). Některé z těchto knihoven mohou mít přihlašovací proces kvůli omezením mírně odlišný (například JavaScript), ale hlavní princip zůstává vždy stejný.
+Existují různé knihovny pro práci s facebook Graph API. Tyto knihovny se liší hlavně použitou platformou (Google Android, Apple iOS, ...) a programovacím jazkem (serverové: PHP, Java, apod., klientské: JavaScript). Některé z těchto knihoven mohou mít přihlašovací proces kvůli omezením mírně odlišný (například JavaScript), ale hlavní princip zůstává vždy stejný.
 
-Nemusí se vždy jednat pouze o aplikace pro interakci s facebookem, velké množství aplikací (například hry a podobné aplikace) data z facebooku pouze čtou a získávájí informace o přátelích uživatele a podobně. Takovéto aplikace jsou pak zobrazeny v okně facebooku (vložení stránky pomocí tagu iframe) a mohou používat facebookové prvky (tlačítka, vyskakovací okna, apod.\footnote{https://developers.facebook.com/docs/plugins/}), takže méně zkušený uživatelé si ani nemusí neuvědomit, že používají aplikaci, která není vyvíjena facebookem. 
+Nemusí se ale jednat pouze o aplikace pro interakci s facebookem, velké množství aplikací (například hry a podobné aplikace) data z facebooku pouze čtou a získávájí informace o přátelích uživatele a podobně. Takovéto aplikace jsou pak zobrazeny v okně facebooku (vložení stránky pomocí tagu iframe) a mohou používat facebookové prvky (tlačítka, vyskakovací okna, apod.\footnote{https://developers.facebook.com/docs/plugins/}), takže méně zkušený uživatelé si ani nemusí uvědomit, že používají aplikaci, která není vyvíjena facebookem. 
 
 Facebook nepodporuje žádnou jinou možnost, jak aplikaci ovládat kromě Graph API. Kvůli častému zneužívání tohoto API byl ale facebook postupem času nucen některé funkce tohoto rozhraní omezit nebo úplně zakázat. Jedná se hlavně o možnost dát skupině nebo stránce na facebooku like anebo přidat si přátele. Tato funkce API byla ještě spolu s takzvaným likejackingem\footnote{Variace clickjacingu, pomocí HTML, CSS anebo JavaScriptu je na stránce skryto facebookové tlačítko like a je překryto jiným tlačíkem, uživatel pak po kliknutí na viditelné tlačítko nevědomky aktivuje i skryté facebookové like tlačítko http://en.wikipedia.org/wiki/Clickjacking\#Likejacking} často zneužívána k podvodnému navyšování fanoušků facebookových skupin. 
 
-Na internetu se dnes běžně objevují nabídky na nákup fanoušků do facebookových skupin (příklady viz tabulka \ref{tab:likes-buy}). Ve většině případů se jedná o falešné nebo ukradené facebookové účty. Některé stránky jdou ale ještě dále a nabízejí na internetu možnost koupit si na facebooku falešnou přítelkyni (\verb|www.girlfriendhire.com|, \verb|namorofake.com.br| a další). Možnosti jsou různé od nákupu statusů na vaši zeď nebo s vašim ozančením až po přidání do vztahu na facebooku. Nabízí se otázka, kolik účtů, které služby nabízí, je pravých a jaká je záruka, že po převodu peněz účty nezmizí. Každopádně se jedná o zajímavý typ businessu.
+Na internetu se dnes běžně objevují nabídky na nákup fanoušků do facebookových skupin (příklady viz tabulka \ref{tab:likes-buy}). Ve většině případů se jedná o falešné nebo ukradené facebookové účty. Některé stránky jdou ale ještě dále a nabízejí na internetu možnost koupit si na facebooku falešnou přítelkyni (\verb|www.girlfriendhire.com|, \verb|namorofake.com.br| a další). Možnosti jsou různé od nákupu statusů na vaši zeď nebo s vaším ozančením až po přidání do vztahu na facebooku. Nabízí se otázka, kolik účtů, které služby nabízí, je pravých a jaká je záruka, že po převodu peněz účty nezmizí. Každopádně se jedná o zajímavý typ businessu.
 
 
 \begin{table}[h]
@@ -144,20 +160,19 @@ Tyto nedostatky Graph API mi nedovolovaly jej použít pro implementaci  aplikac
 
 \subsection{Využití HTTP protokolu}
 
-Jako první možnost ovládání webového rozhraná facebooku se nabízelo simulovat webový prohlížeč pomocí HTTP požadavků. Toto řešení je poměrně přímočaré a webový protokol HTTP je velmi dobře zdokumenovaný a jednoduše používatelný, později jsem ale tuto možnost zavrhnul, jelikož bych musel znovu implementovat již hotové řešení, kde bych musel řešit nízkoúrovňové problémy HTTP komunikace. 
+Jako první možnost ovládání webového rozhraní facebooku se nabízelo simulovat webový prohlížeč pomocí HTTP požadavků. Toto řešení je poměrně přímočaré a webový protokol HTTP je velmi dobře zdokumentovaný a jednoduše používatelný, později jsem ale tuto možnost zavrhnul, jelikož bych musel znovu implementovat již hotové řešení, kde bych musel řešit nízkoúrovňové problémy HTTP komunikace. 
 
-Použití HTTP protokolu by se nejvíce vyplatilo u statických webových stránek. Největším problémem tohoto přístupu je ale skutečnost, že facebook používá velké množství AJAXových\footnote{AJAX - asynchronní načítání dynamických částí webových stránek pomocí JavaScriptu (viz http://en.wikipedia.org/wiki/Ajax\_(programming))} požadavků a dynamických JavaScriptových oken, které by mohly způsobit komplikace. Ztížilo by to především získávání informací z uživatelských profilů a podobně. Například pro zobrazení příspěvků na zdi uživatele za určité období, je potřeba dosáhnout konce stránky, kde se musí kliknout na tlačítko načíst další příspěvky a tento postup se opakuje, do té doby, než dosáhneme požadovaného stáří příspěvků, stejný způsob zobrazování dalsích dat se na facebooku používá opakovaně.
+Použití HTTP protokolu by se nejvíce vyplatilo u statických webových stránek. Největším problémem tohoto přístupu je ale skutečnost, že facebook používá velké množství AJAXových\footnote{AJAX - asynchronní načítání dynamických částí webových stránek pomocí JavaScriptu (viz http://en.wikipedia.org/wiki/Ajax\_(programming))} požadavků a dynamických JavaScriptových oken, které by mohly způsobit komplikace. Ztížilo by to především získávání informací z uživatelských profilů a podobně. Například pro zobrazení příspěvků na zdi uživatele za určité období, je potřeba dosáhnout konce stránky, kde se musí kliknout na tlačítko načíst další příspěvky a tento postup se opakuje, do té doby, než dosáhneme požadovaného stáří příspěvků, stejný způsob zobrazování dalších dat se na facebooku používá opakovaně.
 
-Mezi další nevýhody používání HTTP komunikace patří to, že facebook pro některé části webových stránek generuje odlišný HTML kód (mění se například atributy ID u HTML značek a podobně). Nejvíce jsem se s těmito změnami setkal na hlavní stránce facebooku, kde pravděpodobně probíhá takzvané A/B uživatelské testování stránek. To znamená, že se uživatelům zobrazují různé grafické verze stránky a následně se měří rozdíly úspěšnosti konverzního poměru měřených veličin (například: počet zobrazení stránky / počet nákupů) pro jednotlivé verze
-\newline(http://en.wikipedia.org/wiki/A/B\_testing).
+Mezi další nevýhody používání HTTP komunikace patří to, že facebook pro některé části webových stránek generuje odlišný HTML kód (mění se například atributy ID u HTML značek a podobně). Nejvíce jsem se s těmito změnami setkal na hlavní stránce facebooku, kde pravděpodobně probíhá takzvané A/B\footnote{http://en.wikipedia.org/wiki/A/B\_testing} uživatelské testování stránek. To znamená, že se uživatelům zobrazují různé grafické verze stránky a následně se měří rozdíly úspěšnosti konverzního poměru měřených veličin (například: počet zobrazení stránky / počet nákupů) pro jednotlivé verze.
 
-V poslední době se začal rozšiřovat nový internetový protokol nazvaný SPDY\footnote{http://en.wikipedia.org/wiki/SPDY}, který slouží jako nadstavba nad tradičním HTTP protokolem pro rychlejší načítání stránek. Facebook tento protokol již na svých serverch používá a mohly by tak vzniknout problémy při HTTP komunikaci i když by měl být protokol SPDY teoreticky zpětně kompatibilní, nemuselo by vše být úplně bez problémů.
+V poslední době se začal rozšiřovat nový internetový protokol nazvaný SPDY\footnote{http://en.wikipedia.org/wiki/SPDY}, který slouží jako nadstavba nad tradičním HTTP protokolem pro rychlejší načítání stránek. Facebook tento protokol již na svých serverech používá a mohly by tak vzniknout problémy při HTTP komunikaci i když by měl být protokol SPDY teoreticky zpětně kompatibilní, nemuselo by vše být úplně bez problémů.
 
-Kvůli těmto problémům spojeným s používáním HTTP protokolu jsem se tedy rozhodnul využít raději některé z hotových řešení a zabývat se komunikací s webovými stránkami na vyšších vrstvách. 
+Kvůli těmto problémům spojených s používáním HTTP protokolu jsem se tedy rozhodnul využít raději některé z hotových řešení a zabývat se komunikací s webovými stránkami na vyšších vrstvách. 
 
 \subsection{Programy simulující chování webového prohlížeče}
 
-Jako nejjednodušší z možností ovládání webového rozhraní facebookové stránky se nasklo využití programů, které simulují internetový prohlížeč. Existuje celá škála takovýchto programů. Téměř pro každý programovací jazyk existuje některý program, který dokáže zpracovávat webové stránky. Rozdíl mezi těmito programy je především v počtu a kvalitě implementovaných webových specifikací a funkcionalit.
+Jako nejjednodušší z možností ovládání webového rozhraní facebookové stránky se naskytlo využití programů, které simulují internetový prohlížeč. Existuje celá škála takovýchto programů. Téměř pro každý programovací jazyk existuje některý program, který dokáže zpracovávat webové stránky. Rozdíl mezi těmito programy je především v počtu a kvalitě implementovaných webových specifikací a funkcionalit.
 
 Programy pro zobrazování webových stránek se liší především implementovaným jádrem webového prohlížeče. V následujícím seznamu je zobrazen přehled nejpoužívanějších jader pro vykreslování webových stránek.
 
@@ -168,7 +183,7 @@ Programy pro zobrazování webových stránek se liší především implementov
   \item Trident\footnote{Trident - http://en.wikipedia.org/wiki/Trident\_(layout\_engine)} - Miscrosoft Internet Explorer
 \end{itemize}
  
-Kromě těchto nejpoužívanějších jader, které používají internetové prohlížeče, exisuje i velké množství méně známých jader a vpodstatě každý si může implementovat vlastní vykreslovací jádro pro  webové stránky.
+Kromě těchto nejpoužívanějších jader, které vyžívají internetové prohlížeče, existuje i velké množství méně známých jader a v podstatě každý si může implementovat vlastní vykreslovací jádro pro  webové stránky.
 
 Vykreslovací jádro ovlivňuje to, jak bude webová stránka vykreslena. Mohou se lišit i způsoby vykreslení stejné webové stránky mezi jednotlivými verzemi stejného jádra. Existují i speciálně upravená jádra pro vykreslování internetových stránek na mobilních přístrojích, které často naschvál neimplementují některé pokročilejší funkce kvůli hardwarovým nárokům mobilních zařízení a rychlosti vykreslování.
 
@@ -213,14 +228,14 @@ Různé programy pro zpracování webových stránek jsou zobrazeny v tabulce \r
 
 \section{Popis programu Selenium}
 
-Programů zpracovávajích webové stránky je velké množství. Jeden z nejpoužívanějších nástrojů se nazývá Selenium. Původně tento program vzniknul jako nadstavba nad webovým prohlížečem Mozilla Firefox. Pomocí nainstalovaného pluginu v tomto prohlížeci jej lze ovládat pomocí programového API, které poskytuje program Selenium. 
+Programů zpracovávajích webové stránky je velké množství. Jeden z nejpoužívanějších nástrojů se nazývá Selenium. Původně tento program vznikl jako nadstavba nad webovým prohlížečem Mozilla Firefox. Pomocí nainstalovaného pluginu v tomto prohlížeci jej lze ovládat pomocí programového API, které poskytuje program Selenium. 
 
-Jedná se o Javový \verb|.jar| soubor, který se stará o spouštění a ovládání webového prohlížeče. API programu Selenium je nezávislé na programovacím jazyku a tak mohli vzniknout knihovny pro velké množství programovacích jazyků. Selenium používá webové RESTové API, takže se dají na internetu najít i neoficiální knihovny pro různé další jazyky, které nejsou podporovány přímo od výrobce tohoto programu. Dnes již existují k programu Selenium i pluginy, které umožňují místo prohlížeče Firefox používat prohlížeče Chrome, Operu, PhantomJS a další.
+Jedná se o Javový \verb|.jar| soubor, který se stará o spouštění a ovládání webového prohlížeče. API programu Selenium je nezávislé na programovacím jazyku a tak mohly vzniknout knihovny pro velké množství programovacích jazyků. Selenium používá webové RESTové API, takže se dají na internetu najít i neoficiální knihovny pro různé další jazyky, které nejsou podporovány přímo od výrobce tohoto programu. Dnes již existují k programu Selenium i pluginy, které umožňují místo prohlížeče Firefox používat prohlížeče Chrome, Operu, PhantomJS a další.
 
 Hlavní výhoda programu Selenium spočívá v tom, že jsou webové stránky renderovány v reálném prohlížeči a operace, které se v prohlížeči odehrávají máme možnost vidět v reálném čase. V případě potřeby je možné převzít ruční kontrolu nad stránkou a pokračovat v interakci s webovou stránkou manuálně. 
 
-S použitím reálného prohlížeče se pojí i výhoda optimalizace webových stránek facebooku. Stránky jsou pro reálný prohlížeč připravovány a zcela jistě jsou v něm i facebookem důkladně testovány pro správné 
-zobrazování a fungování všech částí. V případě nefunkčnosti by facebook všechny nedostatky co nejdříve napravil a určitě by velmi rychle reagoval na nahlášné problémy. (Facebook o některých nahlášených problémech ví, ale kvůli tomu, že pro něj nejsou natolik důležité se s nimi nezabývá, například nefunkčnost URL pro přidání podmínek pro používaní facebookové aplikace  nahlášena v prosinci 2012 -\newline  https://developers.facebook.com/bugs/393455200735878.) 
+S použitím reálného prohlížeče se pojí i výhoda optimalizace webových stránek facebooku. Stránky jsou pro reálný prohlížeč připravovány a zcela jistě jsou v něm facebookem důkladně testovány pro správné 
+zobrazování a fungování všech částí. V případě nefunkčnosti by facebook všechny nedostatky co nejdříve napravil a určitě by velmi rychle reagoval na nahlášené problémy. (Facebook o některých nahlášených problémech ví, ale kvůli tomu, že pro něj nejsou natolik důležité se s nimi nezabývá, například nefunkčnost URL pro přidání podmínek pro používaní facebookové aplikace  nahlášena v prosinci 2012 - https://developers.facebook.com/bugs/393455200735878.) 
 
 Selenium je produkt, pod kterým se skrývá soubor několika programů, které slouží primárně k testování internetových stránek přímo v prohlížeči. Původně se jednalo jen o rozšíření (takzvaný plugin) do prohlížeče Firefox. Pomocí tohoto pluginu je možné nahrát konkrétní uživatelské chování na webové stránce (například: zadat konkrétní text do uživatelského pole, kliknout na tlačíto, otevřít novou stránku a podobně). Všechy akce se nahrávají a ukládají do souboru (s příponou \verb|.html|) a lze je jednoduše znovu opakovaně spouštět. Celý postup je totožný s používáním funkce makro pro hromadné operace v programech jako jsou Microsoft Word anebo Adobe Photoshop. Tento program se nyní nazývá Selenium~IDE\footnote{http://docs.seleniumhq.org/projects/ide/}.
 
@@ -229,11 +244,11 @@ Díky oblibě tohoto pluginu se postupem času utvořil kolem této technologie 
 \begin{itemize}
   \item \textbf{Selenium IDE} - plugin popsaný výše
   \item \textbf{Selenium Remote Control} - program pro ovládání prohlížeče lokálně nebo na jiných počítačích z různých programovacích jazyků
-  \item \textbf{Selenium WebDriver} - program pro spouštění prohlížeče lokálně nabo na jiných počítačích
-  \item \textbf{Selenium Grid} - za pomoci programu Selenium Remote Control dokáže spouštět webové prohlížeče na více serverech zároveň - hodí se především na testování stránek v odlišncýh prohlížečích a na různých operačních systémech
+  \item \textbf{Selenium WebDriver} - program pro spouštění prohlížeče lokálně nebo na jiných počítačích
+  \item \textbf{Selenium Grid} - za pomoci programu Selenium Remote Control dokáže spouštět webové prohlížeče na více serverech zároveň - hodí se především na testování stránek v odlišných prohlížečích a na různých operačních systémech
 \end{itemize}
 
-Více informace o jednotlivých produktech lze nalézt na oficiálnich stánkách jednotlivých programů: http://docs.seleniumhq.org/projects/. 
+Více informací o jednotlivých produktech lze nalézt na oficiálních stránkách jednotlivých programů: http://docs.seleniumhq.org/projects/. 
 
 \subsection{Popis fungování programu Selenium WebDriver}
 
@@ -245,7 +260,7 @@ Program Selenium WebDriver používá k ovládání prohlížeče takzvané driv
 
 Mimo driverů pro webové prohlížeče existují pro program Selenium WebDriver i dva speciální drivery: EventFiringWebDriver (slouží k odchytávání JavaScriptových událostí, které v prohlížeči vzniknou, můžeme na ně pak v našem programu reagovat) a RemoteWebDriver (slouží ke vzdálenému ovládání prohlížečů na jiných počítačích). S těmito drivery máme možnost ovládat všechy hlavní internetové prohlížeče a to jak desktopové, tak i mobilní.
 
-\begin{lstlisting}[caption={Příklad otevření url v seleniu pomocí CURL},label=lst:seleniumOpenUrl,belowcaptionskip=0.4cm]
+\begin{lstlisting}[caption={Příklad otevření URL v programu Selenium WebDriver pomocí cURL},label=lst:seleniumOpenUrl,belowcaptionskip=0.4cm]
 # Pomoci tohoto prikazu vytvorime novou session 
 # (otevreme prohlizec firefox)
 curl -X POST http://localhost:4444/wd/hub/session \
@@ -265,7 +280,7 @@ Vývojáři prohlížeče Opera vydali 12. února 2013
 
 \section{Výhody a nevýhody použití programu Selenium WebDriver}
 
-Selenium WebDriver je program sloužící k ovládání internetového prohlížeče pomocí velkého množství programovacích jazyků. Největší výhodou používání programu Selenium WebDriver k zpracování webových stránek je, že se stará o všechnu práci spojenou s komunikací skrze HTTP protokol, vykreslováním i ovládáním webových stránek a zpracováním všech dynamických skriptů ve stránce. 
+Selenium WebDriver je program sloužící k ovládání internetového prohlížeče pomocí velkého množství programovacích jazyků. Největší výhodou používání programu Selenium WebDriver k zpracování webových stránek je, že se stará o všechnu práci spojenou s komunikací skrze HTTP protokol, vykreslováním i ovládáním webových stránek a zpracováním všech dynamických skriptů na stránce. 
 
 Selenium WebDriver nám umožňuje přistupovat k výsledným vyrenderovaným elementům prohlížeče a to jak textově, tak i k HTML zdrojům jednotlivých elementů na stránce. Problém nastává při následném zpracování, protože data ze stránky nejsou vždy jednotná jako v případě použití Graph API. Musíme tedy získaná data následně zpracovávat a upravovat.
 
@@ -314,7 +329,7 @@ Jako databázi pro ukládání dat jsem pro začátek zvolil MySQL. Jedná se o 
 
 Původně jsem chtěl pro ukládání stažených dat použít také MySQL databázi, ale rozhodl jsem se jinak. Pro ukládání dat stažených z uživatelských profilů se používá NoSQL (nerelační) databáze MongoDB. MongoDB je dnes jedna z nejrozšířenějších nerelačních databází. Jedná se o open source dokumentově orientovanou NoSQL databázi o kterou se stará společnost 10gen (http://www.mongodb.org/). Jedna z největších předností této databáze je, že do ní lze ukládat jakákoliv nestrukturovaná data ve~formátu JSON (JavaScript Object Notation - http://www.json.org/) a lze pak s těmito daty nadále manipulovat a provádět nad nimi agregační dotazy. 
 
-Databáze MongoDB byla vybrána hlavně kvůli tomu, že umí pracovat s jaýmikoliv nestrukturovanými daty, to znamená, že cokoliv, co získáme z~facebooku můžeme rovnou uložit. Takovéto chování se hodí především k ukládání příspěvků ze~zdi facebookových uživatelů a informací z profilových stránek osob. Nemusíme se starat o to, že někteří uživatelé mají omezenou viditelnost počtu přátel nebo počtu skupin.
+Databáze MongoDB byla vybrána hlavně kvůli tomu, že umí pracovat s jakýmikoliv nestrukturovanými daty, to znamená, že cokoliv, co získáme z~facebooku můžeme rovnou uložit. Takovéto chování se hodí především k ukládání příspěvků ze~zdi facebookových uživatelů a informací z profilových stránek osob. Nemusíme se starat o to, že někteří uživatelé mají omezenou viditelnost počtu přátel nebo počtu skupin. Kvůli těmto důvodům jsem si tedy pro ukládání stahovaných dat vybral databázi MongoDB.
 
 Facebook v roce 2010 vyvinul vlastní NoSQL databázi nazvanou Cassandra (http://en.wikipedia.org/wiki/Apache\_Cassandra), která slouží k vyhledávání nad velkým objemem dat. Facebook tuto databázi později nahradil další NoSQL databází nazvanou HBase (http://hbase.apache.org/). Tyto databáze jsou ale určeny především k vyhledávání a jejich výhoda se ukáže až při ukládání mnohem většího množství dat, než bylo pro daný experiment potřeba.
 
@@ -330,7 +345,7 @@ Facebook v roce 2010 vyvinul vlastní NoSQL databázi nazvanou Cassandra (http:/
 
 Aplikace sloužící pro otestování celého experimentu má dvě základní funkce. První z nich je sbírání dat o uživatelích facebooku z jejich profilů a inforamcí na jejich účtech. Druhou funkcí je ovládní fiktivních účtů, to znamená, nahrávání dat na facebook a interakce s dalšími uživateli. Data uživatelů z facebooku slouží k~analýze a k~dalšímu porovnání.
 
-Jako programovací jazyk bylo pro celou aplikaci zvoleno PHP. Pro tento jazyk existuje kvalitní framework jmenující se NetteFramework (\verb|nette.org|), který se hodí především na menší aplikace. Jedná se o MVP (Model - View - Presenter) framework z dílny českého autora. Tento framework se stará především o zpracování webových formulářů a zpracování požadavků webového prohlížeče, zpracování HTML šablon a celkovou architekturu celé aplikace. Více informací o tomto frameworku je k dispozici v oficiální dokumentaci (\verb|doc.nette.org|). 
+Jako programovací jazyk bylo pro celou aplikaci zvoleno PHP. Pro tento programovací jazyk existuje kvalitní framework, jmenuje se \textbf{Nette Framework} (\verb|nette.org|), který se hodí především na menší aplikace. Jedná se o MVP (Model - View - Presenter) framework z dílny českého autora. Tento framework se stará především o zpracování webových formulářů a zpracování požadavků webového prohlížeče, zpracování HTML šablon a celkovou architekturu celé aplikace. Více informací o tomto frameworku je k dispozici v oficiální dokumentaci (\verb|doc.nette.org|). 
 
 Pro webové aplikace, které jsou rozsahem podobně velké jako je naše experimentální aplikace je tento framework ideální. Na internetu se dá najít velké množství návodů k tomuto frameworku v českém jazyce a existuje i početná česká komunita, která se tímto frameworkem zabývá a pomáhá s vývojem. 
 
@@ -341,7 +356,7 @@ Důležitou součástí aplikace je získávání informací o~uživatelích z~j
 
 O veškeré zpracování stránek facebooku se stará program Selenium WebDriver, pomocí kterého se načte konkrétní stránka (například zeď anebo přátelé určitého uživatele), z této stránky se poté přečtou jednotlivé fragmenty (například příspěvek na zdi anebo jméno přítele na facebooku) a tato data jsou pak pomocí PHP zpracována, upravena a uložena do databáze MongoDB. 
 
-Facebook je celosvětová sociální síť a je tedy přeložen do velkého množství jazků (včetně pirátské angličtiny a angličtiny s písmenky vzhůru nohy). Facebook je celý primárně v anglickém jazyce a do ostatních jazyků je celá aplikace přeložena. Překlad do všech jazyků probíhá pomocí speciální facebookové aplikace (\verb|https://www.facebook.com/?app=1&sk=translations|), kam mohou své překlady zasílat všichni uživatelé facebooku. (Dříve bylo docela dlouhou dobu v českém překladu špatně přeloženo slovo neděle jako slunce - anglicky Sun = slunce a zkratka neděle.) Jazyk procházených stránek pomocí programu Selenium WebDriver byl tedy vždy nastaven na anglický jazyk, abz nedocházelo k problémům s překlady. 
+Facebook je celosvětová sociální síť a je tedy přeložen do velkého množství jazků (včetně pirátské angličtiny a angličtiny s písmenky vzhůru nohy). Facebook je celý primárně v anglickém jazyce a do ostatních jazyků je celá aplikace přeložena. Překlad do všech jazyků probíhá pomocí speciální facebookové aplikace (\verb|https://www.facebook.com/?app=1&sk=translations|), kam mohou své překlady zasílat všichni uživatelé facebooku. (Dříve bylo docela dlouhou dobu v českém překladu špatně přeloženo slovo neděle jako slunce - anglicky Sun = slunce a zkratka neděle.) Jazyk procházených stránek pomocí programu Selenium WebDriver byl tedy vždy nastaven na anglický jazyk, aby nedocházelo k problémům s překlady. 
 
 Pro každý náš facebookový účet uložený v aplikaci je spuštěna následující sekvence operací:
 
@@ -353,7 +368,7 @@ Pro každý náš facebookový účet uložený v aplikaci je spuštěna násled
 
 \subsection{Zpracování stahovaných informací}
 
-Všechny statusy (příspěvky na zdi uživatele), které jsou stahovány ze zdi jsou pročištěny od nedůležitých dat a upravovány do stejné podoby. Data, která jsou získávána z facebooku, jsou někdy zobrazena rozdílně. Například zobrazení like u statusů. Pro analýzu statusů potřebujeme ukládat pouze počet like, které status obdržel. Facebook bohužel ale někdy místo počtu liků zobrazuje i jména lidí, kteří like udělili. Stává se tak v případě, že like udělil, někdo z lidí, které má účet v přátelích anebo pokud je u statusu pouze jeden like.
+Všechny statusy (příspěvky na zdi uživatele), které jsou stahovány ze zdi jsou pročištěny od nedůležitých dat a upravovány do stejné podoby. Data, která jsou získávána z facebooku, jsou někdy zobrazena rozdílně. Například zobrazení like u statusů. Pro analýzu statusů potřebujeme ukládat pouze počet like, které status obdržel. Facebook bohužel ale někdy místo počtu like zobrazuje i jména lidí, kteří like udělili. Stává se tak v případě, že like udělil, někdo z lidí, které má účet v přátelích anebo pokud je u statusu pouze jeden like.
 
 Pro účely experimentu se ukládá ke statusu pouze počet like, který je pro nás nejdůležitější. V programu se o získání počtu like stará funkce, která sečte počet jmen a počet like u statusů a vrátí výsledný součet celkových like. 
 
@@ -380,7 +395,7 @@ Nevýhoda takovéhoto zobrazení časových údajů je, že nejsou vůbec přesn
 </abbr>
 \end{lstlisting}
 
-Stejné elementy používá facebook pro zborazení času u statusů a komentrářů. Zkoumal jsem vztah mezi těmito dvěma časovými údaji uvedenými u elementu. Zjistil jsem, že tyto dva časové údaje nejsou stejné. Stáhnul jsem tedy z facebooku 70 elementů s časovými údaji, z toho bylo 30 komentářů a 40 statusů. Zjistil jsem, že u 28 elementů byly údaje v rámci elementu stejné, u jednoho elementu se čas lišil o 1 hodinu, u 34 elementů byly časové údaje rozdílné o 8 hodin a u 7 elementů se čas lišil o 9 hodin. Přehledně jsou všechna data shrnuta v grafu \ref{fig:timeDifference}.
+Stejné elementy používá facebook pro zborazení času u statusů a komentářů. Zkoumal jsem vztah mezi těmito dvěma časovými údaji uvedenými u elementu. Zjistil jsem, že tyto dva časové údaje nejsou stejné. Stáhnul jsem tedy z facebooku 70 elementů s časovými údaji, z toho bylo 30 komentářů a 40 statusů. Zjistil jsem, že u 28 elementů byly údaje v rámci elementu stejné, u jednoho elementu se čas lišil o 1 hodinu, u 34 elementů byly časové údaje rozdílné o 8 hodin a u 7 elementů se čas lišil o 9 hodin. Přehledně jsou všechna data shrnuta v grafu \ref{fig:timeDifference}.
 
 \begin{figure}[h]
 \begin{center}
@@ -390,9 +405,9 @@ Stejné elementy používá facebook pro zborazení času u statusů a komentrá
 \end{center}
 \end{figure}
 
-U některých elementů se dokonce lišil čas o rozdílný počet hodin u statusu a odpovídajících komentářů pod ním. Tento problém bude pravděpodobně způsoben různými časovými zónami. Facebook má několik datových center po  po celém světě. Časový rozdíl 8 hodin odpovídá časovému posunu mezi západem USA a Greenwichským časem (základní časové pásmo). Rozdíl mezi Českou republikou a Greenwichským časem je pak 1 hodina. Kombinací těchto časových pousunů pravděpodobně dojde k takovýmto rozdílům, které způsobují nekonzistence mezi časy uvedenými u stejného elementu. 
+U některých elementů se dokonce lišil čas o rozdílný počet hodin u statusu a odpovídajících komentářů pod ním. Tento problém bude pravděpodobně způsoben různými časovými pásmy. Facebook má několik datových center po  celém světě. Časový rozdíl 8 hodin odpovídá časovému posunu mezi západem USA a Greenwichským časem (základní časové pásmo). Rozdíl mezi Českou republikou a Greenwichským časem je pak 1 hodina. Různou kombinací těchto časových posunů pravděpodobně dojde k takovýmto rozdílům, které způsobují nekonzistence mezi časy uvedenými u stejného HTML elementu. 
 
-Všchna data byla získána ze tří rozdílných uživatelských zdí na facebooku. Největším překvapením pro mne bylo to, že se různé rozdíly v časových údajích vyskytovaly na stejných zdech a dokonce se lišily i časové údaje u statusu a pod ním přidaných komentářích.  Je možné, že facebook vybíral statusy z jiných datových center než komentáře a tím vzniknuly takovéto nekonzistence.
+Všechna data byla získána ze tří rozdílných uživatelských zdí na facebooku. Největším překvapením pro mne bylo to, že se různé rozdíly v časových údajích vyskytovaly na stejných zdech a dokonce se lišily i časové údaje u statusu a pod ním přidaných komentářů.  Je možné, že facebook vybíral statusy z jiných datových center než komentáře a tím vznikly takovéto nekonzistence.
 
 Nakonec jsem po tomto zjištění otestoval, který ze dvou stahovaných časových údajů odpovídá realitě. Test byl naštěstí poměrně jednoduchý. Vše jsem vyzkoušel vložením statusu a komentáře na facebook a poté jsem kontroloval, jak se obě data liší oproti realitě. 
 
@@ -402,15 +417,15 @@ Hlavní nevýhodou použití atributu \verb|title| pro parsování data je, že 
 
 \subsection{Změna webového rozhraní facebooku}
 
-Největším problémem při použití programu selenium WebDriver a vlastně jakéhokoliv programu pracujícím s webovým rozhraním facebooku je fakt, že toto rozhraní se občas mění. Někdy se jedná o změny drobné, které běžní uživatelé této sítě ani nezpozorují. Jednou za čas na facebooku ale dojde k razantnější změně webového rozhraní.
+Největším problémem při použití programu Selenium WebDriver a vlastně jakéhokoliv programu pracujícím s webovým rozhraním facebooku je fakt, že toto rozhraní se občas mění. Někdy se jedná o změny drobné, které běžní uživatelé této sítě ani nezpozorují. Jednou za čas na facebooku ale dojde k razantnější změně webového rozhraní.
 
-Během března 2013 facebook oznámil novou verzi profilové stránky (timeline) [todo citace http://newsroom.fb.com/News/584/Improvements-to-Timeline]. Jadnalo se o jednu z větších úprav webového rozhraní facebooku. Tato nová funkčnost byla navíc spouštěna postupně, takže někteří facebookoví uživatelé mají starou verzi timeline a některé účty již používají verzi novou. Vše funguje tak, že pokud je na vašem profilu zapnutá nová verze timeline, tak vidíte novou verzi na profilových stránkách všech vašich přátel a svojí profilové stránce. Ke staré verzi timeline se již po zapnutí facebookuem nejde nikdy vrátit. Nejde ani ovlivnit, kdy bude nová verze zapnuta právě pro váš profil.
+Během března 2013 facebook oznámil novou verzi profilové stránky (timeline) [todo citace http://newsroom.fb.com/News/584/Improvements-to-Timeline]. Jednalo se o jednu z větších úprav webového rozhraní facebooku. Tato nová funkčnost byla navíc spouštěna postupně, takže někteří facebookoví uživatelé mají starou verzi timeline a některé účty již používají verzi novou. Vše funguje tak, že pokud je na vašem profilu zapnutá nová verze timeline, tak vidíte novou verzi na profilových stránkách všech vašich přátel a svojí profilové stránce. Ke staré verzi timeline se již po zapnutí facebookem nejde nikdy vrátit. Nejde ani ovlivnit, kdy bude nová verze zapnuta právě pro váš profil.
 
-Pro čtení dat z facebooku pomocí programu Selenium WebDriver se použíá XPath (XML Path Language). Což je jazyk pro vybírání elementů z XML a HTML dokumentů. Vše funguje tak, že se vybírají konkrétní elementy anebo se vybere konkrétní element procházejí se jeho podelementy. Konkrétní elementy se vybírají podle atributů u jednotlivých elementů.
+Pro čtení dat z facebooku pomocí programu Selenium WebDriver se používá XPath (XML Path Language). Což je jazyk pro vybírání elementů z XML a HTML dokumentů. Vše funguje tak, že se vybírají konkrétní elementy anebo se vybere konkrétní element a procházejí se jeho podelementy. Konkrétní elementy se vybírají podle atributů, především \verb|id| a \verb|class|, u jednotlivých elementů.
 
-Obával jsem se, že při změně vizuálního vzhledu timeline na facebooku budu muset předělávat velkou část stahování tak, aby aplikace mohla pracovat s novým HTML zdrohovým kódem. Naštěstí se ale HTML elementy na stránce měnily pouze minimálně. Takže stačilo upravit některé XPath dotazy a zbytek aplikace byl zcela funkční.
+Obával jsem se, že při změně vizuálního vzhledu timeline na facebooku budu muset předělávat velkou část stahování tak, aby aplikace mohla pracovat s novým HTML zdrojovým kódem. Naštěstí se ale HTML elementy na stránce měnily pouze minimálně. Takže stačilo upravit některé XPath dotazy a zbytek aplikace byl zcela funkční.
 
-Změna timeline, ale měla jiný dopad. Na staré timeline se zobrazoval počet přátel, které má uživatel přidané na facebooku (pokud to neměl uživatel zakázané v nastavení). Se změnou na novou vizuální verzi timeline, ale tato položka zmizela a údaj o celkovém počtu přátel je dostupný až po přijetí přátelství od dotyčného člověka. V této chvíli tedy neexistuje žádný způsob, jak zjistit celkový počet přátel na facebooku u cizích profilů. 
+Změna timeline, která se částečně týkala i dalších stránek, ale měla jiný dopad. Na starém profilu se zobrazoval počet přátel, které má uživatel přidané na facebooku (pokud to neměl uživatel zakázané v nastavení). Se změnou na novou vizuální verzi timeline, ale tato položka zmizela a údaj o celkovém počtu přátel je dostupný až po přijetí přátelství od dotyčného člověka. V této chvíli tedy neexistuje žádný způsob, jak zjistit celkový počet přátel na facebooku u cizích profilů. 
 
 \subsection{Stahovaná dat z facebooku}
 
@@ -429,8 +444,8 @@ Pro účely experimentu byla u statusů ukládána následující data získaná
 Dále byli ukládáni do databáze všichni přátelé. Struktura těchto dat byla následující:
 
 \begin{itemize}
-  \item name - Uživatelské jméno na profilu
-  \item url - Url adresa profilu
+  \item name - uživatelské jméno na profilu
+  \item url - URL adresa profilu
   \item friendsCount - počet všech přátel stahovaného účtu, pokud to bylo možné z profilu zjistit
   \item mutual - počet společných přátel stahovaného účtu, pokud to bylo možné z profilu zjistit
   \item fromUser - kterého uživatele je stahovaný účet přítelem
@@ -440,7 +455,7 @@ Dále byli ukládáni do databáze všichni přátelé. Struktura těchto dat by
 Poslední stahovanou kolekcí do databáze MongoDb byly profily jednotlivých přátel našich profilů. Jedná se o informace o osobě, které o sobě každý na facebooku může vyplnit. Ukládaná data do této databáze jsou následující:
 
 \begin{itemize}
-  \item user - Uživatelské jméno profilu
+  \item user - uživatelské jméno profilu
   \item friend - zda se jedná o přímého přítele nebo ne
   \item friendsCount - počet všech přátel stahovaného účtu, pokud to bylo možné z profilu zjistit
   \item photosCount - počet všech fotek stahovaného účtu, pokud to bylo možné z profilu zjistit
@@ -471,15 +486,15 @@ Všechny údaje, které začínají velkým písmenkem jsou parsovány přímo z
 
 Některé z těchto informací nemusí být na profilech dostupné. Záleží vždy na konkrétním uživateli facebooku, zda je ochoten o sobě tyto informace prozradit a zveřejnit.
 
-Jediná povinná informace, která se zadává již při registraci na facebooku je pohlaví, takže pohlaví se na stránce s osobními informacemi o uživateli zobrazí vždy. Počet zobrazených informací na této stránce se navíc může lišit pro uživatele, které mají profil v přátelích a pro uživatel, kteří jsou pro profil cizí. Každá sekce má své vlastní nastavení viditelnosti. Možnosti viditelnosti jsou: veřejné (viditelné pro všechny), přátelé (viditelné jen pro přátele), jen já (není viditelné pro nikoho kromě uživatele samotného) a vlastní nastavení (lze nastavit kteří konkrétní uživatelé nebo skupiny uživatelů mohou údaj vidět a pro které uživatele nebo skupiny je údaj naopak neviditelný neviditelný).
+Jediná povinná informace, která se zadává již při registraci na facebooku je pohlaví, takže pohlaví se na stránce s osobními informacemi o uživateli zobrazí vždy. Počet zobrazených informací na této stránce se navíc může lišit pro uživatele, které mají profil v přátelích a pro uživatele, kteří jsou pro profil cizí. Každá sekce má své vlastní nastavení viditelnosti. Možnosti viditelnosti jsou: veřejné (viditelné pro všechny), přátelé (viditelné jen pro přátele), jen já (není viditelné pro nikoho kromě uživatele samotného) a vlastní nastavení (lze nastavit kteří konkrétní uživatelé nebo skupiny uživatelů mohou údaj vidět a pro které uživatele nebo skupiny je údaj naopak neviditelný).
 
-Nová verze facebookvého vzhedu timeline zavedla na stránce s osobními informacemi nové sekce jako jsou: Hudba, Filmy, Seriály, Knihy, Místa, Like, Skupiny, Fitness a Poznámky. Protože byla aplikace nastavena pro starší verzi facebookové timeline, nepřidával jsem do stahování tyto informace, jelikož některé účty měly ještě starou verzi timeline a získávané informace by byly tudíž nekonzistentní.
+Nová verze facebookového vzhedu timeline zavedla na stránce s osobními informacemi nové sekce jako jsou: Hudba, Filmy, Seriály, Knihy, Místa, Like, Skupiny, Fitness a Poznámky. Protože byla aplikace nastavena pro starší verzi facebookové timeline, nepřidával jsem do stahování tyto informace, jelikož některé účty měly ještě starou verzi timeline a získávané informace by byly tudíž nekonzistentní.
 
 \section{Nahrávání dat na facebookové profily}
 
 \subsection{Možné způsoby interakce na facebooku}
 
-Druhá část aplikace pro experiment byla určena pro nahrávání dat na facebookvé profily. Hlavním cílem pro přidávání dat na profily byla simulace chování reálných uživatelů a zvýšení věrohodnosti účtů. Na facebooku je velké množství možností k interakci s ostatními uživateli. Nejdůležitějším prvkem na facebooku je zeď se statusy přátel. Statusy je možné komentovat, likovat a sdílet (share = poslat na svou zeď pro zviditelnění svým přátelům). 
+Druhá část aplikace pro experiment byla určena pro nahrávání dat na facebookové profily. Hlavním cílem pro přidávání dat na profily byla simulace chování reálných uživatelů a zvýšení věrohodnosti účtů. Na facebooku je velké množství možností k interakci s ostatními uživateli. Nejdůležitějším prvkem na facebooku je zeď se statusy přátel. Statusy je možné komentovat, přidávat like a sdílet (share = poslat na svou zeď pro zviditelnění svým přátelům). 
 
 Kromě statusů lze na facebooku komunikovat pomocí zpráv. Systém je podobný jako u e-mailových zpráv s tím rozdílem, že pomocí zpráv lze komunikovat pouze  v rámci facebooku. Zprávy jsou viditelné pouze pro uživatele přidané do komunikace, stejně jako je tomu u klasických e-mailových zpráv. 
 
@@ -487,14 +502,14 @@ Dalším komunikačním kanálem je chat, který probíhá v reálném čase. Fa
 
 Další možností, jak na sebe na facebooku upozornit určitou osobu je možnost někoho šťouchnout (poke). Funkčnost tlačítka šťouchnout je jednoduchá. Pokud vás někdo šťouchne, přijde vám upozornění a můžete šťouchnutí opětovat. Šťouchnutí je znázorněno ikonou lidské ruky s napřaženým ukazováčkem.
 
-Při implementaci jsem se soustředil především na automatické nahrávání statusů na uživatelské profily. V implementované aplikaci je sekce Tasks (úkoly), kde je možné nastavit jaké akce se mají pro které profily provést. V aplikaci jsou implementovány následující automatické akce publikování na facebook. Každá akce má jméno a paramtry.
+Při implementaci jsem se soustředil především na automatické nahrávání statusů na uživatelské profily. V implementované aplikaci je sekce Tasks (úkoly), kde je možné nastavit jaké akce se mají pro které profily provést. V aplikaci jsou implementovány následující automatické akce publikování na facebook. Každá akce má jméno a parametry. Identifikátor je jednoznačné id na facebooku, které má každý prvek. Jedná se o několikamístné číslo a tento identifikátor lze získat z URL adresy na facebooku.
 
 \begin{itemize}
   \item postStatus(text, [attachement]) - přidá na zeď uživatele status (parametr text), pokud je určena i příloha (attachement), což může být obrázek, video nebo odkaz, tak se vloží na facebook jako speciální objekt i s popisem
-  \item likeGroup(id) - přidat se ke skupině (Group nebo Page), parametrem je id skupiny 
-  \item addFriend(id) - požádá konkrétního uživatele o přátelství na facebooku, parametrem je id uživatele
-  \item rsvpEvent(id, [rsvpType]) - přidat se ke konkrétní události na facebooku, parametrem je id události, druhým parametrem je účast, možné hodnoty jsou: attend (účastnit se), maybe (možná), decline (zamítnout účast), pokud není druhý parametr uveden, jako výchozí se bere možnost attend
-  \item inviteEvent(id) - pozvat všechny facebookové přátele na událost, parametrem je id události
+  \item likeGroup(id) - přidat se ke skupině (Group nebo Page), parametrem je identifikátor skupiny 
+  \item addFriend(id) - požádá konkrétního uživatele o přátelství na facebooku, parametrem je identifikátor uživatele
+  \item rsvpEvent(id, [rsvpType]) - přidat se ke konkrétní události na facebooku, parametrem je identifikátor události, druhým parametrem je účast, možné hodnoty jsou: attend (účastnit se), maybe (možná), decline (zamítnout účast), pokud není druhý parametr uveden, jako výchozí se bere možnost attend
+  \item inviteEvent(id) - pozvat všechny facebookové přátele na událost, parametrem je identifikáto události
 \end{itemize}
 
 Ostatní typy možnosti komunikace na facebooku nebyly automaticky zpracovávány. Nebylo by složité doimplementovat některé další funkce jako šťouchnutí všech přátel, ale pro tento experiment jsem se chtěl zaměřit na tyto hlavní funkce. 
@@ -502,12 +517,9 @@ Ostatní typy možnosti komunikace na facebooku nebyly automaticky zpracováván
 Facebook navíc začal od dubna 2013 povolovat maximálně pouze 100 pozvaných uživatelů na událost najednou a každá událost může mít maximálně 300 nevyřízených pozvánek. Facebook tak nutí organizátory akcí vybírat jen hosty, které bude daná akce zajímat a budou se chtít účastnit.
 [todo http://www.insidefacebook.com/2013/04/09/facebook-puts-limits-on-event-invites/, https://www.facebook.com/help/202545109787461/]
 
-Celá aplikace byla spouštěna lokálně na mém počítači. Teoreticky by se dalo vše nahrát na vzdálený server a ovládat přes internet, ale tím bychom ztratili výhodu kontroly prováděných operací v prohlížeči za použití programu Selenium WebDriver. Existují i internetové služby, které nabízejí pornájem výpočetního času prohlížečů, taže lze mít celou aplikaci lokálně a spouštět program Selenium WebDriver přes internet vzdáleně. Problém je ale stejný jako v předchozím případě.
+Celá aplikace byla spouštěna lokálně na mém počítači. Teoreticky by se dalo vše nahrát na vzdálený server a ovládat přes internet, ale tím bychom ztratili výhodu kontroly prováděných operací v prohlížeči za použití programu Selenium WebDriver. Existují i internetové služby, které nabízejí pronájem výpočetního času prohlížečů, taže lze mít celou aplikaci lokálně a spouštět program Selenium WebDriver přes internet vzdáleně. Problém je ale stejný jako v předchozím případě.
 
-Pokud by se aplikace rozrostla anebo by ji použávalo více uživatelů, pravděpodobně by se přenesení na vzdálený server vyplatilo. Přineslo by to ale problémy s nutností správy serveru a ošetřování neočekávaných stavů v aplikaci.
-
-= pridavani pratel = 10, tasks screen
-
+Pokud by se aplikace rozrostla anebo by ji používalo více uživatelů, pravděpodobně by se přenesení na vzdálený server vyplatilo. Přineslo by to ale problémy s nutností správy serveru a ošetřování neočekávaných stavů v aplikaci.
 
 
 
@@ -515,9 +527,9 @@ Pokud by se aplikace rozrostla anebo by ji použávalo více uživatelů, pravd�
 
 \section{První generace facebookových účtů}
 
-Před samotným startem celého experimentu jsem potřeboval otestovat, jak přibližně bude vše fungovat a jak se budou účty přibližně chovat. Založil jsem proto na facebooku pět testovacích účtů, které jsem nazval \textbf{první generace}. Pomocí těchto účtů jsem zjišťoval omezení i zádrhele celého experimentu a jak by vše mělo fungovat. Pomocí těchto účtů jsem vyvíjel aplikaci pro automatické stahování a nahrávání dat na facebook (viz předchozí kapitola).
+Před samotným startem celého experimentu jsem potřeboval otestovat, jak přibližně bude vše fungovat a jak se budou účty přibližně chovat. Založil jsem proto na facebooku pět testovacích účtů, které jsem nazval \textbf{první generace}. Pomocí těchto účtů jsem zjišťoval omezení i komplikace celého experimentu a jak by vše mělo fungovat. Pomocí těchto účtů jsem vyvíjel aplikaci pro automatické stahování a nahrávání dat na facebook (viz předchozí kapitola).
 
-Pomocí první generace jsem ověřil, že facebook nekontroluje, pokud se z jedné IP adresy přihlašuje velké množství účtů. Denně jsem se přihlašoval k sedmi různým facebookovým účtům a nikdy jsem nenarazil na žádný probém. Je to i logické, jelikož v institucích jako jsou školy, knihovny a podobně se může k facebooku přihlašovat velké množství účtů, které jsou k internetu připojeny skrze jednu IP~adresu\footnote{IP adresa - číselná adresa počítače, pomocí které se připojuje k internetu}, přes kterou jsou instituce připojovány k internetu.
+Pomocí první generace jsem ověřil, že facebook nekontroluje, pokud se z jedné IP adresy přihlašuje velké množství účtů. Denně jsem se přihlašoval k sedmi různým facebookovým účtům a nikdy jsem nenarazil na žádný problém. Je to i logické, jelikož v institucích jako jsou školy, knihovny a podobně se může k facebooku přihlašovat velké množství účtů, které jsou k internetu připojeny skrze jednu IP~adresu\footnote{IP adresa - číselná adresa počítače, pomocí které se připojuje k internetu}, přes kterou jsou instituce připojovány k internetu.
 
 \section{Příprava experimentu}
 
@@ -535,7 +547,7 @@ Pokud se někdo pokusí založit více než jeden účet, zobrazí se na faceboo
 \end{center}
 \end{figure}
 
-Nejdříve bylo potřeba pro všechny facebookové účty založit e-mailové adresy, sloužící k vytvoření falešných účtů na facebooku. Všechny e-mailové adresy byly založeny na české doméně a měly koncovku \verb|.cz|, protože jsem chtěl provést experiment na uživatelích facebooku z České republiky, aby bylo vše věrohodnější a abych se mohl kvalitněji zaměřit na určitou skupinu na facebooku. 
+Nejdříve bylo potřeba pro všechny facebookové účty založit e-mailové adresy, sloužící k vytvoření falešných účtů na facebooku. Všechny e-mailové adresy byly založeny na české doméně a měly koncovku \verb|.cz|, protože jsem chtěl provést experiment na uživatelích facebooku z České republiky, aby bylo vše věrohodnější a abych se mohl kvalitněji zaměřit na určitou skupinu uživatelů facebooku. 
 
 Pro vytváření e-mailových adres jsem použil především bezplatnou e-mailovou službu od portálu seznam.cz (jedná se v první řadě o internetový vyhledavač, e-mailové schránky jsou provozovány jako jedna z doplňkových služeb). Na tomto portálu lze vytvářet e-mailové adresy s koncovkou \verb|@seznam.cz| a \verb|@email.cz|.
 
@@ -551,21 +563,21 @@ Facebook po úspěšné registraci na zadanou e-mailovou adresu posílá upozorn
 
 Před začátkem experimentu jsem uvažoval nad použitím některé ze služeb poskytujících dočasné nebo veřejné e-mailové adresy. Jedná se o služby, které vám při návštěvě vygenerují náhodnou e-mailovou adresu (například:\newline \verb|e1461664@rmqkr.net|). Takovéto e-mailové adresy fungují většinou jen po omezeně dlouhou dobu (v řádu několika desítek minut až hodin) a všechy e-mailové zprávy, které jsou odeslány na tuto adresu se zobrazí přímo na navštívené stránce veřejně (u dočasných e-mailů jen pro návštěvníka, pro kterého byla daná e-mailová adresa vygenerována).
 
-Takovéto internetové služby slouží především jako ochrana proti e-mailové nevyžádané poště (takyvaný spam) a pro registraci na pochybné internetové služby. Po uplynutí časového intervalu je e-mailová adresa zrušena.
+Takovéto internetové služby slouží především jako ochrana proti e-mailové nevyžádané poště (takzvaný spam) a pro registraci na pochybné internetové služby. Po uplynutí časového intervalu je e-mailová adresa zrušena.
 
 Příklady dočasných a veřejných e-mailových služeb:
 
 \begin{itemize}
   \item \verb|10minutemail.com| - vytvoří náhodnou e-mailovou adresu na různých doménách platnou 10 minut, tato doba lze postupně prodlužovat, vždy o dalších 10 minut
-  \item \verb|mailinator.com| - možnost vygenerovat si jakoukoliv e-mailovou adresu na doméně \verb|mailinator.com| nebo \verb|spamherelots.com|, k této e-mailové schránce může přistupovat kdokoli, ale 
+  \item \verb|mailinator.com| - možnost vygenerovat si jakoukoliv e-mailovou adresu na doméně \verb|mailinator.com| nebo \verb|spamherelots.com|, k této e-mailové schránce může přistupovat kdokoli, ale takováto e-mailová adresa má časově neomezenou platnost
   \item \verb|meltmail.com| - funguje tak, že po omezenou časovou dobu přeposílá veškeré e-maily zaslané na vygenerovanou adresu na zadaný e-mail, platnost vygenerovaných e-mailových adres může být 3, 6, 12 a 24 hodin
 \end{itemize}
 
-Zjistil jsem ale, že facebook registrace z takovýchto e-mailových adres blokuje a po registraci je ihned potřeba zadat telefonní číslo, na které příjde ověřovací kód, stejně jako při registraci více účtů z jedné IP adresy. Dále se mi nepodařilo najít službu s dočasnými e-mailovými adresami, které by obsahovly doménu s koncovkou \verb|.cz|. Použil jsem proto služby českých e-mailových serverů. Hlavní výhodou je to, že k e-mailovým schránkám budu mít přístup i později a nebude problém pokud by bylo potřeba dohledat některé informace posílané e-mailem (například zapomenuté heslo nebo důvod zablokování facebookového účtu).
+Zjistil jsem ale, že facebook registrace z takovýchto e-mailových adres blokuje a po registraci je ihned potřeba zadat telefonní číslo, na které přijde ověřovací kód, stejně jako při registraci více účtů z jedné IP adresy. Dále se mi nepodařilo najít službu s dočasnými e-mailovými adresami, které by obsahovaly doménu s koncovkou \verb|.cz|. Použil jsem proto služby českých e-mailových serverů. Hlavní výhodou je to, že k e-mailovým schránkám budu mít přístup i později a nebude problém pokud by bylo potřeba dohledat některé informace posílané e-mailem (například zapomenuté heslo nebo důvod zablokování facebookového účtu).
 
 \section{Problémy se zakládáním facebookových účtů}
 
-Profily na facebooku tedy byly zakládány již dopředu, abych mohl být experiment spuštěn najednou ve stejný čas. Bohužel se ale stalo to, že dříve založené účty na facebooku byly neaktivní a když jsem se k nim přihlásil po delší době, tak facebook požadoval zadání telefonního čísla, pro ověření totožnosti uživatele (stejně jako pokud se pokoušíme zaregistrovat více účtů denně z jedné IP adresy). Problém byl v tom, že facebook bere účty jako věrohodné až pokud má přidáno několik přátel a vyvíjí aktivitu na facebooku. 
+Profily na facebooku tedy byly zakládány již dopředu, aby mohl být experiment spuštěn najednou ve stejný čas. Bohužel se ale stalo to, že dříve založené účty na facebooku byly neaktivní a když jsem se k nim přihlásil po delší době, tak facebook požadoval zadání telefonního čísla, pro ověření totožnosti uživatele (stejně jako pokud se pokoušíme zaregistrovat více účtů denně z jedné IP adresy). Problém byl v tom, že facebook bere účty jako věrohodné až pokud mají přidáno několik přátel a vyvíjí aktivitu na facebooku. 
 
 Stalo se tedy to, že jsem zakládal účty, aktivoval jsem je pomocí e-mailové adresy, ale už na účtech nebylá žádná další aktivita. Když jsem se poté v den spouštění experimentu k účtům vrátil, tak se mi objevilo textové pole s prosbou o ověření účtu zadáním telefonního čísla. Musel jsem tedy spustit experiment jen s funkčními účty s tím, že jsem po spuštění experimentu zakládal další nové účty.
 
@@ -573,24 +585,24 @@ Všechny facebookové účty jsem zakládal ručně, protože jsem se nechtěl v
 
 \section{Skupiny facebookových účtů pro experiment}
 
-Při vymýšlení celého experimentu bylo hlavním cílem simulovat reálné chování uživatelů na facebooku. Chtěl jsem také vyzkoušet různé strategie přidávání přátel. Na začátku experimentu jsem tedy rozdělil všechny účty do pěti kategoríí podle vyplněnosti profilu. Každá kateogie měla známku od 1 do 5, přičemž známka 1 znamená, že profil je nevyplněný a známka 5 znamená, že profil je zcela vyplněný. Hlavní motivací pro takovéto rozdělení je, že více vyplněné facebookové profily by měly být pro ostatní návštěvníky věrohodnější a lidé by si je měli teoreticky více přidávat.
+Při vymýšlení celého experimentu bylo hlavním cílem simulovat reálné chování uživatelů na facebooku. Chtěl jsem také vyzkoušet různé strategie přidávání přátel. Na začátku experimentu jsem tedy rozdělil všechny účty do pěti kategorií podle vyplněnosti profilu. Každá kateogie měla známku od 1 do 5, přičemž známka 1 znamená, že profil je nevyplněný a známka 5 znamená, že profil je zcela vyplněný. Hlavní motivací pro takovéto rozdělení je, že více vyplněné facebookové profily by měly být pro ostatní návštěvníky věrohodnější a lidé by si je měli teoreticky více přidávat.
 
 Na následujícím seznamu jsou faktory ovlivňující vyplněnost profilu:
 
 \begin{itemize}
   \item profilová a úvodní fotka
   \item vyplněny informace na stránce o sobě - především město ve kterém osoba právě žije, datum narození a oblíbené citáty
-  \item vlžené statusy na profilu
+  \item vložené statusy na profilu
   \item veřejná viditelnost informací na profilu
 \end{itemize}
 
 Profily, které měly úroveň vyplněnosti na profilu 1, neměly použitou ani jednu z možností uvedených výše. Profily s úrovní 1 měly náhodně vybranou jednu z výše zmíněných možností zatraktivnění profilu. Profily s úrovní 5 měly vyplněny všechy výše zmíněné možnosti.
 
-K získání fotografií k profilům posloužily internetové seznamky a sociální sítě. Z českého prostředí se jednalo především o stránky: \verb|libimseti.cz| a \verb|www.lide.cz|. Ze zahraničních webů posloužila nejlépe internetová stránka \verb|www.myspace.com|. Výhodou těchto stránek je, že lze vybírat profily podle pohlaví a věku, což bylo ideální protože bylo jednoduché najít profilové fotky odpovídající pohlaví a věku jakéhokoliv facebookového profilu. Veškeré obrázky jsou navíc veřejně dostupné bez nutnosti přihlášení na zmíněné služby.
+K získání fotografií k profilům posloužily internetové seznamky a sociální sítě. Z českého prostředí se jednalo především o stránky: \verb|libimseti.cz| a \verb|www.lide.cz|. Ze zahraničních webů posloužila nejlépe internetová stránka \verb|www.myspace.com|. Výhodou těchto stránek je, že lze vybírat profily podle pohlaví a věku, což bylo ideální, protože bylo jednoduché najít profilové fotky odpovídající pohlaví a věku jakéhokoliv facebookového profilu. Veškeré obrázky jsou navíc veřejně dostupné bez nutnosti přihlášení na zmíněné služby.
 
 \subsection{Strategie přidávání prvních přátel na facebooku}
 
-Pro experimentální facebookové účty jsem pro experiment vytvořil pět různých strategií přidávání nových přátel. Cílem bylo otestovat, jak úspěšné strategie budou a zda bude rozíl v počtu přidaných přátel mezi různými stretegiemi. 
+Pro experimentální facebookové účty jsem pro experiment vytvořil pět různých strategií přidávání nových přátel. Cílem bylo otestovat, jak úspěšné strategie budou a zda bude rozdíl v počtu přidaných přátel mezi různými stretegiemi. 
 
 Strategie pro přidávání nových přátel:
 
@@ -599,40 +611,54 @@ Strategie pro přidávání nových přátel:
   \item \textbf{fake profiles} - přidávání falešných facebookových profilů
   \item \textbf{facebook suggestions} - přidávání profilů na facebooku, které nabídne facebook 
   \item \textbf{mutual friends} - přidávání profilů s největším počtem společných přátel
-  \item \textbf{facebook groups} - přidívání skupin na facebooku a následné přidávání profilů, které mají skupiny v oblíbených
+  \item \textbf{facebook groups} - přidávání skupin na facebooku a následné přidávání profilů, které mají skupiny v oblíbených
 \end{itemize}
 
-Všechny experimentální účty byly zařazeny do jedné z těchto pěti skupin. Toto rozdělení profilů bylo ještě navíc zkombinováno se skupinami vyplněností profilů popsaných výše. V každé skupině bylo tedy vždy pět účtů s různou skupinou vyplněnosti. Vzniknul tak soubor pětadvaceti facebookových profilů, z nichž každý byl zařazen do jiné skupiny vyplněnosti a také rozdílně skupiny pro přidávání nových přátel.
+Všechny experimentální účty byly zařazeny do jedné z těchto pěti skupin. Toto rozdělení profilů bylo ještě navíc zkombinováno se skupinami vyplněností profilů popsaných výše. V každé skupině bylo tedy vždy pět účtů s různou skupinou vyplněnosti. Vznikl tak soubor pětadvaceti facebookových profilů, z nichž každý byl zařazen do jiné skupiny vyplněnosti a také rozdílně skupiny pro přidávání nových přátel.
 
-U některých profilů zařazených do určitých skupin přidávání nových přátel na facebooku bylo nutné zezačátku přidat některé uživatele. Jednalo se o skupiny many friends a mutual friends aby se mohli použít již existující přátelé u profilu. U těchto skupin byly první uživatelé přidáni z některé náhodně vybrané skupiny na facebooku. 
+U některých profilů zařazených do určitých skupin přidávání nových přátel na facebooku bylo nutné ze začátku přidat některé uživatele. Jednalo se o skupiny many friends a mutual friends aby se mohli použít již existující přátelé u profilu. U těchto skupin byly první uživatelé přidáni z některé náhodně vybrané skupiny na facebooku. 
 
-K přidávání prvních přátel jse využil facebookové pluginy, které jsou veřejně dostupné na některých internetových stánkách. Jená se o takzyvaný facebook like box [todo https://developers.facebook.com/docs/reference/plugins/like-box/], kde jsou zobrazeny profilové fotky a odkazy na facebookové profily uživatelů, kteří mají danou stránku v oblíbených. Využil jsem tedy takto veřejně dostupné náhodné facebookvé profily a přidával je k experimentálním účtům ve dříve zmíněných skupinách skupinách.
+K přidávání prvních přátel jsem využil facebookové pluginy, které jsou veřejně dostupné na některých internetových stánkách. Jená se o takzvaný facebook like box [todo https://developers.facebook.com/docs/reference/plugins/like-box/], kde jsou zobrazeny profilové fotky a odkazy na facebookové profily uživatelů, kteří mají danou stránku v oblíbených. Využil jsem tedy takto veřejně dostupné náhodné facebookové profily a přidával je k experimentálním účtům ve výše zmíněných skupinách.
 
-V původním plánu bylo využití událostí a her na facebooku pro přidávání nových přátel, ale po vyzkoušení na první generaci jsem tento způsob zavrhnul. Prvotní myšlenka byla taková, že se experimentální účet bude přidávat na facebookvé události a bude si postupně přidávat účastníky akcí. Po vyzkoušení jsem ale zjistil, že je k tomuto účelu lepší využít facebookové skupiny. Velké množství událostí s velkým množstvím účastníků zakládají kluby nebo organizace a ty mají založeny své facebookové skupiny.
+V původním plánu bylo využití událostí a her na facebooku pro přidávání nových přátel, ale po vyzkoušení na první generaci jsem tento způsob zavrhl. Prvotní myšlenka byla taková, že se experimentální účet bude přidávat na facebookové události a bude si postupně přidávat účastníky akcí. Po vyzkoušení jsem ale zjistil, že je k tomuto účelu lepší využít facebookové skupiny. Velké množství událostí s vysokým počtem účastníků zakládají kluby nebo organizace a ty mají ve většině případů založeny své facebookové skupiny, pomocí nichž akce promují.
 
 Využití facebookových her pro přidávání nových přátel by mohlo být velmi zajímavé, jelikož ve hrách existují různé výhody za zaslání pozvánek facebookovým přátelům a někdy můžete přátele na facebooku požádat, aby vám poslali některé vylepšení nebo s nimi vyměňovat suroviny. Čím více přátel na facebooku do hry tedy účet pozve, tím větší výhody ve hře získává. Při hraní her bývá běžné, že si uživatelé zakládají na facebooku nové účty jen aby mohli získat tyto výhody ve hrách.
 
 Bohužel má ale každá hra jiné ovládání a velké množství her je napsáno v technologii Adobe Flash\footnote{Adobe Flash - http://www.adobe.com/products/flash.html} nebo podobných, které nejsou přístupné přes HTML zdrojový kód stránky a nešel by tedy pro interakci s nimi použít program Selenium WebDriver. Musel jsem tedy od tohoto záměru upustit, ale jedná se o zajímavý segment, kde by se mohly účty sami doporučovat a posílat pozvánky na facebooku.
 
-Je důležité zmínit, že žádné dva experimentální účty nebyly sobě navzájem přáteli na facebooku. Ani se nestalo, že by se některé účty přátelily na facebooku se stejnými lidmi. V pozdější fázi některé aktivní facebookvé účty se staly přáteli více experimentálních účtů, ale záměr byl co nejvíce simulovat chování reálných uživatelů a aby byly počáteční přátelé účtů co nejvíce náhodní.
+Je důležité zmínit, že žádné dva experimentální účty nebyly sobě navzájem přáteli na facebooku. Ani se nestalo, že by se některé účty přátelily na facebooku se stejnými lidmi. V pozdější fázi některé aktivní facebookové účty se staly přáteli více experimentálních účtů, ale záměr byl co nejvíce simulovat chování reálných uživatelů a aby byly počáteční přátelé účtů co nejvíce náhodní.
 
-Celkově jsem kvůli problémům se zakládáním facebookých účtů pracoval s 25 experimentálními účty. K~experimentálním účtům jsem se přihlašoval vždy jednou za tři až čtyři dny. [TODO ...]
+Celkově jsem kvůli problémům se zakládáním facebookých účtů pracoval s 25 experimentálními účty. K~těmto účtům jsem se přihlašoval vždy jednou za tři až čtyři dny. Vše vycházelo tak, že jsem se za den přihlásil k osmi až devíti účtům z těchto pětadvaceti. Za jeden týden jsem se tedy ke každému experimentálnímu účtu přihlásil přibližně dvakrát s tím, že pokud se u některého účtu objevilo podezření z některé podezřelé činnosti u účtu. Provedl jsem požadované akce pro daný účet a pokračoval jsem s dalšími účty v sérii až následující den.
+
+Po každém navštívení všech pětadvaceti účtů jsem provedl jednodenní pauzu a nepřihlásil jsem se k žádnému z experimentálních účtů. Navštívení všech účtů i s pauzou tedy trvalo celkem 4 dny. Přihlašování tedy probíhalo v pravidelných půltýdenních intervalech.
+
+Začátek experimentu byl naplánován na pondělí 1. dubna 2013 a trval přesně 30 dnů až do 1. května 2013. Všechny účty byly za tuto dobu navštíveny přesně osm krát.
 
 \subsection{Fáze experimentu}
 
-Tato strategie byla využívána ze začátku experimentu, když bylo potřeba nabrat určitou základnu přátel na facebooku, aby profil vypadal pro ostatní facebookové uživatel jako aktivní. Tato fáze trvala dva a půl týdne a hlavním cílem bylo získat přátele, kteří budou ochotní přijmout pozvánku na přátelství na facebooku od experimentálních účtů. 
+Strategie přidávání přátel popsané v předchozí kapitole byly využívány ze začátku experimentu, když bylo potřeba nabrat určitou základnu přátel na facebooku, aby profil vypadal pro ostatní facebookové uživatel jako aktivní. Tato fáze trvala dva a půl týdne a hlavním cílem bylo získat přátele, kteří budou ochotní přijmout pozvánku na přátelství na facebooku od experimentálních účtů. 
 
 V pozdější fázi experimentu byla využívána pouze strategie facebook suggestions. Tato stragtegie totiž počítala s přidanými přáteli k experimentálnímu účtu a pracovala hlavně se společnými a naposledy přidanými přáteli.
 
-Celý experiment probíhal tak, že jsem všechny
+Celý experiment probíhal tak, že jsem pro každý experimentální účet nejdříve spustil stahování všech dat z profilu. V rámci tohoto stahování se stáhla zeď přihlášeného účtu. V rámci tohoto stahování byl udělěn like třem statusům uživatelů (statusy od facebookových stránek se přeskakovaly) s nejvyšším počtem like. Like byl přidáván pouze textovým statusům, facebook na zdi zobrazuje i aktivity, například, že někdo změnil své město na stránce s informacemi o uživateli nebo že byl uživatel označen na fotce a podobně, všechy tyto aktivity byly odfiltrovány. 
+
+Pro přidávání like ke statusům se procházelo pouze dvacet prvních statusů na stránce, aby nedocházelo k přidávání like k neaktuálním statusům. Při menším počtu přátel u experimentálního účtu na facebooku se totiž zobrazovaly na zdi statusy starší než několik měsíců. Všechny parametry, tedy počet přidaných statusů za jedno příhlášení i počet statusů pro které se počítá počet like by šlo upravit, ale tyto hodnoty mi přišly z testování ideální.
+
+Občas se stávalo, že všechny tři like u statusů za jedno přihlášení získaly statusy jednoho uživatele na facebooku. Jednalo se především o velmi aktivní profily s velkým počtem přátel - tím pádem měly velký počet like u veškeré své aktivity na facbooku. Vše by šlo vylepšit kontrolováním autorů statusů a přidáváním like pouze u jednoho statusu pro každého autora. Naštěstí k přidávání like u statusů pouze jednoho uživatele nedocházelo často, tak jsem algoritmus neměnil.
+
+Po stažení všech informací přišlo na řadu nahrávání informací na uživatelské profily. Pro každý profil bylo připraveno několik možných statusů na nahrání na facebook a stačilo jen vybrat konkrétní status a odeslat formulář. Statusy je možné připravit dopředu a přiřadit pro přidání na konkrétní profil nebo pro kterýkoliv profil.
+
+Přidávání přátel na facebooku probíhalo podobným způsobem. Nejdříve se otevřelo okno pro přidávání přátel daného profilu. Na pozadí se stáhlo prvních 10 přátel, které facebook danému profilu doporučil. Jedná se o stránku: \verb|https://www.facebook.com/find-friends/browser/|. Experimentální aplikace zobrazila jména těchto doporučených přátel a bylo možné vybrat, kterým uživatelům bude zaslána žádost o přátelství. 
+
+Ze začátku jsem chtěl při experimentu vždy automaticky zaslat žádost o přátelství prvním pěti nabídnutým facebookovým účtům, ale při testování na první generaci jsem zjistil, že se takto k profilu přidávaly účty ze zahraničí, které nerozumněly přidávaným statusům (viz dále). Chtěl jsem, aby nové přidávané profily byly převážně z České republiky, proto bylo potřeba přidat mezikrok s vybíráním relevantních přátel.
 
 \subsection{Četnost přidávání přátel}
 
-Hlavím cílem interakce na facebooku byla věrohodnost pro ostatní facebookové uživatele. Ze začátku jsem po zaregistrování nového profilu plánoval přidávat pokaždé přibližně sedm až osm přátel. Když se zaregistruje nový uživatel na facebook, tak nemá skoro žádné možnosti využití, dokud nemá některé přátele, většina uživatelů se tak snaží zpočátku přidávat více přátel. 
+Hlavním cílem interakce na facebooku byla věrohodnost pro ostatní facebookové uživatele. Ze začátku jsem po zaregistrování nového profilu plánoval přidávat pokaždé přibližně sedm až osm přátel. Když se zaregistruje nový uživatel na facebook, tak nemá skoro žádné možnosti využití, dokud nemá nějáké přátele, většina uživatelů se tak snaží zpočátku přidávat více přátel. 
 
-Facebook ihned po registraci nového profilu nabízí možnost stáhnutí kontkatů z e-mailu, z programu Skype nebo z progamu ICQ za účelem nalezení nových přtel na facebooku. Vše funguje jednoduše tak, že stažené kontaktní údaje se porovnávají s registrovanými uživateli facebooku a pokud se najde shoda, tak facebook nabídne tyto účty ke zpřátelení.
+Facebook ihned po registraci nového profilu nabízí možnost stáhnutí kontkatů z e-mailu, z programu Skype nebo z programu ICQ za účelem nalezení nových přátel na facebooku. Vše funguje jednoduše tak, že stažené kontaktní údaje se porovnávají s registrovanými uživateli facebooku a pokud se najde shoda, tak facebook nabídne tyto účty ke spřátelení.
 
-Facebook ale při přidávání většího množství přátel (většinou okolo pěti, ale někdy i méně) zobrazil potvrzovací okno \ref{fig:confirmFriendship}. Jedná se o potvrzení, zda známe daný facebookový účet i v reálu. Tento dialog stačí potvrdit Ustálil jsem tedy po tomto zjištění počet přidávaných přátel na pět za jedno přihlášení.
+Facebook ale při přidávání většího množství přátel (většinou okolo pěti, ale někdy i méně) zobrazil potvrzovací okno, viz obrázek \ref{fig:confirmFriendship}. Jedná se o potvrzení, zda známe daný facebookový účet i v reálu. Tento dialog stačí potvrdit a vše funguje. Ustálil jsem tedy po tomto zjištění počet přidávaných přátel na pět za jedno přihlášení. Během prvního kola přihlašování tedy bylo zasláno sedm až osm žádostí o nová přátelství a od druhého kola přihlašování už byl počet vždy pět.
 
 \begin{figure}[h]
 \begin{center}
@@ -642,32 +668,128 @@ Facebook ale při přidávání většího množství přátel (většinou okolo
 \end{center}
 \end{figure}
 
-Počet pěti nových žádostí o přátelství jsem ponechal u každého účtu až do konce experimentu. Pokud se ale stalo, že náš účet obdržel některé žádosti o přátelství, tak byly všechny přijaty. Počet nově přidaných přátel za jedno přihlášení se pak snižoval o počet přijatých žádostí o přátelství. Pokud počet nových žádostí o přátelství překročil pět, tak už nebyly přidáváni další nové profily.
+U některých účtů, především s málo přidanými přáteli, se mi ale stávalo, že se mi zobrazilo podobné okno jako v předchozím případě. Jedanlo se ale o zrušení žádosti o přátelství. Obrázek zprávy viz \ref{fig:cantFriend}. Facebook tuto zprávu zobrazil ihned po aktivování tlačítka pro odeslání žádosti o přidání do přátel, nejednalo se tedy o zrušení ze strany uživatele, kterému byla pozvánka zaslána.
 
-Snažil jsem se, aby nově přidávání přátelé byli české národnosti. Hlavním důvodem bylo, aby přidané profily rozumněli publikovaným statusům a aby byly požadavky o přátelství realističtější. Při testování první generace se mi stalo, že po přidání několika účtů s arabskými jmény mi facebook začal nabízet pouze arabské přátele. Někteří přijetí o přátelství přijali, ale většinou jen ze zvědavosti a daný účet začal dostávat pozvánky na facebookové skupiny s arabskými názvy. Proto jsem se při experimentu snažil přidávat pouze facebookové uživatele z České republiky.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/cantFriend.png}
+\caption{Zrušení žádosti o přátelství na facebooku}
+\label{fig:cantFriend}
+\end{center}
+\end{figure}
 
+Počet pěti nových žádostí o přátelství jsem ponechal u každého účtu až do konce experimentu. Pokud se ale stalo, že náš účet obdržel některé žádosti o přátelství, tak byly všechny přijaty. Počet nově přidaných přátel za jedno přihlášení se pak snižoval o počet přijatých žádostí o přátelství. Pokud počet nových žádostí o přátelství překročil pět, tak už nebyly přidávány další nové profily.
 
+Snažil jsem se, aby nově přidávání přátelé byli české národnosti. Hlavním důvodem bylo, aby přidané profily rozumněly publikovaným statusům a aby byly požadavky o přátelství realističtější. Při testování první generace se mi stalo, že po přidání několika účtů s arabskými jmény mi facebook začal nabízet pouze arabské přátele. Někteří žádost o přátelství přijali, ale většinou jen ze zvědavosti a daný účet začal dostávat pozvánky na facebookové skupiny s arabskými názvy. Proto jsem se při experimentu snažil přidávat pouze facebookové uživatele z České republiky.
 
-= vysvetlit prihlaseni
-= unfriendnuti, zamitnuti pratelstvi
-- stahovani friend - friend dat
-- Chovani uzivatelu + Metriky
-= zdany zablokovany
+Pro zachování autentičnosti chování uživatelů facebooku jsem se při přidávání přátel snažil aby si účty přidávaly ve větší míře profily opačného pohlaví. Tedy aby si experimentální profily se ženským jménem přidávaly více mužských přátel na facebooku a naopak. 
+
+\subsection{Nahrávání statusů k experimentálním účtům na facebooku}
 
 Pro experiment jsem sdílení omezil na přidávání statusů na svou zeď. Jedná se totiž o hlavní možnost, jak dát na facebooku o sobě vědět. Frekvence přidávání statusů byla nastavena na jeden status za přihlášení. 
 
 Obsah vkládaných statusů byl obecný a neutrální. Jednalo se většinou o citáty a výroky známých i neznámých osobností na internetu, vtipy a neutrální a spontánní komentáře aktuálního dění (například o počasí). Jako zdroj pro statusy citátů sloužila webová stránka: \verb|citaty.net| a jako zdroj vtipných statusů sloužily stránky: \verb|www.vtipy.net|, \verb|vysmatej.cz| a \verb|vtipy.peoplelovepeople.com|. Snažil jsem se vyhýbat rasistickým a politickým vtipům, abych nepobouřil některého z přidaných přátel na facebooku. Spontánní texty statusů jsem vymýšlel sám nebo jsem se inspiroval statusy na zdi ostatních fiktivních účtů.
 
+Mimo klasických textových statusů byly na účty nahrávány i obrázky doplněny textovým popisem. Na facebooku jsou tyto obrázky velmi oblíbené, existují webové stránky jako \verb|9gag.com| nebo \verb|www.rouming.cz|, které obsahují vtipné obrázky s popisky a facebookoví uživatelé je velmi rádi likují a sdílejí. Jako zdroje obrázků pro statusy sloužily obrázky nalezené na ostatních stahovaných profilech nebo na stránkách zmíněných výše. Obzvláště oblíbené jsou v posledních týdnech animované obrázky (takzvané memy).
 
- Po přihlášení k účtu, stažení informací a spuštění automatizovaných akcí jsem vždy ručně kontroloval co se na facebookovém účtu děje. Ve většině případů se u účtu zobrazovaly notifikace o potvrzení žádostí o přátelství a několik zpráv o tom, zda náš fiktivní účet zná osobu, které byla odeslána žádost o přátelství a občas i šťouchnutí.
+[todo]- stahovani friend - friend dat
 
+\subsection{Zajímavosti na které jsem během experimentu narazil}
 
-Facebookvé zprávy nebyly automaticky zpracovávány. Zpracovávání by totiž nepřinášelo přidanou hodnotu k našemu experimentu a zpracovávání textu by bylo složité, jak už bylo zmíněno dříve. Na žádné zprávy jsem nikdy neodpovídal. Teoreticky by bylo možné připravit univerzální odpověď na otázku, zda se dané facebookové účty znají. Například vymyšlení univerzálního místa, kde se mohly dané osoby setkat - škola, práce, apod., anebo přiznání, že se účty neznají). Pak by ale zcela určitě pokračovalo další dotazování pomocí facebookových zpráv, odkud se dané účty znají anebo proč byla odeslána žádost o přátelství na facebooku. Nejen, že by takovéto zpracovávání zabralo mnoho času a nebylo by možné plně automatizovat, ale někdy by mohlo takovéto chování být i kontraproduktivní.
+Po přihlášení k účtu, stažení informací a spuštění automatizovaných akcí jsem vždy ručně kontroloval, co se na facebookovém účtu děje. Ve většině případů se u účtu zobrazovaly notifikace o potvrzení žádostí o přátelství a několik zpráv o tom, zda náš fiktivní účet zná osobu, které byla odeslána žádost o přátelství a občas i šťouchnutí.
 
+Facebookové zprávy nebyly automaticky zpracovávány. Zpracovávání by totiž nepřinášelo přidanou hodnotu k našemu experimentu a zpracovávání textu by bylo složité, jak už bylo zmíněno dříve. Na žádné zprávy jsem nikdy neodpovídal. Teoreticky by bylo možné připravit univerzální odpověď na otázku, zda se dané facebookové účty znají. Například vymyšlení univerzálního místa, kde se mohly dané osoby setkat - škola, práce, apod., anebo přiznání, že se účty neznají. Pak by ale zcela určitě pokračovalo další dotazování pomocí facebookových zpráv, odkud se dané účty znají anebo proč byla odeslána žádost o přátelství na facebooku. Nejen, že by takovéto zpracovávání zabralo mnoho času a nebylo by možné plně automatizovat, ale někdy by mohlo takovéto chování být i kontraproduktivní.
+
+Při procházení profilů jsem ale občas narazil na zajímavé jevy. Pokud účet neměl na facebooku vyplněné některé informace, konkrétně školu nebo bydliště. Zobrazil se na facebooku na výpisu zdi (což je stránka, která se zobrazí ihned po přihlášení) nad výpisem statusů upozornění o doplnění těchto informací i s nabídkami. Příklad takovéhoto formuláře je vidět na obrázku \ref{fig:completeSchool}.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/completeSchool.png}
+\caption{Formulář na facebooku nabádající k vyplnění vystudované střední školy}
+\label{fig:completeSchool}
+\end{center}
+\end{figure}
+
+Kromě takovýchto formulářů na stránce zdi se po přihlášení u některých účtů zobrazil tříkrokový průvodce pro vyplnění bezpečnostích informací. Jedná se o zadání kontaktních informací při ztrátě facebookového hesla nebo při odcizení facebookového účtu cizí osobou (například při prozrazení hesla k účtu). Pokud by bylo potřeba, facebook umožňuje resetovat heslo a zaslat nové heslo na jeden ze zadaných kontaktních údajů. Jedná se také o ověření, že bude heslo změněno jen skutečným vlastníkem účtu. Jedná se o tyto informace: e-mail, telefonní číslo a bezpečnostní otázka včetně odpovědi. 
+
+Mezi další formuláře pro doplnění informací na facebooku patří možnost výběru URL adresy facebookového profilu. Jedná se o jednoznačný identifikátor každého uživatele. Adresa profilu pak vypadá následujícím způsobem: \verb|http://www.facebook.com/jan.novak|. Tento identifikátor se používá i pro e-mailovou adresu na facebooku, kterou má každý účet. Například: \verb|jan.novak@facebook.com|. Jakékoliv zprávy odeslané na tuto e-mailovou adresu se zobrazí mezi zprávami na facebooku. Pokud si uživatel žádný identifikátor nevybere, získá adresu vygenerovanou od facebooku spojením jména příjmení a náhodného čísla, například: \verb|jan.novak.145|.
+
+Občas se u některých elementů na facebooku objeví malé vyskakovací okno s nápovědou, která popisuje možnosti na facebooku. Jedná se například o oznámení, že lze na facebook nahrávat fotky a odkazy pouhým přetažením do textového pole pro zadávání statusů. 
+
+U jednoho experimentálního účtu se mi po přihlášení 24. dubna 2013 objevilo okno s oznámením, že byly z tohoto účtu zasílány žádosti o přátelství lidem, které daný účet nezná. Pravděpodobně došlo k tomu, že většina zaslaných pozvánek na facebooku byla zamítnuta a lidé nepotvrdili, že by daný účet znali i v reálném životě. Facebook radí přidávat si lidi, jako jsou: rodinní příslušníci, spolužáci nebo spolupracovníci a lidi, které známe z reálu. Je potřeba odškrtnout potvrzení, že již nebudou rozesílány žádosti o~přátelství lidem, které neznáme z reálu, jinak může být daný účet zablokován.
+
+Na další obrazovce se objevil seznam zaslaných nepřijatých a nepotvrzených žádostí o přátelství s možností jakékoliv žádosti zrušit (jak je vidět na obrázku \ref{fig:cancelPendingFrinedRequests}).
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/cancelPendingFriendRequests.png}
+\caption{Formulář na facebooku pro zrušení nepřijatých  a nepotvrzených žádostí o přátelství}
+\label{fig:cancelPendingFrinedRequests}
+\end{center}
+\end{figure}
+
+Zrušil jsem tedy všechny tyto žádosti a zaslal jsem pět nových žádostí jako u každého experimentálního účtu. Při příštím přihlášení 28.4.2013 se mi zobrazil formulář s nutností opsat kontrolní kód a na další obrazovce se objevilo oznámení o zablokování účtu s formulářem pro zadání telefonního čísla (naprosto stejný jako při zakládání více účtů ze stejné IP adresy).
+
+Pravděpodobně došlo odebráním čekajících žádostí o přátelství k snížení důvěryhodnosti profilu, jelikož účet obsahoval málo přátel na facebooku. V~době posledního přihlášení před zablokováním obsahoval účet osm potvrzených přátel. Z nichž někteří si mohli do dalšího přihlášení tento účet odebrat. Tím došlo k zablokování daného profilu po 26 dnech od spuštění experimentu. Po zablokování jsem se již k danému účtu nepokoušel přihlašovat. [todo] Otázkou zůstává, zda by došlo k zablokování profilu i bez smazání žádostí o přátelství.
+
+U jedné odeslané žádosti o přátelství se mi podařilo narazit na další omezení facebooku. Maximální počet přátel, které může každý účet na facebooku mít je pět tisíc. S tím se pojí další limit, jeden účet může mít na facebooku maximálně jeden tisíc nevyřízených (nezamítnutých nebo nepotvrzených) žádostí o přátelství. Při jedné ze zaslaných žádostí o přidání mezi facebookové přátele se mi zobrazilo vyskakovací okno (viz obrázek \ref{fig:friendRequestsLimitReached}), že kvůli tomuto omezení nebyla žádost o přátelství zaslána. Bohužel s tímto nemůžeme nic udělat, musíme počkat, až účet jemuž byla žádost zaslána tyto nevyřízené žádosti o přátelství potvrdí nebo zamítne.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/friendRequestsLimitReached.png}
+\caption{Informace o dosažení maximálního počtu nevyřízených žádostí o přátelství na facebooku}
+\label{fig:friendRequestsLimitReached}
+\end{center}
+\end{figure}
+
+Ve většině případů jsem experimentální účty navštěvoval z domova, z mé domací IP adresy. Ve dvou dnech jsem se ale připojoval k účtům z jiného místa a IP adresa byla odlišná od mé domácí adresy. Při tomto připojování dne 26. dubna 2013 se mi u jednoho z účtů ihned po přihlášení zobrazilo oznámení, že je účet dočasně zablokovaný. Po pokračování na následující obrazovku se mi zobrazil formulář pro ověření identity. Celý formulář je k vidění na obrázku \ref{fig:confirmIdentity}.
+
+Formulář obsahoval pole pro zadání data narození daného profilu. Naštěstí jsem měl pro každý experimentální účet poznamenané datum narození, které bylo vyplněno při registraci. Po zadání správného data narození už byl účet odblokovaný a bez jakýchkoliv omezení. 
+
+Jak je na obrázku formuláře vidět, dočasné zablokování bylo pravdědpodobně způsobeno přihlašováním k facebooku z jiné IP adresy. Pod formulářem je napsáno, že pro odblokování účtu se lze místo zadávání data narození přihlásit ze zařízení (IP adresy), ze kterého se daný účet přihlašoval naposledy.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/confirmIdentity.png}
+\caption{Formulář pro ověření totožnosti zadáním data narození na facebooku}
+\label{fig:confirmIdentity}
+\end{center}
+\end{figure}
+
+Při vývoji aplikace jsem používal program Selenium WebDriver k ovládání webového prohlížeče. Při přidávání like ke statusům na zdi jsem vždy musel stáhnout nejnovější statusy a zjistit, kolik mají jednotlivé příspěvky uděleno like. Po stažení všech příspěvků a vyhodnocení, které mají nejvíce like jsem používal Selenium WebDriver k okamžitému udělení like k vybraným statusům. 
+
+Při programování aplikace jsem ale jednou omylem vložil část pro udělování like ke statusům, což bylo v internetovém prohížeči realizováno klikem na tlačítko, do špatné sekce v programu. Klik na tlačítko pro udělení like se kvůli tomuto omylu opakoval vždy několikanásobně v rychlém sledu za sebou.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/slowDown.png}
+\caption{Facebookové upozornění kvůli příliš rychlé interakci}
+\label{fig:slowDown}
+\end{center}
+\end{figure}
+
+Facebook mi kvůli těmto rychlým interakcím zobrazil upozornění, které je vidět na obrázku \ref{fig:slowDown}. Jednalo se o upozornění, že se děje něco, k čemu by docházet nemělo a že může dojít i k zablokování facebookového účtu. Při experimentu jsem si na tento problém již dával pozor a mezi interakcemi jsem dělal prodlevy, aby facebook nemohl odhalit automatizaci interakce. Později jsem na toto upozornění již nenarazil.
+
+Nejzajímavější zjištění pro mne nastalo při návštěvě jednoho z profilů. Zjistil jsem totiž, že od posledního navštívení profilu, získal jeden z účtů 48 nových žádsotí o přátelství a to 22. dubna 2013. Takovéto množství přidaných přátel jsem v žádném případě na začátku experimentu nepředpokládal.
+
+Konkrétně se jednalo o profil se skupinou vyplněnosti 4 a se strategií přidávání profilů s velkým množstvím přátel. Zajímavé na všem bylo, že celkový dosavadní počet přátel profilu byl 18 uživatelů. Jedná se tedy o téměř třínásobné navýšení počtu přátel. Je nutné dodat že naprostá většina těchto žádostí o přátelství pocházela od profilů mužů na facebooku.
+
+Profily, které tomuto experimentálnímu účtu zaslaly pozvánku byly z různých států světa (USA, Egypt, Thajsko a další). Účty byly velmi různorodé, některé vypadaly na první pohled jako falešné účty vytvořené pouze za účelem přidávání přátel, ale některé profily byly naopak velmi vyplněné a obsahovaly autentické fotografie jedné osoby s několikaletou historíí celého profilu, takže se pravděpodobně nejednalo o falešné účty. Nikdy to ale není zcela jisté. 
+
+S největší pravděpodobností facebook tento profil vyhodnotil jako zajímavý pro ostatní uživatele, tím že si ho přidávali na facebooku vlivné osoby (profily s velkým počtem uživatelů). Díky tomu mohl facebook tento experimentální účet doporučovat pro přátelení s ostatními profily a tak mohl získat velké množství žádsotí o přátelství.
+
+Dalším faktorem tohoto jevu mohla být poměrně pěkná profilová fotka experimentálního účtu. Je možné, že se odkaz na tento facebookvý profil objevil na některé internetové stránce a díky tomu si tento profil přidávali ostatní uživatelé. Na facebooku bohužel není žádná možnost zjištění kolik lidí navštíví facebookový profil a odkud uživatele přicházejí.
+
+Další možností k tomuto rozšíření experimentálního profilu mezi další facebookové uživatele, která mne napadá, je možnost doporučení přátel. Facebook po spřátelení dvou profilů dává každému možnost doporučit novému profilu někoho ze svých přátel. Těmto účtům pak přijde upozornění, že jim byl doporučen facebookový  účet k přidání mezi své přátele. Uživatel pak může tomuto účtu poslat žádost o přátelství anebo toto doporučení zamítnout. Je tedy pravděpodobné, že některý ze starších přátel experimentálního profilu doporučil svým přátelům tento profil k přídání mezi přátele. 
+
+Jak k takovému vysokému nárůstu přátel mohlo dojít asi nepůjde dostupnými prostředky nikdy stoprocentně zjistit. S největší pravděpodobností půjde o kombinaci výše zmíněných faktorů na facebooku i mimo něj.
 
 %\begin{conclusion}
 %\end{conclusion}
 \chapter{Z{\' a}v{\v e}r}
+
+- Chovani uzivatelu + Metriky
+= zadny zablokovany
 
 \section{Možné způsoby rozšíření a pokračování v experimentu}
 
@@ -689,16 +811,17 @@ Pravděpodobně by bylo potřeba řešit i jiné problémy spojené s automatick
 
 \section{Možnosti pokračování experimentu}
 
-Pro naši aplikaci nebylo potřeba uchovávat texty komentářů u statusů, takže se tento problém nemusel řešit. Ukládá se pouze počet komentářů, který lze získat zpracováním zobrazeného textu. Ukládání textu komentářů by mohlo být užitečné, pokud by bylo možné zjistit citové zabarvení komentářů (negativní/pozitivní/neutrální). Pro takovéto analýzy jsou ale potřeba pokročilé algoritmy pro práci s textem a pro kvalitní rozpoznání by bylo potřeba delší úseky textu. Takovéto analýzy se využívají pro sledování nálady ve společnosti (například při volbách apod.) anebo pro sledování spokojenosti s určitým produktem nebo brandem (značkou) na sociálních sítích. 
+Pro naši aplikaci nebylo potřeba uchovávat texty komentářů u statusů, takže se tento problém nemusel řešit. Ukládá se pouze počet komentářů, který lze získat zpracováním zobrazeného textu. Ukládání textu komentářů by mohlo být užitečné, pokud by bylo možné zjistit citové zabarvení komentářů (negativní/pozitivní/neutrální). Pro takovéto analýzy jsou ale potřeba pokročilé algoritmy pro práci s textem a pro kvalitní rozpoznání by bylo potřeba delší úseky textů. Takovéto analýzy se využívají pro sledování nálady ve společnosti (například při volbách apod.) anebo pro sledování spokojenosti s určitým produktem nebo brandem (značkou) na sociálních sítích. 
 
 Hlavní cíl experimentu ale byl odlišný a počet facebookových účtů, které byly do experimentu zahrnuty nebyl dostatečně velký (hlavně počet facebookových přátel účtů), aby měly výsledky vypovídající hodnotu. Každopádně by se při větším množství účtů zahrnutých do experimentu mohlo podařit získat vypovídající masu lidí, kde by mohly být výsledky zajímavé. Zatím jsou takováto data získávána pouze z veřejně dostupných zdrojů anebo ze stránek na facebooku a takováto data mohou být zkreslená (omezením vzorku jen na určitou skupinu uživatelů). Jedná se o jeden ze směrů, kterým by se dal experiment dále rozšířit a pokračovat v něm v budoucnu.
 
-Kromě získávání nálady ve společnosti by bylo možné i ovlivňovat ostatní profily. Vkládáním pozitivních statusů o určitém příspěvku by mohlo sloužit jako zajímavá reklama. Lidé jsou odmítaví ke klasickým formám reklamy (letáky, televizní reklamy, apod.), ale pokud by se jednalo o pozitivně laděné sdělení, které by nevypadalo na první pohled jako reklama, mohlo by se jednat o zajímavou možnost ovlivnit mínění facebookových uživatelů. Teoreticky by nemuselo být sdělení pozitivní, někdy by mohla stačilt zmínka na facebooku a uživatelé by se díky sociální aktivitě (sdílení, dávání like a komentování) postarali o šíření mezi další uživatele internetu. Reklama by mohla být i negativní. V dnešní době už existují služby pro placené blogové články na míru (Například \verb|placla.cz|). Podobně by to mohlo fungovat i u facebooku.
+Kromě získávání nálady ve společnosti by bylo možné i ovlivňovat ostatní profily. Vkládáním pozitivních statusů o určitém příspěvku by mohlo sloužit jako zajímavá reklama. Lidé jsou odmítaví ke klasickým formám reklamy (letáky, televizní reklamy, apod.), ale pokud by se jednalo o pozitivně laděné sdělení, které by nevypadalo na první pohled jako reklama, mohlo by se jednat o zajímavou možnost ovlivnit mínění facebookových uživatelů. Teoreticky by nemuselo být sdělení pozitivní, někdy by mohla stačit zmínka na facebooku a uživatelé by se díky sociální aktivitě (sdílení, dávání like a komentování) postarali o šíření mezi další uživatele internetu. Reklama by mohla být i negativní. V dnešní době už existují služby pro placené blogové články na míru (Například \verb|placla.cz|). Podobně by to mohlo fungovat i u facebooku.
 
-Facebook na podzim roku 2012 zavedl možnost placení za zviditelnění statusů. Na facebooku se nyní nezobrazují všechy statusy od vašich přátel, ale jen vybrané statusy, které facebook považuje pro vás za nejhodnotnější a nejkvalitnější. Vše jde nastavit a ovlivnit skupinami do kterých si přátele zařadíte (algoritmy pro zobrazování příspěvků nejsou veřejné). Nikdy ale nemáte jistotu, že váš příspěvek uvidí všichni (nebo určití) přátelé. Za poplatek \$6.99 (přibližně 140 Kč - duben 2013) pak uživaté facebooku mohou promovat své příspěvky, aby se zobrazily většímu počtu kamarádů. Takto lze promovat příspěvky i u facebookových stránek, kde tato funkce dává větší smysl.
+Facebook na podzim roku 2012 zavedl možnost placení za zviditelnění statusů. Na facebooku se nyní nezobrazují všechy statusy od vašich přátel, ale jen vybrané statusy, které facebook považuje pro vás za nejhodnotnější a nejkvalitnější. Vše jde nastavit a ovlivnit skupinami do kterých si přátele zařadíte (algoritmy pro zobrazování příspěvků nejsou veřejné). Nikdy ale nemáte jistotu, že váš příspěvek uvidí všichni (nebo určití) přátelé. Za poplatek \$6.99 (přibližně 140 Kč - duben 2013) pak uživaté facebooku mohou zviditelnit své příspěvky, aby se zobrazily většímu počtu kamarádů. Takto lze promovat příspěvky i u facebookových stránek, kde tato funkce dává větší smysl.
 
 
 [TODO] zdroje/citace??? :)
+[todo] - fiktivni, falesne -Find
 \bibliographystyle{csn690}
 \bibliography{mybibliographyfile}
 
@@ -713,15 +836,16 @@ Facebook na podzim roku 2012 zavedl možnost placení za zviditelnění statusů
 	\item[Like statusu] - Like = Líbí se mi - způsob vyjádření, že se uživatelovi líbí status na facebooku, bez nutnosti status komentovat. Jedná se o modré tlačítko, na kterém je znázorněn palec nahoru.
 	\item[Postování statusu] - Vkládání příspěvku na svou zeď na  facebooku.
 	\item[Přidat se do vztahu na facebooku] - 
-	\item[Přítel na facebooku] - Jedá se o virtuální kamarádství mezi dvěma lidmi, které funguje tak, že oba zúčastnění musí přátelství potvrdit. Prakticky vše probíhá tak, že můžeme komukoliv na facebooku zaslat pozvánku k přátelství, dotyčný pak může pozvánku přijmout anebo odmítnout.  
+	\item[Přítel na facebooku] - Jedná se o virtuální kamarádství mezi dvěma lidmi, které funguje tak, že oba zúčastnění musí přátelství potvrdit. Prakticky vše probíhá tak, že můžeme komukoliv na facebooku zaslat pozvánku k přátelství, dotyčný pak může pozvánku přijmout anebo odmítnout.  
 	\item[Profil na facebooku]
 	\item[(internetový) prohlížeč = browser] - Program pro zpracování a zobrazování internetových stránek. Zpracovává takzvaný HTML kód webové stránky.
 	\item[REST] - Representational state transfer - Architektura rozhraní pro komunikaci s webovými službami (Web services), postavený nad HTTP protkolem
 \newline(https://en.wikipedia.org/wiki/Representational\_state\_transfer).
 	\item[Status] - Příspěvek na svou facebookovou zeď od uživatelů (Facebook nabádá k odpovědi na otázku: „What is on your mind?“ = „Co se vám honí hlavou?“).
-	\item[Stránka na facebooku]
+	\item[Skupina = stránka na facebooku]
 	\item[Šťouchnout na facebooku (Poke)] -
 	\item[Zeď na facebooku] - V terminologii facebooku se zeď používá k označení seznamu příspěvků svých a svých kamarádů.
+	\item[URL]
 \end{description}
 
 \chapter{Obsah přiloženého CD}
