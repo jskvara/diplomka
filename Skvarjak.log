@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.1.22)  29 APR 2013 22:41
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.1.22)  1 MAY 2013 00:10
 entering extended mode
  %&-line parsing enabled.
 **Skvarjak.tex
@@ -827,26 +827,26 @@ Package: listings 2007/02/22 1.4 (Carsten Heinz)
  (./Skvarjak.aux)
 \openout1 = `Skvarjak.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 89.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package hyperref Info: Link coloring OFF on input line 68.
+Package hyperref Info: Link coloring OFF on input line 89.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -858,9 +858,9 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 68.
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
+LaTeX Info: Redefining \nameref on input line 89.
+LaTeX Info: Redefining \ref on input line 89.
+LaTeX Info: Redefining \pageref on input line 89.
 (./Skvarjak.out) (./Skvarjak.out)
 \@outlinefile=\write4
 \openout4 = `Skvarjak.out'.
@@ -872,38 +872,38 @@ LaTeX Info: Redefining \pageref on input line 68.
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
 
 ]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 68.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 89.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 68.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 89.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 68.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 89.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 68.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 89.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 68.
+(Font)              <12> on input line 89.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 68.
+(Font)              <8> on input line 89.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 68.
+(Font)              <6> on input line 89.
 
 <cvut-logo-bw.pdf, id=105, 91.34125pt x 69.25874pt>
 File: cvut-logo-bw.pdf Graphic file (type pdf)
  <use cvut-logo-bw.pdf>
-Underfull \hbox (badness 10000) in alignment at lines 68--68
+Underfull \hbox (badness 10000) in alignment at lines 89--89
 [][] 
  []
 
@@ -911,30 +911,30 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68 \begin{document}
+l.89 \begin{document}
                       [1 <./cvut-logo-bw.pdf>]pdfTeX warning (ext4): destinatio
 n with the same identifier (name{page.ii}) has been already used, duplicate ign
 ored
 <to be read again> 
                    \relax 
-l.68 \begin{document}
+l.89 \begin{document}
                       [2
 
 ]
 
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
-(Font)              using `T1/lmr/bx/n' instead on input line 68.
+(Font)              using `T1/lmr/bx/n' instead on input line 89.
 
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 68.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 89.
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/bx/sc' undefined
-(Font)              using `T1/lmss/bx/n' instead on input line 68.
+(Font)              using `T1/lmss/bx/n' instead on input line 89.
 
 
-Overfull \hbox (0.46567pt too wide) in paragraph at lines 68--68
+Overfull \hbox (0.46567pt too wide) in paragraph at lines 89--89
 \T1/lmr/m/n/12 Cht¥l bych pod¥ko-vat svému ve-doucímu Ing. Jaroslavu Kucha°ovi,
  za ochotu
  []
@@ -944,12 +944,12 @@ Overfull \hbox (0.46567pt too wide) in paragraph at lines 68--68
 ] [6
 
 ] [7]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 68.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 89.
  (/usr/share/texmf/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 68.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 89.
  [8
 
 ] [9
@@ -987,486 +987,466 @@ Overfull \hbox (4.58624pt too wide) in paragraph at lines 13--13
 ] [2
 
 ]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 99.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 120.
+
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 99.
+(Font)              <10> on input line 120.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 99.
+(Font)              <7> on input line 120.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 99.
+(Font)              <5> on input line 120.
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 [][] [][]\T1/lmr/m/n/10 http://www.zive.cz/bleskovky/facebook-tento-tyden-ceka-
 velka-zmena-priblizi-se-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 [][] [][]\T1/lmr/m/n/10 http://www.zive.cz/bleskovky/facebook-opet-v-novem-komp
 letni-zmena-okoli-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 [][] [][]\T1/lmr/m/n/10 http://computerworld.cz/internet-a-komunikace/facebook-
 chrli-dalsi-novinky-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 [][] [][]\T1/lmr/m/n/10 http://www.cnews.cz/clanky/facebook-se-chysta-prepracov
 at-zpravy-budou-se-
  []
 
 [3]
-Overfull \hbox (6.96857pt too wide) in paragraph at lines 108--109
+Overfull \hbox (6.96857pt too wide) in paragraph at lines 129--130
 \T1/lmr/m/n/12 (https://developers.facebook.com/docs/concepts/login/login-archi
 tecture/). 
  []
 
-<figures/server-side-diagram.png, id=233, 734.745pt x 525.965pt>
+<figures/server-side-diagram.png, id=234, 734.745pt x 525.965pt>
 File: figures/server-side-diagram.png Graphic file (type png)
 
 <use figures/server-side-diagram.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4]
-Underfull \hbox (badness 1460) in paragraph at lines 123--123
+
+Underfull \vbox (badness 1009) has occurred while \output is active []
+
+ [4]
+Underfull \hbox (badness 1460) in paragraph at lines 144--144
 [][] [][]\T1/lmr/m/n/10 Variace click-jacingu, po-mocí HTML, CSS anebo JavaScri
 ptu je na stránce
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 123--123
-\T1/lmr/m/n/10 skryto face-bookové tla£ítko like a je p°ekryto jiným tla£íkem, 
-uºi-va-tel pak po
+Underfull \hbox (badness 1454) in paragraph at lines 144--144
+\T1/lmr/m/n/10 skryto fa-ce-boo-kové tla£ítko like a je p°ekryto jiným tla£íkem
+, uºi-va-tel pak po
  []
 
 
-Overfull \hbox (0.40839pt too wide) in paragraph at lines 123--124
+Overfull \hbox (0.40839pt too wide) in paragraph at lines 144--145
 []\T1/lmr/m/n/12 Facebook nepod-poruje ºád-nou ji-nou moºnost, jak ap-likaci ov
 lá-dat krom¥
  []
 
-[5 <./figures/server-side-diagram.png>]
-Overfull \hbox (1.13124pt too wide) in paragraph at lines 157--158
+
+Underfull \vbox (badness 4832) has occurred while \output is active []
+
+ [5 <./figures/server-side-diagram.png>]
+Overfull \hbox (7.75568pt too wide) in paragraph at lines 173--174
+\T1/lmr/m/n/12 Facebook proto zru²il moºnost dá-vat stránkám like skrze Graph A
+PI. S dal²ím
+ []
+
+[6]
+Overfull \hbox (1.13124pt too wide) in paragraph at lines 182--183
 []\T1/lmr/m/n/12 Tyto ne-dostatky Graph API mi ne-do-volo-valy jej pouºít pro i
 m-ple-mentaci
  []
 
 
-Overfull \hbox (8.69849pt too wide) in paragraph at lines 163--164
+Overfull \hbox (8.69849pt too wide) in paragraph at lines 188--189
 \T1/lmr/m/n/12 Jako první moºnost ov-lá-dání we-bového rozhraní face-booku se n
 abízelo simulo-
  []
 
-[6]
-Underfull \hbox (badness 1655) in paragraph at lines 165--165
+
+Underfull \hbox (badness 1655) in paragraph at lines 190--190
 [][] [][]\T1/lmr/m/n/10 AJAX - asyn-chronní na£ítání dy-nam-ick-ých £ástí we-bo
-vých stránek po-mocí
+vých strá-nek po-mocí
  []
 
 
-Overfull \hbox (25.22327pt too wide) in paragraph at lines 165--166
-\T1/lmr/m/n/12 book pou-ºívá velké mnoºství AJAX-ových[] poºa-davk· a dy-nam-ic
-k-ých JavaScrip-
+Overfull \hbox (25.22327pt too wide) in paragraph at lines 190--191
+\T1/lmr/m/n/12 book pou-ºívá velké mnoº-ství AJAX-ových[] poºa-davk· a dy-nam-i
+ck-ých JavaScrip-
  []
 
-
-Underfull \vbox (badness 1270) has occurred while \output is active []
-
- [7]
-Overfull \hbox (13.29544pt too wide) in paragraph at lines 186--187
-[]\T1/lmr/m/n/12 Krom¥ t¥chto nej-pou-ºí-va-n¥j-²ích jader, které vyºí-vají in-
-ter-ne-tové prohlíºe£e,
- []
-
-[8]
-Overfull \hbox (6.6107pt too wide) in paragraph at lines 190--191
-[]\T1/lmr/m/n/12 Druhým d·leºitým parame-trem pro-gram· pro práci s we-bovým ro
-zhraním
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--201
+[7] [8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
 []|\T1/lmr/bx/n/12 Programovací
  []
 
-[9]
-Overfull \hbox (1.3527pt too wide) in paragraph at lines 235--236
+
+Overfull \hbox (1.3527pt too wide) in paragraph at lines 264--265
 []\T1/lmr/m/n/12 Hlavní výhoda pro-gramu Se-le-nium spo£ívá v tom, ºe jsou we-b
 ové stránky
  []
 
 
-Overfull \hbox (1.38782pt too wide) in paragraph at lines 237--239
+Overfull \hbox (1.38782pt too wide) in paragraph at lines 266--268
 \T1/lmr/m/n/12 prob-lémy. (Face-book o n¥k-terých nahlá²ených prob-lémech ví, a
 le kv·li tomu,
  []
 
-
-Overfull \hbox (29.42438pt too wide) in paragraph at lines 242--243
-\T1/lmr/m/n/12 nolo-gie celý ekosys-tém pro au-tom-a-ti-zo-vané testování po-mo
-cí we-bového prohlíºe£e.
- []
-
 [10]
-Overfull \hbox (6.35765pt too wide) in paragraph at lines 246--247
-[]\T1/lmr/bx/n/12 Selenium Re-mote Con-trol \T1/lmr/m/n/12 - pro-gram pro ov-lá
--dání prohlíºe£e lokáln¥
+Overfull \hbox (2.66113pt too wide) in paragraph at lines 271--272
+\T1/lmr/m/n/12 nolo-gie celý ekosys-tém pro au-tom-a-ti-zo-vané testování po-mo
+cí we-bového proh-
  []
 
 
-Overfull \hbox (12.64407pt too wide) in paragraph at lines 251--252
+Overfull \hbox (6.35765pt too wide) in paragraph at lines 275--276
+[]\T1/lmr/bx/n/12 Selenium Re-mote Con-trol \T1/lmr/m/n/12 - pro-gram pro ov-lá
+-dání proh-lí-ºe£e lokáln¥
+ []
+
+
+Overfull \hbox (12.64407pt too wide) in paragraph at lines 280--281
 []\T1/lmr/m/n/12 Více in-for-mací o jed-notlivých pro-duk-tech lze nalézt na of
 i-ciál-ních stránkách
  []
 
-
-Overfull \hbox (2.10243pt too wide) in paragraph at lines 257--258
+[11]
+Overfull \hbox (2.10243pt too wide) in paragraph at lines 286--287
 []\T1/lmr/m/n/12 Celý mech-a-nis-mus fun-guje na jen-oduchém prin-cipu. Se-le-n
 ium Web-Driver
  []
 
-[11]
+
+Overfull \hbox (0.40674pt too wide) in paragraph at lines 288--289
+[]\T1/lmr/m/n/12 Jelikoº je we-bové rozhraní pro-gramu nezávislé na pro-gramova
+cím jazyku,
+ []
+
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 263.
- [12]
-Overfull \hbox (7.48904pt too wide) in paragraph at lines 283--284
-\T1/lmr/m/n/12 po-mocí velkého mnoºství pro-gramovacích jazyk·. Ne-jv¥t²í výhod
-ou pouºívání
+nput line 292.
+[12]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13]
+[14] [15] [16]
+Overfull \hbox (0.15967pt too wide) in paragraph at lines 369--370
+\T1/lmr/m/n/12 HBase ([]\T1/lmtt/m/n/12 http://hbase.apache.org/\T1/lmr/m/n/12 
+). Tyto databáze jsou ale ur£eny p°ede-
  []
 
+[17] [18
 
-Overfull \hbox (7.62144pt too wide) in paragraph at lines 287--288
-\T1/lmr/m/n/12 Tento nástroj se nej-více pou-ºívá k au-to-mat-ick-ému testování
- we-bových stránek
- []
-
-[13] [14] [15] [16]
+]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 342.
+(hyperref)                removing `\textasciicaron' on input line 377.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 353.
+(hyperref)                removing `\textring' on input line 388.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17
-
-]
-Overfull \hbox (3.86496pt too wide) in paragraph at lines 359--360
-[]\T1/lmr/m/n/12 Facebook je celosv¥-tová so-ciální sí´ a je tedy p°eloºen do v
-elkého mnoºství
- []
-
-
-Overfull \hbox (7.75287pt too wide) in paragraph at lines 359--360
-\T1/lmr/m/n/12 bookové ap-likace ([]\T1/lmtt/m/n/12 https://www.facebook.com/?a
-pp=1&sk=translations\T1/lmr/m/n/12 ),
- []
-
-
-Underfull \vbox (badness 2237) has occurred while \output is active []
-
- [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
-[20] <figures/time-difference.png, id=343, 500.87125pt x 321.2pt>
+[20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Underfull \vbox (badness 1515) has occurred while \output is active []
+
+ [22]
+<figures/time-difference.png, id=354, 500.87125pt x 321.2pt>
 File: figures/time-difference.png Graphic file (type png)
 
-<use figures/time-difference.png>
-Overfull \hbox (13.9575pt too wide) in paragraph at lines 408--409
-\T1/lmr/m/n/12 tusu a odpoví-da-jících ko-men-tá°· pod ním. Tento prob-lém bude
- pravd¥podobn¥
- []
-
-[21 <./figures/time-difference.png (PNG copy)>]
-Overfull \hbox (3.34462pt too wide) in paragraph at lines 422--423
+<use figures/time-difference.png> [23 <./figures/time-difference.png (PNG copy)
+>]
+Overfull \hbox (3.34462pt too wide) in paragraph at lines 459--460
 []\T1/lmr/m/n/12 B¥hem b°ezna 2013 face-book oznámil novou verzi pro-filové str
 ánky (time-
  []
 
 
-Overfull \hbox (33.65982pt too wide) in paragraph at lines 422--423
+Overfull \hbox (33.65982pt too wide) in paragraph at lines 459--460
 \T1/lmr/m/n/12 line) [todo citace http://newsroom.fb.com/News/584/Improvements-
 to-Timeline].
  []
 
-[22] [23] [24]
-Overfull \hbox (11.6675pt too wide) in paragraph at lines 480--481
+
+Underfull \vbox (badness 1546) has occurred while \output is active []
+
+ [24]
+[25]
+Overfull \hbox (11.6675pt too wide) in paragraph at lines 502--503
 []\T1/lmr/m/n/12 yearly - d·leºité mezníky v ºiv-ot¥ uºi-vatele se°azené po-dle
  data (narození
  []
 
-[25]
-Overfull \hbox (27.36763pt too wide) in paragraph at lines 503--504
-\T1/lmr/m/n/12 moºnost n¥koho ²´ouch-nout (poke). Funk£nost tla£ítka ²´ouch-nou
-t je jednoduchá.
- []
-
-[26]
-Overfull \hbox (11.86392pt too wide) in paragraph at lines 508--509
-[]\T1/lmr/m/n/12 postStatus(text, [at-tache-ment]) - p°idá na ze¤ uºi-vatele st
-a-tus (parametr
+[26] [27] [28]
+Overfull \hbox (13.85382pt too wide) in paragraph at lines 550--551
+[]\T1/lmr/m/n/12 inviteEvent(id) - poz-vat v²echny fa-ce-boo-kové p°átele na ud
+álost, parame-
  []
 
 
-Overfull \hbox (13.85382pt too wide) in paragraph at lines 512--513
-[]\T1/lmr/m/n/12 inviteEvent(id) - poz-vat v²echny face-bookové p°átele na udál
-ost, parame-
- []
-
-
-Overfull \hbox (6.90468pt too wide) in paragraph at lines 517--519
+Overfull \hbox (6.90468pt too wide) in paragraph at lines 555--557
 \T1/lmr/m/n/12 http://www.insidefacebook.com/2013/04/09/facebook-puts-limits-on
 -event-
  []
 
-[27] [28]
+[29]
+Overfull \hbox (5.75586pt too wide) in paragraph at lines 558--559
+\T1/lmr/m/n/12 likaci lokáln¥ a spou²t¥t pro-gram Se-le-nium Web-Driver p°es in
+-ter-net vzdálen¥.
+ []
+
+[30]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 526.
+(hyperref)                removing `\textring' on input line 566.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 526.
+(hyperref)                removing `\textasciicaron' on input line 566.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 528.
+(hyperref)                removing `\textasciicaron' on input line 568.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 528.
+(hyperref)                removing `\textring' on input line 568.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 534.
+(hyperref)                removing `\textasciicaron' on input line 574.
 
-[29
+[31
 
-] <figures/fb-telephone-number2.jpg, id=387, 1022.82124pt x 507.8975pt>
+] <figures/fb-telephone-number2.jpg, id=398, 1022.82124pt x 507.8975pt>
 File: figures/fb-telephone-number2.jpg Graphic file (type jpg)
 
-<use figures/fb-telephone-number2.jpg> [30 <./figures/fb-telephone-number2.jpg>
+<use figures/fb-telephone-number2.jpg> [32 <./figures/fb-telephone-number2.jpg>
 ]
+Overfull \hbox (9.17064pt too wide) in paragraph at lines 598--599
+[]\T1/lmr/m/n/12 Struktura e-mailových adres byla násle-du-jící: []\T1/lmtt/m/n
+/12 jmenoprijmeni@domena.cz\T1/lmr/m/n/12 .
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31]
-Overfull \hbox (5.92477pt too wide) in paragraph at lines 566--567
+ [33]
+Overfull \hbox (5.92477pt too wide) in paragraph at lines 608--609
 []\T1/lmr/m/n/12 Takovéto in-ter-ne-tové sluºby slouºí p°ede-v²ím jako ochrana 
 proti e-mailové
  []
 
 
-Overfull \hbox (7.51453pt too wide) in paragraph at lines 572--573
+Overfull \hbox (1.31302pt too wide) in paragraph at lines 614--615
 [][]\T1/lmtt/m/n/12 mailinator.com \T1/lmr/m/n/12 - moºnost vy-gen-erovat si ja
-k-ouko-liv e-mailovou adresu
+k-oukoli e-mailovou adresu
  []
 
 
-Overfull \hbox (3.63194pt too wide) in paragraph at lines 572--573
+Overfull \hbox (3.63194pt too wide) in paragraph at lines 614--615
 \T1/lmr/m/n/12 na domén¥ []\T1/lmtt/m/n/12 mailinator.com \T1/lmr/m/n/12 nebo [
 ]\T1/lmtt/m/n/12 spamherelots.com\T1/lmr/m/n/12 , k této e-mailové
  []
 
 
+Overfull \hbox (1.88007pt too wide) in paragraph at lines 620--621
+\T1/lmr/m/n/12 mailem (na-p°í-klad za-pomenuté heslo nebo d·vod zablokování fac
+e-bookového
+ []
+
+[34]
+
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 578.
+(hyperref)                removing `\textasciicaron' on input line 622.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 578.
+(hyperref)                removing `\textring' on input line 622.
 
-[32]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 586.
+(hyperref)                removing `\textasciicaron' on input line 630.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 586.
+(hyperref)                removing `\textring' on input line 630.
 
-
-Underfull \vbox (badness 3068) has occurred while \output is active []
-
- [33]
-Overfull \hbox (12.48332pt too wide) in paragraph at lines 605--606
-\T1/lmr/m/n/12 Pro ex-per-i-men-tální face-bookové ú£ty jsem pro ex-per-i-ment 
-vytvo°il p¥t r·zných
+[35]
+Overfull \hbox (12.48332pt too wide) in paragraph at lines 649--650
+\T1/lmr/m/n/12 Pro ex-per-i-men-tální fa-ce-boo-kové ú£ty jsem pro ex-per-i-men
+t vytvo°il p¥t r·zných
  []
 
-
-Overfull \hbox (4.1155pt too wide) in paragraph at lines 612--613
-[]\T1/lmr/bx/n/12 facebook sug-ges-tions \T1/lmr/m/n/12 - p°idávání pro-fil· na
- face-booku, které nabídne
- []
-
-
-Overfull \hbox (7.88152pt too wide) in paragraph at lines 614--615
+[36]
+Overfull \hbox (7.88152pt too wide) in paragraph at lines 658--659
 []\T1/lmr/bx/n/12 facebook groups \T1/lmr/m/n/12 - p°idávání skupin na face-boo
 ku a následné p°idávání
  []
 
-[34]
-Overfull \hbox (0.30656pt too wide) in paragraph at lines 617--618
+
+Overfull \hbox (0.30656pt too wide) in paragraph at lines 661--662
 []\T1/lmr/m/n/12 V²echny ex-per-i-men-tální ú£ty byly za-°azeny do jedné z t¥ch
 to p¥ti skupin.
  []
 
 
-Overfull \hbox (8.27716pt too wide) in paragraph at lines 617--618
-\T1/lmr/m/n/12 Toto rozd¥lení pro-fil· bylo je²t¥ navíc zkom-bi-nováno se skupi
-nami vy-pln¥ností
- []
-
-
-Overfull \hbox (52.0107pt too wide) in paragraph at lines 621--622
+Overfull \hbox (52.0107pt too wide) in paragraph at lines 665--666
 \T1/lmr/m/n/12 face-book like box [todo https://developers.facebook.com/docs/re
 ference/plugins/like-
  []
 
-[35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37]
-Overfull \hbox (11.27042pt too wide) in paragraph at lines 651--652
+[37] [38] [39]
+Overfull \hbox (11.27042pt too wide) in paragraph at lines 695--696
 \T1/lmr/m/n/12 stránku: []\T1/lmtt/m/n/12 https://www.facebook.com/find-friends
 /browser/\T1/lmr/m/n/12 . Ex-per-i-men-
  []
 
-<figures/confirm-friendship.png, id=425, 498.86375pt x 165.61874pt>
+[40] <figures/confirm-friendship.png, id=441, 498.86375pt x 165.61874pt>
 File: figures/confirm-friendship.png Graphic file (type png)
 
 <use figures/confirm-friendship.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[38] <figures/cantFriend.png, id=432, 494.84875pt x 190.7125pt>
+<figures/cantFriend.png, id=443, 494.84875pt x 190.7125pt>
 File: figures/cantFriend.png Graphic file (type png)
 
-<use figures/cantFriend.png> [39 <./figures/confirm-friendship.png> <./figures/
+<use figures/cantFriend.png> [41 <./figures/confirm-friendship.png> <./figures/
 cantFriend.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \hbox (7.03555pt too wide) in paragraph at lines 737--738
+\T1/lmr/m/n/12 os-tat-ních sta-ho-vaných pro-filech nebo na stránkách zmín¥ných
+ vý²e. Obzvlá²t¥
+ []
 
- [40]
-<figures/completeSchool.png, id=445, 544.0325pt x 287.0725pt>
+[42] <figures/completeSchool.png, id=457, 544.0325pt x 287.0725pt>
 File: figures/completeSchool.png Graphic file (type png)
 
 <use figures/completeSchool.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[43]
+Underfull \vbox (badness 3291) has occurred while \output is active []
 
-Underfull \vbox (badness 3108) has occurred while \output is active []
-
- [41]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42 <./figures/completeSchool.png>]
-<figures/cancelPendingFriendRequests.png, id=458, 569.12625pt x 435.6275pt>
+ [44 <./figures/completeSchool.png>]
+<figures/cancelPendingFriendRequests.png, id=469, 569.12625pt x 435.6275pt>
 File: figures/cancelPendingFriendRequests.png Graphic file (type png)
 
-<use figures/cancelPendingFriendRequests.png> [43 <./figures/cancelPendingFrien
+<use figures/cancelPendingFriendRequests.png> [45 <./figures/cancelPendingFrien
 dRequests.png>]
-<figures/friendRequestsLimitReached.png, id=465, 493.845pt x 146.5475pt>
+<figures/friendRequestsLimitReached.png, id=476, 493.845pt x 146.5475pt>
 File: figures/friendRequestsLimitReached.png Graphic file (type png)
 
-<use figures/friendRequestsLimitReached.png> [44 <./figures/friendRequestsLimit
-Reached.png>] <figures/confirmIdentity.png, id=472, 568.1225pt x 213.79875pt>
+<use figures/friendRequestsLimitReached.png> [46 <./figures/friendRequestsLimit
+Reached.png>] <figures/confirmIdentity.png, id=483, 568.1225pt x 213.79875pt>
 File: figures/confirmIdentity.png Graphic file (type png)
 
 <use figures/confirmIdentity.png>
-<figures/slowDown.png, id=473, 494.84875pt x 146.5475pt>
+<figures/slowDown.png, id=484, 494.84875pt x 146.5475pt>
 File: figures/slowDown.png Graphic file (type png)
 
-<use figures/slowDown.png> [45 <./figures/confirmIdentity.png> <./figures/slowD
-own.png>] [46] [47] [48
+<use figures/slowDown.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[47 <./figures/confirmIdentity.png>] [48 <./figures/slowDown.png>] [49]
+[50
 
 ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 789.
+(hyperref)                removing `\textasciicaron' on input line 835.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 794.
+(hyperref)                removing `\textring' on input line 840.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 794.
+(hyperref)                removing `\textasciicaron' on input line 840.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 794.
+(hyperref)                removing `\textasciicaron' on input line 840.
 
+[51]
 
-Overfull \hbox (11.08276pt too wide) in paragraph at lines 801--802
-\T1/lmr/m/n/12 char-ac-ter recog-ni-tion - optické rozpoznávání znak·) anebo li
-d-ským opisováním
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 858.
+
+[52]
+No file Skvarjak.bbl.
+
+Overfull \hbox (2.91782pt too wide) in paragraph at lines 869--874
+[]\T1/lmr/m/n/12 [TODO] zdro-je/c-i-tace??? :) [todo] - fik-tivni, falesne -Fin
+d [todo] - skupiny
  []
 
-[49]
-
-Package hyperref Warning: Composite letter `\textasciicaron+c'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 812.
-
-[50]
-No file Skvarjak.bbl.
-[51] [52
+[53] [54
 
 ]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 830.
+(hyperref)                removing `\textring' on input line 877.
 
 
-Overfull \hbox (3.1481pt too wide) in paragraph at lines 839--840
+Overfull \hbox (3.1481pt too wide) in paragraph at lines 886--887
 []\T1/lmr/m/n/12 - Jedná se o vir-tuální ka-marád-ství mezi dv¥ma lidmi,
  []
 
-[53]
-Overfull \hbox (7.0141pt too wide) in paragraph at lines 844--845
+
+Overfull \hbox (12.71466pt too wide) in paragraph at lines 886--887
+\T1/lmr/m/n/12 ticky v²e probíhá tak, ºe m·ºeme ko-mukoli na face-booku za-slat
+ pozvánku
+ []
+
+[55]
+Overfull \hbox (7.0141pt too wide) in paragraph at lines 891--892
 []\T1/lmr/m/n/12 - P°ísp¥vek na svou face-bookovou ze¤ od uºi-vatel· (Face-book
  nabádá
  []
 
-[54]
+[56]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 851.
+(hyperref)                removing `\textasciicaron' on input line 898.
 
-[55
+[57
 
 ]
 \tf@toc=\write5
@@ -1481,13 +1461,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10838 strings out of 495061
- 147731 string characters out of 1182621
- 279638 words of memory out of 3000000
+ 10863 strings out of 495061
+ 147999 string characters out of 1182621
+ 277901 words of memory out of 3000000
  13689 multiletter control sequences out of 15000+50000
  85577 words of font info for 56 fonts, out of 3000000 for 9000
- 48 hyphenation exceptions out of 8191
- 49i,13n,32p,1135b,1754s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69 hyphenation exceptions out of 8191
+ 49i,13n,32p,1092b,1754s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/publ
@@ -1497,9 +1477,9 @@ lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Skvarjak.pdf (69 pages, 703687 bytes).
+Output written on Skvarjak.pdf (71 pages, 711725 bytes).
 PDF statistics:
- 599 PDF objects out of 1000 (max. 8388607)
- 148 named destinations out of 1000 (max. 500000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 152 named destinations out of 1000 (max. 500000)
  240 words of extra memory for PDF output out of 10000 (max. 10000000)
 
