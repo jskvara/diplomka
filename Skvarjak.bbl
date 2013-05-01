@@ -1,0 +1,59 @@
+\begin{thebibliography}{10}
+\providecommand{\biburl}[1]{\url{#1}}
+\providecommand{\urlprefix}{Dostupn{\' e} z: }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\biburl{#2}}
+
+\bibitem{fbGraphApi}
+{Facebook developers}: Graph API. 2013.
+\urlprefix\biburl{https://developers.facebook.com/docs/reference/api/}
+
+\bibitem{fbLikeBox}
+{Facebook developers}: Like Box. 2013.
+\urlprefix\biburl{https://developers.facebook.com/docs/reference/plugins/like-%
+box/}
+
+\bibitem{fbEventsLimitHelpCenter}
+{Facebook help center}: How many people can I invite to an event? 2013.
+\urlprefix\biburl{https://www.facebook.com/help/202545109787461/}
+
+\bibitem{fbTimelineImprovements}
+{Facebook Newsroom}: Improvements to Timeline. 2013.
+\urlprefix\biburl{http://newsroom.fb.com/News/584/Improvements-to-Timeline}
+
+\bibitem{fbEventsLimit}
+{Inside Facebook}: Facebook puts limits on event invites. 2013.
+\urlprefix\biburl{http://www.insidefacebook.com/2013/04/09/facebook-puts-limit%
+s-on-event-invites/}
+
+\bibitem{operaMovesToWebkit}
+{Opera Developer News}: 300 million users and move to WebKit. 2013.
+\urlprefix\biburl{http://my.opera.com/ODIN/blog/300-million-users-and-move-to-%
+webkit}
+
+\bibitem{chromiumBlink}
+{The Chromium Blog}: Blink: A rendering engine for the Chromium project. 2013.
+\urlprefix\biburl{http://blog.chromium.org/2013/04/blink-rendering-engine-for-%
+chromium.html}
+
+\bibitem{fbNewHomePage}
+{The Facebook Blog}: Welcome to Your New Home Page. 2009.
+\urlprefix\biburl{https://blog.facebook.com/blog.php?post=59195087130}
+
+\bibitem{fbNewNavigation}
+{The Facebook Blog}: Introducing Your New Navigation. 2010.
+\urlprefix\biburl{https://blog.facebook.com/blog.php?post=287459122130}
+
+\bibitem{fbNewMessages}
+{The Facebook Blog}: See the Messages that Matter. 2011.
+\urlprefix\biburl{https://blog.facebook.com/blog.php?post=452288242130}
+
+\bibitem{fbNewTimeline}
+{The Facebook Blog}: Timeline: Now Available Worldwide. 2011.
+\urlprefix\biburl{https://blog.facebook.com/blog.php?post=10150408488962131}
+
+\end{thebibliography}
