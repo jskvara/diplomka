@@ -2,70 +2,74 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: Skvarjak.aux
 The style file: csn690.bst
 Database file #1: mybibliographyfile.bib
-Warning--entry type for "fbNewHomePage" isn't style-file defined
+Warning--entry type for "web:fbNewHomePage" isn't style-file defined
 --line 1 of file mybibliographyfile.bib
-Warning--entry type for "fbNewNavigation" isn't style-file defined
---line 8 of file mybibliographyfile.bib
-Warning--entry type for "fbNewTimeline" isn't style-file defined
---line 15 of file mybibliographyfile.bib
-Warning--entry type for "fbNewMessages" isn't style-file defined
---line 22 of file mybibliographyfile.bib
-Warning--entry type for "fbGraphApi" isn't style-file defined
---line 29 of file mybibliographyfile.bib
-Warning--entry type for "operaMovesToWebkit" isn't style-file defined
---line 36 of file mybibliographyfile.bib
-Warning--entry type for "chromiumBlink" isn't style-file defined
---line 43 of file mybibliographyfile.bib
-Warning--entry type for "fbTimelineImprovements" isn't style-file defined
---line 50 of file mybibliographyfile.bib
-Warning--entry type for "fbEventsLimit" isn't style-file defined
+Warning--entry type for "web:fbNewNavigation" isn't style-file defined
+--line 9 of file mybibliographyfile.bib
+Warning--entry type for "web:fbNewTimeline" isn't style-file defined
+--line 17 of file mybibliographyfile.bib
+Warning--entry type for "web:fbNewMessages" isn't style-file defined
+--line 25 of file mybibliographyfile.bib
+Warning--entry type for "web:fbGraphApi" isn't style-file defined
+--line 33 of file mybibliographyfile.bib
+Warning--entry type for "web:operaMovesToWebkit" isn't style-file defined
+--line 41 of file mybibliographyfile.bib
+Warning--entry type for "web:chromiumBlink" isn't style-file defined
+--line 49 of file mybibliographyfile.bib
+Warning--entry type for "web:fbTimelineImprovements" isn't style-file defined
 --line 57 of file mybibliographyfile.bib
-Warning--entry type for "fbEventsLimitHelpCenter" isn't style-file defined
---line 64 of file mybibliographyfile.bib
-Warning--entry type for "fbLikeBox" isn't style-file defined
---line 71 of file mybibliographyfile.bib
-Warning--I didn't find a database entry for "oa"
-Warning--I didn't find a database entry for "web:nist-cloud"
+Warning--entry type for "web:fbEventsLimit" isn't style-file defined
+--line 65 of file mybibliographyfile.bib
+Warning--entry type for "web:fbEventsLimitHelpCenter" isn't style-file defined
+--line 73 of file mybibliographyfile.bib
+Warning--entry type for "web:fbLikeBox" isn't style-file defined
+--line 80 of file mybibliographyfile.bib
+Warning--entry type for "web:fbMonthlyActiveUsers" isn't style-file defined
+--line 88 of file mybibliographyfile.bib
+Warning--entry type for "web:socialbotNetwork" isn't style-file defined
+--line 96 of file mybibliographyfile.bib
+Warning--entry type for "web:fbCzechUsers" isn't style-file defined
+--line 104 of file mybibliographyfile.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 11 entries,
+You've used 14 entries,
             3151 wiz_defined-function locations,
-            706 strings with 6885 characters,
-and the built_in function-call counts, 3061 in all, are:
-= -- 198
-> -- 77
+            719 strings with 7534 characters,
+and the built_in function-call counts, 3948 in all, are:
+= -- 252
+> -- 98
 < -- 0
-+ -- 33
-- -- 22
-* -- 123
-:= -- 396
-add.period$ -- 22
-call.type$ -- 11
-change.case$ -- 33
++ -- 43
+- -- 28
+* -- 168
+:= -- 501
+add.period$ -- 28
+call.type$ -- 14
+change.case$ -- 42
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 286
-empty$ -- 342
-format.name$ -- 22
-if$ -- 650
+cite$ -- 14
+duplicate$ -- 376
+empty$ -- 447
+format.name$ -- 28
+if$ -- 839
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 66
-newline$ -- 54
-num.names$ -- 22
-pop$ -- 198
+int.to.str$ -- 14
+missing$ -- 84
+newline$ -- 66
+num.names$ -- 28
+pop$ -- 240
 preamble$ -- 1
-purify$ -- 33
+purify$ -- 42
 quote$ -- 0
-skip$ -- 109
+skip$ -- 127
 stack$ -- 0
-substring$ -- 55
-swap$ -- 110
+substring$ -- 71
+swap$ -- 176
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 44
+type$ -- 56
 warning$ -- 0
-while$ -- 22
-width$ -- 13
-write$ -- 97
-(There were 13 warnings)
+while$ -- 28
+width$ -- 16
+write$ -- 121
+(There were 14 warnings)

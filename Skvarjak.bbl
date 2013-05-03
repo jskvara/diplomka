@@ -8,52 +8,68 @@
 \providecommand{\selectlanguage}[1]{\relax}
 \providecommand{\eprint}[2][]{\biburl{#2}}
 
-\bibitem{fbGraphApi}
-{Facebook developers}: Graph API. 2013.
+\bibitem{web:fbCzechUsers}
+{effectix.com}: STATISTIKY SOCIÁLNÍCH SÍTÍ. 2013.
+\urlprefix\biburl{http://www.doba-webova.com/cs/statistiky-pro-socialni-sit}
+
+\bibitem{web:fbGraphApi}
+{Facebook developers}: Graph API. Duben 2013.
 \urlprefix\biburl{https://developers.facebook.com/docs/reference/api/}
 
-\bibitem{fbLikeBox}
-{Facebook developers}: Like Box. 2013.
+\bibitem{web:fbLikeBox}
+{Facebook developers}: Like Box. Duben 2013.
 \urlprefix\biburl{https://developers.facebook.com/docs/reference/plugins/like-%
 box/}
 
-\bibitem{fbEventsLimitHelpCenter}
+\bibitem{web:fbEventsLimitHelpCenter}
 {Facebook help center}: How many people can I invite to an event? 2013.
 \urlprefix\biburl{https://www.facebook.com/help/202545109787461/}
 
-\bibitem{fbTimelineImprovements}
-{Facebook Newsroom}: Improvements to Timeline. 2013.
+\bibitem{web:fbMonthlyActiveUsers}
+{Facebook Investor Relations}: Facebook Reports First Quarter 2013 Results.
+  Kv\v eten 2013.
+\urlprefix\biburl{http://investor.fb.com/releasedetail.cfm?ReleaseID=761090}
+
+\bibitem{web:fbTimelineImprovements}
+{Facebook Newsroom}: Improvements to Timeline. B\v rezen 2013.
 \urlprefix\biburl{http://newsroom.fb.com/News/584/Improvements-to-Timeline}
 
-\bibitem{fbEventsLimit}
-{Inside Facebook}: Facebook puts limits on event invites. 2013.
+\bibitem{web:fbEventsLimit}
+{Inside Facebook}: Facebook puts limits on event invites. Duben 2013.
 \urlprefix\biburl{http://www.insidefacebook.com/2013/04/09/facebook-puts-limit%
 s-on-event-invites/}
 
-\bibitem{operaMovesToWebkit}
-{Opera Developer News}: 300 million users and move to WebKit. 2013.
+\bibitem{web:operaMovesToWebkit}
+{Opera Developer News}: 300 million users and move to WebKit. \'Unor 2013.
 \urlprefix\biburl{http://my.opera.com/ODIN/blog/300-million-users-and-move-to-%
 webkit}
 
-\bibitem{chromiumBlink}
-{The Chromium Blog}: Blink: A rendering engine for the Chromium project. 2013.
+\bibitem{web:chromiumBlink}
+{The Chromium Blog}: Blink: A rendering engine for the Chromium project. Duben
+  2013.
 \urlprefix\biburl{http://blog.chromium.org/2013/04/blink-rendering-engine-for-%
 chromium.html}
 
-\bibitem{fbNewHomePage}
-{The Facebook Blog}: Welcome to Your New Home Page. 2009.
+\bibitem{web:fbNewHomePage}
+{The Facebook Blog}: Welcome to Your New Home Page. B\v rezen 2009.
 \urlprefix\biburl{https://blog.facebook.com/blog.php?post=59195087130}
 
-\bibitem{fbNewNavigation}
-{The Facebook Blog}: Introducing Your New Navigation. 2010.
+\bibitem{web:fbNewNavigation}
+{The Facebook Blog}: Introducing Your New Navigation. \'Unor 2010.
 \urlprefix\biburl{https://blog.facebook.com/blog.php?post=287459122130}
 
-\bibitem{fbNewMessages}
-{The Facebook Blog}: See the Messages that Matter. 2011.
+\bibitem{web:fbNewMessages}
+{The Facebook Blog}: See the Messages that Matter. \'Unor 2011.
 \urlprefix\biburl{https://blog.facebook.com/blog.php?post=452288242130}
 
-\bibitem{fbNewTimeline}
-{The Facebook Blog}: Timeline: Now Available Worldwide. 2011.
+\bibitem{web:fbNewTimeline}
+{The Facebook Blog}: Timeline: Now Available Worldwide. Prosinec 2011.
 \urlprefix\biburl{https://blog.facebook.com/blog.php?post=10150408488962131}
+
+\bibitem{web:socialbotNetwork}
+{Yazan Boshmaf, Ildar Muslukhov, Konstantin Beznosov, Matei Ripeanu}: The
+  Socialbot Network: When Bots Socialize for Fame and Money. Prosinec 2011.
+\urlprefix\biburl{http://www.acsac.org/2011/openconf/modules/request.php?modul%
+e=oc_program&action=summary.php&id=175}
 
 \end{thebibliography}

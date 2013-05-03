@@ -2,49 +2,55 @@
 \select@language {czech}
 \select@language {czech}
 \contentsline {chapter}{\chapternumberline {1}{\' U}vod}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Motivace}{1}{section.1.1}
-\contentsline {chapter}{\chapternumberline {2}Anal\IeC {\'y}za}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Mo\IeC {\v z}nost\IeC {\'\i } interakc\IeC {\'\i } s facebookem}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Rozhran\IeC {\'\i } internetov\IeC {\'e} str\IeC {\'a}nky facebook}{3}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Facebook Graph API}{4}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}N\IeC {\'a}kup aktivity na facebooku}{5}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Omezen\IeC {\'\i } facebook Graph API}{6}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Mo\IeC {\v z}nosti ovl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } webov\IeC {\'e}ho rozhran\IeC {\'\i } facebooku}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}V\IeC {\'y}hody a nev\IeC {\'y}hody vyu\IeC {\v z}it\IeC {\'\i } HTTP protokolu pro komunikaci s facebookem}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Programy simuluj\IeC {\'\i }c\IeC {\'\i } chov\IeC {\'a}n\IeC {\'\i } webov\IeC {\'e}ho prohl\IeC {\'\i }\IeC {\v z}e\IeC {\v c}e}{8}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Detailn\IeC {\'\i } popis programu Selenium}{9}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Popis fungov\IeC {\'a}n\IeC {\'\i } programu Selenium WebDriver}{11}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}V\IeC {\'y}hody a nev\IeC {\'y}hody pou\IeC {\v z}it\IeC {\'\i } programu Selenium WebDriver}{13}{section.2.4}
-\contentsline {section}{\numberline {2.5}Volba programovac\IeC {\'\i }ho jazyka a datab\IeC {\'a}ze}{15}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Volba programovac\IeC {\'\i }ho jazyka}{15}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Volba datab\IeC {\'a}ze}{16}{subsection.2.5.2}
-\contentsline {chapter}{\chapternumberline {3}Implementace}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Rozd\IeC {\v e}len\IeC {\'\i } aplikace}{19}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Architektura cel\IeC {\'e} aplikace}{19}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Stahov\IeC {\'a}n\IeC {\'\i } informac\IeC {\'\i } z facebookov\IeC {\'y}ch profil\IeC {\r u}}{20}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Zpracov\IeC {\'a}n\IeC {\'\i } stahovan\IeC {\'y}ch informac\IeC {\'\i }}{21}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Probl\IeC {\'e}my se stahovan\IeC {\'y}m \IeC {\v c}asem}{22}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Zm\IeC {\v e}na webov\IeC {\'e}ho rozhran\IeC {\'\i } facebooku}{24}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Stahovan\IeC {\'a} dat z facebooku}{25}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Nahr\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } dat na facebookov\IeC {\'e} profily}{28}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Mo\IeC {\v z}n\IeC {\'e} zp\IeC {\r u}soby interakce na facebooku}{28}{subsection.3.3.1}
-\contentsline {chapter}{\chapternumberline {4}Pr\IeC {\r u}b\IeC {\v e}h experimentu}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Prvn\IeC {\'\i } generace facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u}}{31}{section.4.1}
-\contentsline {section}{\numberline {4.2}P\IeC {\v r}\IeC {\'\i }prava experimentu}{31}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Zakl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } e-mailov\IeC {\'y}ch adres}{31}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Internetov\IeC {\'e} slu\IeC {\v z}by poskytuj\IeC {\'\i }c\IeC {\'\i } do\IeC {\v c}asn\IeC {\'e} a ve\IeC {\v r}ejn\IeC {\'e} e-mailov\IeC {\'e} schr\IeC {\'a}nky}{34}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Probl\IeC {\'e}my se zakl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i }m facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u}}{35}{section.4.3}
-\contentsline {section}{\numberline {4.4}Skupiny facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u} pro experiment}{35}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Strategie p\IeC {\v r}id\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } prvn\IeC {\'\i }ch p\IeC {\v r}\IeC {\'a}tel na facebooku}{36}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}F\IeC {\'a}ze experimentu}{39}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}\IeC {\v C}etnost p\IeC {\v r}id\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } p\IeC {\v r}\IeC {\'a}tel}{40}{subsection.4.4.3}
-\contentsline {subsection}{\numberline {4.4.4}Nahr\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } status\IeC {\r u} k experiment\IeC {\'a}ln\IeC {\'\i }m \IeC {\'u}\IeC {\v c}t\IeC {\r u}m na facebooku}{42}{subsection.4.4.4}
-\contentsline {subsection}{\numberline {4.4.5}Zaj\IeC {\'\i }mavosti na kter\IeC {\'e} jsem b\IeC {\v e}hem experimentu narazil}{43}{subsection.4.4.5}
-\contentsline {chapter}{\chapternumberline {5}Z{\' a}v{\v e}r}{51}{chapter.5}
-\contentsline {section}{\numberline {5.1}Mo\IeC {\v z}n\IeC {\'e} zp\IeC {\r u}soby roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i } a pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } v experimentu}{51}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Automatizace zakl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u}}{51}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Vyhodnocen\IeC {\'\i }}{52}{section.5.2}
-\contentsline {section}{\numberline {5.3}Mo\IeC {\v z}nosti pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } experimentu}{52}{section.5.3}
-\contentsline {chapter}{Literatura}{55}{section*.6}
-\contentsline {appendix}{\chapternumberline {A}Slovn\IeC {\'\i }k pou\IeC {\v z}it\IeC {\'y}ch pojm\IeC {\r u} a zkratek}{57}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD}{59}{appendix.B}
+\contentsline {section}{\numberline {1.1}Stru\IeC {\v c}n\IeC {\'y} popis facebooku}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Motivace}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Stru\IeC {\v c}n\IeC {\'y} popis experimentu}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}P\IeC {\v r}\IeC {\'\i }nos}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Etick\IeC {\'e} hledisko experimentu}{3}{section.1.5}
+\contentsline {chapter}{\chapternumberline {2}Anal\IeC {\'y}za}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Mo\IeC {\v z}nost\IeC {\'\i } interakc\IeC {\'\i } s facebookem}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Rozhran\IeC {\'\i } internetov\IeC {\'e} str\IeC {\'a}nky facebook}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Facebook Graph API}{6}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Omezen\IeC {\'\i } facebook Graph API}{7}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Mo\IeC {\v z}nosti ovl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } webov\IeC {\'e}ho rozhran\IeC {\'\i } facebooku}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}V\IeC {\'y}hody a nev\IeC {\'y}hody vyu\IeC {\v z}it\IeC {\'\i } HTTP protokolu pro komunikaci s facebookem}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Programy simuluj\IeC {\'\i }c\IeC {\'\i } chov\IeC {\'a}n\IeC {\'\i } webov\IeC {\'e}ho prohl\IeC {\'\i }\IeC {\v z}e\IeC {\v c}e}{10}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Detailn\IeC {\'\i } popis programu Selenium}{11}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Popis fungov\IeC {\'a}n\IeC {\'\i } programu Selenium WebDriver}{13}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}V\IeC {\'y}hody a nev\IeC {\'y}hody pou\IeC {\v z}it\IeC {\'\i } programu Selenium WebDriver}{15}{section.2.4}
+\contentsline {section}{\numberline {2.5}Volba programovac\IeC {\'\i }ho jazyka a datab\IeC {\'a}ze}{17}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Volba programovac\IeC {\'\i }ho jazyka}{17}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Volba datab\IeC {\'a}ze}{18}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Vyu\IeC {\v z}it\IeC {\'\i } aplikace}{19}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}N\IeC {\'a}kup aktivity na facebooku}{19}{subsection.2.6.1}
+\contentsline {chapter}{\chapternumberline {3}Implementace}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Rozd\IeC {\v e}len\IeC {\'\i } aplikace}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Architektura cel\IeC {\'e} aplikace}{21}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Stahov\IeC {\'a}n\IeC {\'\i } informac\IeC {\'\i } z facebookov\IeC {\'y}ch profil\IeC {\r u}}{22}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Zpracov\IeC {\'a}n\IeC {\'\i } stahovan\IeC {\'y}ch informac\IeC {\'\i }}{23}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Stahovan\IeC {\'a} data z facebooku}{24}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Probl\IeC {\'e}my p\IeC {\v r}i implementaci}{27}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Probl\IeC {\'e}my se stahovan\IeC {\'y}m \IeC {\v c}asem}{27}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Zm\IeC {\v e}na webov\IeC {\'e}ho rozhran\IeC {\'\i } facebooku}{30}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Nahr\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } dat na facebookov\IeC {\'e} profily}{31}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Mo\IeC {\v z}n\IeC {\'e} zp\IeC {\r u}soby interakce na facebooku}{31}{subsection.3.4.1}
+\contentsline {chapter}{\chapternumberline {4}Pr\IeC {\r u}b\IeC {\v e}h experimentu}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Prvn\IeC {\'\i } generace facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u}}{35}{section.4.1}
+\contentsline {section}{\numberline {4.2}P\IeC {\v r}\IeC {\'\i }prava experimentu}{35}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Zakl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } e-mailov\IeC {\'y}ch adres}{35}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Internetov\IeC {\'e} slu\IeC {\v z}by poskytuj\IeC {\'\i }c\IeC {\'\i } do\IeC {\v c}asn\IeC {\'e} a ve\IeC {\v r}ejn\IeC {\'e} e-mailov\IeC {\'e} schr\IeC {\'a}nky}{38}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Probl\IeC {\'e}my se zakl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i }m facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u}}{39}{section.4.3}
+\contentsline {section}{\numberline {4.4}Skupiny facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u} pro experiment}{39}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Strategie p\IeC {\v r}id\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } prvn\IeC {\'\i }ch p\IeC {\v r}\IeC {\'a}tel na facebooku}{40}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}F\IeC {\'a}ze experimentu}{43}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}\IeC {\v C}etnost p\IeC {\v r}id\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } p\IeC {\v r}\IeC {\'a}tel}{44}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Nahr\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } status\IeC {\r u} k experiment\IeC {\'a}ln\IeC {\'\i }m \IeC {\'u}\IeC {\v c}t\IeC {\r u}m na facebooku}{46}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.5}Zaj\IeC {\'\i }mavosti na kter\IeC {\'e} jsem b\IeC {\v e}hem experimentu narazil}{47}{subsection.4.4.5}
+\contentsline {chapter}{\chapternumberline {5}Z{\' a}v{\v e}r}{55}{chapter.5}
+\contentsline {section}{\numberline {5.1}Mo\IeC {\v z}n\IeC {\'e} zp\IeC {\r u}soby roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i } a pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } v experimentu}{55}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Automatizace zakl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u}}{55}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Vyhodnocen\IeC {\'\i }}{56}{section.5.2}
+\contentsline {section}{\numberline {5.3}Mo\IeC {\v z}nosti pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } experimentu}{56}{section.5.3}
+\contentsline {chapter}{Literatura}{59}{section*.6}
+\contentsline {appendix}{\chapternumberline {A}Slovn\IeC {\'\i }k pou\IeC {\v z}it\IeC {\'y}ch pojm\IeC {\r u} a zkratek}{61}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD}{63}{appendix.B}
