@@ -358,29 +358,6 @@ Neexistující oficiální knihovna pro jazyk PHP nakonec takovou nevýhodou neb
 
 Nutnost zpracovávat získaná data by byla nutná u všech postupů mimo použití Graph API. Tato nevýhoda ale byla nahrazena výhodou, a to tím že můžeme používat všechny funkce facebooku bez omezení, které Graph API přináší.
 
-\section{Volba programovacího jazyka a databáze}
-
-\subsection{Volba programovacího jazyka}
-
-Pro implementaci celé aplikace jsem si vybral programovací jazyk \textbf{PHP}\footnote{http://www.php.net/}. Jedná se o dynamicky typovaný programovací jazyk s veřejným zdrojovým kódem, který se používá především k vytváření webových stránek a internetových aplikací. Tento jazyk jsem si vybral především proto, že s ním mám osobně největší zkušenosti a přijde mi na menší aplikace ideální. 
-
-Díky dynamickému typování lze v tomto jazyce vytvořit aplikace velmi rychle. Protože aplikace neobsahuje složitý model a hlavní funkcionalitou je převážně volání RESTových služeb a ukládání nebo vybírání dat z databáze, přišel mi tento jazyk jako nejlepší možnost pro implementaci programu tohoto typu.
-
-Celá aplikace facebooku je napsána v jazyce PHP (i když používají speciální kompilátor pro tento jazyk - HipHop for PHP\footnote{http://en.wikipedia.org/wiki/HipHop\_for\_PHP}). Kromě jiných programů facebook uvolnil k volnému používání na internetu knihovnu pro používání programu Selenium WebDriver\footnote{https://github.com/facebook/php-webdriver} pro jazyk PHP. Tuto knihovnu v aplikaci také používám pro komunikaci se Selenium WebDriverem.
-
-Při rozhodování, který programovací jazyk pro aplikaci zvolím, jsem uvažoval i o jazyku Java, který je na rozdíl od PHP staticky typovaný. Jeho hlavní výhodou oproti jazyku PHP pro tento projekt byla knihovna přímo od tvůrců programu Selenium. Naopak nevýhodou byla nutnost výsledný program před spuštěním vždy překompilovat a tedy i pomalejší vývoj celé aplikace. Výhody jazyka Java jsou vidět až u větších a rozsáhlejších aplikací s rozsáhlým datovým modelem a pro takto malou aplikaci by se tyto výhody vykoupené pomalejším vývojem pravděpodobně nevyplatily. 
-
-Mezi další nevýhody jazyka Java patří to, že pokud chceme nasadit aplikaci na server, je složitější sehnat hosting a je náročnější nastavit celou aplikaci. Programy v jazyce PHP je možné nasadit i na sdílený hosting s dalšími běžícími aplikacemi a konfigurace je jen minimální. Selenium WebDriver může běžet i na jiném serveru, protože veškerá komunikace porohíhá pomocí HTTP protokolu.
-
-\subsection{Volba databáze}
-
-Jako databázi pro ukládání dat jsem pro začátek zvolil \textbf{MySQL}. Jedná se o open source relační databázi, kterou aktuálně vlastní společnost Oracle (viz \verb|http://www.mysql.com/|). Tato databáze je nejčastěji používána ve spojení právě s programovacím jazykem PHP. Do této databáze jsou ukládány informace o založených účtech, se kterými pracuje stahovací program. Jedná se o příhlašovací údaje (e-mail a heslo) a další údaje určené k identifikaci účtu (jméno na facebooku, uživatelské jmeno na facebooku a id na facebooku).
-
-Původně jsem chtěl pro ukládání stažených dat použít také MySQL databázi, ale rozhodl jsem se jinak. Pro ukládání dat stažených z uživatelských profilů se používá NoSQL (nerelační) databáze \textbf{MongoDB}. MongoDB je dnes jedna z nejrozšířenějších nerelačních databází. Jedná se o open source dokumentově orientovanou NoSQL databázi o kterou se stará společnost 10gen (\verb|http://www.mongodb.org/|). Jedna z největších předností této databáze je to, že do ní lze ukládat jakákoli nestrukturovaná data ve~formátu JSON (JavaScript Object Notation - \verb|http://www.json.org/|) a pak lze s těmito daty nadále manipulovat a provádět nad nimi agregační dotazy. 
-
-Databáze MongoDB byla vybrána hlavně proto, že umí pracovat s jakýmikoli nestrukturovanými daty, to znamená, že cokoliv, co získáme z~facebooku můžeme přímo bez úpravy uložit. Takovéto chování se hodí především k ukládání příspěvků ze~zdi facebookových uživatelů a informací z profilových stránek osob. Nemusíme se starat o to, že někteří uživatelé mají omezenou viditelnost svých přátel nebo skupin. Kvůli těmto důvodům jsem si tedy pro ukládání stahovaných dat vybral databázi MongoDB vhodnou pro tuto úlohu.
-
-Facebook v roce 2010 vyvinul vlastní NoSQL databázi nazvanou Cassandra (\verb|http://en.wikipedia.org/wiki/Apache\_Cassandra|), která slouží k vyhledávání nad velkým objemem dat. Facebook tuto databázi později nahradil další nerelační databází  s otevřeným zdrohovým kódem nazvanou HBase (\verb|http://hbase.apache.org/|). Tyto databáze jsou ale určeny především k vyhledávání a jejich výhoda se ukáže až při ukládání mnohem většího množství dat, než bylo pro tento experiment potřeba.
 
 
 \section{Využití aplikace}
@@ -389,7 +366,7 @@ Facebook koncem března 2013 oznámil, že má více než miliardu  aktivních m
 
 \subsection{Nákup aktivity na facebooku}
 
-Na internetu se dnes běžně objevují nabídky na nákup fanoušků do facebookových skupin (příklady viz tabulka \ref{tab:likesBuy}). Ve většině případů se jedná o falešné nebo ukradené facebookové účty. Některé stránky jdou ale ještě dále a nabízejí na internetu možnost koupit si na facebooku falešnou přítelkyni (\verb|www.girlfriendhire.com|, \verb|namorofake.com.br| a další). 
+Na internetu se dnes běžně objevují nabídky na nákup fanoušků do facebookových skupin (příklady viz tabulka \ref{tab:likesBuy}). Ve většině případů se jedná o falešné nebo ukradené facebookové účty. Některé stránky jdou ale ještě dále a nabízejí na internetu možnost koupit si na facebooku falešnou přítelkyni (\verb|http://www.girlfriendhire.com/|, \verb|http://namorofake.com.br/| a další). 
 
 \begin{table}[h]
 \centering
@@ -424,24 +401,143 @@ Jedalo by se určitě o zajímavou možnost ovládání facebooku, například m
 
 \chapter{Implementace}
 
-\section{Rozdělení aplikace}
+\section{Požadvky na aplikaci}
 
-\subsection{Architektura celé aplikace}
+Před samotným vývojem aplikace jsem se zaměřil především na zjištění, které hlavní funkce bude program obsahovat a na které části se mám zaměřit. Důležité funkce aplikace pro ovládání účtů na facebooku byly následující:
 
-Aplikace sloužící pro otestování celého experimentu má dvě základní funkce. První z nich je sbírání dat o uživatelích facebooku z jejich profilů a inforamcí na jejich účtech. Druhou funkcí je ovládní experimentálních účtů, to znamená, nahrávání dat na facebook a interakce s dalšími uživateli. Data uživatelů z facebooku slouží k~analýze a k~dalšímu porovnání.
+\begin{itemize}
+  \item přidávání přátel
+  \item přidávání statusů na vlastní zeď
+  \item přidávání účtu ke skupinám
+  \item účast na facebookových událostech
+  \item pozvání přátel na události
+  \item stahování dat ze zdi profilu
+  \item stahování dat z profilů přátel
+\end{itemize}
 
-Jako programovací jazyk bylo pro celou aplikaci zvoleno PHP. Pro tento programovací jazyk existuje kvalitní webový framework. Jmenuje se \textbf{Nette Framework} (\verb|http://nette.org/|) a hodí se především na menší aplikace. Jedná se o MVP (Model - View - Presenter) framework z dílny českého autora. Tento framework se stará především o zpracování webových formulářů, obsluhu požadavků webového prohlížeče, vykreslování HTML šablon a celkovou architekturu celé aplikace. Více informací o tomto frameworku je k dispozici v oficiální dokumentaci (\verb|http://doc.nette.org/|). 
+Všechny tyto funkce byly do aplikace úspěšně implementovány a sloužily k automatizaci ovládání facebookových účtů.
+
+\section{Popis uživatelského rozhraní výsledné aplikace}
+
+Aplikaci pro ovládání účtů jsem nazval \textbf{Facebook client}. Uživatelské rozhraní výsledné aplikace je vidět na obrázku výpisu uložených facebookových účtů \ref{fig:fcUI}.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/fcUI.png}
+\caption{Uživatelské rozhraní výsledné aplikace}
+\label{fig:fcUI}
+\end{center}
+\end{figure}
+
+V levé části aplikace jsou sekce: Users (uživatelé), Users groups (skupiny uživatel), Tasks (úkoly), Instagram a Quotes (citáty). Každá z těchto sekcí má v aplikaci speciální část. Postupně stručně všechy tyto části popíšu.
+
+Sekce users slouží pro uložení facebookových účtů které bude možné skrze aplikaci ovládát. U každého účtu máme uloženo jméno a příjmení, což slouží pouze pro jednodušší orientaci mezi účty, například při přidávání nových úkolů, ale stačilo by používat pouze e-mailovou adresu. Další uloženou informací jsou přihlašovací údaje, tedy e-mail a heslo k facebookovému účtu. Poslení dva údaje jsou facebookové uživatelské jmeno, zobrazené v URL adrese profilu, a facebookové číselné id profilu. Tyto údaje slouží pouze k identifikaci profilu při ukládání stahovaných informací do databáze. Tato akce také zobrazí kolik je u účtu nových přátel, zpráv a upozornění (notifikací) od posledního přihlášení.
+
+Pro každého uloženého uživatele v aplikaci můžeme provést následující akce. Akce Login slouží pouze k přihlášení daného uživatele, tato akce je důležitá, protože se uloží aktuální stav webového brosweru a další operace tak mohou pokračovat ve stejném okně. Download složí ke stažení dat z uživatelské zdi, udělení like statusům na této zdi a stažení všech přátel daného účtu.
+
+Akce Download Fr (friends) se používá ke stažení informací na profilu, dat na zdi a přátel všech přátel daného účtu. Tato akce trvala delší dobu, takže nebyla spouštěna při každém přihlášení. Další možností, kterou jze pro každý účet pomocí aplikace dělat, je přidávání nových přátel.
+
+Nejdůležitější akcí pro každý profil je Tasks neboli úkoly, na této stránce lze vybírat uložené akce a provádět je na facebookových účtech. Přidávání úkolů bude popsáno dále- Poslední dvě akce slouží k úpravě jakýchkoli informací  zobrazených na výpisu uživatelů (například pro změnu helsa), tato akce se jmenuje Edit a poslední akce Delete slouží k odstranění účtu.
+
+Další část aplikace Users groups slouží k zařazování uložených profilů do skupin, například muži nebo náctiletí. Můžeme vytvořit neomezené množství takovýchto skupin a jednotlivé uloženeé účty lze k jednotlivým skupinám přiřazovat, jak je vidět na obázku.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/fcAssignGroup.png}
+\caption{Přiřazování uložených uživatelů k jednotlivým skupinám}
+\label{fig:fcAssignGroup}
+\end{center}
+\end{figure}
+
+Důležitou částí aplikace byly úkoly, neboli Tasks. Zde se ukládaly veškeré akitvity, které bylo možné na uložených účtech vykonat. Celý proces funguje tak, že uživatel nejdříve uloží všechny akce. Například úkol přidat status, zadá text, volitelně i pro který účet se má text zobrazit a vše uloží. Fromulář pro přidávání nových úkolů je pro lepší pochopení celého procesu zobrazen na obrázku \ref{fig:fcNewTask}.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/fcNewTask.png}
+\caption{Formulář pro přidávání nových úkolů v aplikaci}
+\label{fig:fcNewTask}
+\end{center}
+\end{figure}
+
+Všechy uložené úkoly, které zatím nebyly použity lze vypsat. Na výpisu je u každého úkolu vidět identifikátor úkolu z databáze, typ úkolu, parametry, preferovaný uživatel (pokud byl nastavený) a čas uložení. Jakýkoliv úkol lze i smazat. Uživatelské rozhraní výpisu všech připravench úkolů je na obrázku \ref{fig:fcTasks}. Po vykonání úkolu (sekce Users a akce taks) a provedení všech akcí na facebookovém účtu se úkolu nastaví příznak, že je již vykonaný a ve výpisu se již dále nezobrazuje.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/fcTasks.png}
+\caption{Přehled připravených úkolů v uživatelském rozhraní aplikace}
+\label{fig:fcTasks}
+\end{center}
+\end{figure}
+
+Předposlední sekce se nazývá Instagram. Jedná se pouze o doplňkovou funkcionalitu aplikace. Instagram (\verb|https://instagram.com/|) je sociální sít, kam můžete nahrávat fotky z mobilního telefonu upravené pomocí různých filtrů. Jedná se tedy o obrovskou sbírku amatérských fotografií. Tuto sociální síť jsem vybral pro získávání obrázků nahrávaných jako statusy uložených účtů. 
+
+Sekce Instagram tedy sloužila k získávání náhdoných obrázků. Vše funguje tak, že stačí zadat jakékoliv slovo a stránka vrátí obrázek včetně URL adresy, která lze použít při nahrávání na facebooku. Pokud se nám zobrazený obrázek nelíbí pomocí tlačítka Refresh na stránce lze zobrazit fotku jinou.
+
+Poslední sekce se velmi podobá té předchozí. Jak již název Quote = citáty napovídá, funkcí této části aplikace je získávání citátů pro nahrávání na facebookové profily. Jako zdroje vybíraných citátů jsem použil webové stránky \verb|http://citaty.net/|. Můžeme zde najít citáty slavných osobností, lidová pořekadla, přísloví a citáty, které nahrávají na stránky samotní uživatelé. Vybírají se vždy náhodné citáty a aktualizací stránky se zobrazí citát další, jako v případě instagramu.
+
+
+\section{Volba technologií pro aplikaci}
+
+\subsection{Volba programovacího jazyka}
+
+Pro implementaci celé aplikace jsem si vybral programovací jazyk \textbf{PHP}\footnote{http://www.php.net/}. Jedná se o dynamicky typovaný programovací jazyk s veřejným zdrojovým kódem, který se používá především k vytváření webových stránek a internetových aplikací. Tento jazyk jsem si vybral především proto, že s ním mám osobně největší zkušenosti a přijde mi na menší aplikace ideální. 
+
+Díky dynamickému typování lze v tomto jazyce vytvořit aplikace velmi rychle. Protože aplikace neobsahuje složitý model a hlavní funkcionalitou je převážně volání RESTových služeb a ukládání nebo vybírání dat z databáze, přišel mi tento jazyk jako nejlepší možnost pro implementaci programu tohoto typu.
+
+Celá aplikace facebooku je napsána v jazyce PHP (i když používají speciální kompilátor pro tento jazyk - HipHop for PHP\footnote{http://en.wikipedia.org/wiki/HipHop\_for\_PHP}). Kromě jiných programů facebook uvolnil k volnému používání na internetu knihovnu pro používání programu Selenium WebDriver\footnote{https://github.com/facebook/php-webdriver} pro jazyk PHP. Tuto knihovnu v aplikaci také používám pro komunikaci se Selenium WebDriverem.
+
+Při rozhodování, který programovací jazyk pro aplikaci zvolím, jsem uvažoval i o jazyku Java, který je na rozdíl od PHP staticky typovaný. Jeho hlavní výhodou oproti jazyku PHP pro tento projekt byla knihovna přímo od tvůrců programu Selenium. Naopak nevýhodou byla nutnost výsledný program před spuštěním vždy překompilovat a tedy i pomalejší vývoj celé aplikace. Výhody jazyka Java jsou vidět až u větších a rozsáhlejších aplikací s rozsáhlým datovým modelem a pro takto malou aplikaci by se tyto výhody vykoupené pomalejším vývojem pravděpodobně nevyplatily. 
+
+Mezi další nevýhody jazyka Java patří to, že pokud chceme nasadit aplikaci na server, je složitější sehnat hosting a je náročnější nastavit celou aplikaci. Programy v jazyce PHP je možné nasadit i na sdílený hosting s dalšími běžícími aplikacemi a konfigurace je jen minimální. Selenium WebDriver může běžet i na jiném serveru, protože veškerá komunikace porohíhá pomocí HTTP protokolu.
+
+\subsection{Volba databáze}
+
+Jako databázi pro ukládání dat jsem pro začátek zvolil \textbf{MySQL}. Jedná se o open source relační databázi, kterou aktuálně vlastní společnost Oracle (viz \verb|http://www.mysql.com/|). Tato databáze je nejčastěji používána ve spojení právě s programovacím jazykem PHP. Do této databáze jsou ukládány informace o založených účtech, se kterými pracuje stahovací program. Jedná se o příhlašovací údaje (e-mail a heslo) a další údaje určené k identifikaci účtu (jméno na facebooku, uživatelské jmeno na facebooku a id na facebooku).
+
+Původně jsem chtěl pro ukládání stažených dat použít také MySQL databázi, ale rozhodl jsem se jinak. Pro ukládání dat stažených z uživatelských profilů se používá NoSQL (nerelační) databáze \textbf{MongoDB}. MongoDB je dnes jedna z nejrozšířenějších nerelačních databází. Jedná se o open source dokumentově orientovanou NoSQL databázi o kterou se stará společnost 10gen (\verb|http://www.mongodb.org/|). Jedna z největších předností této databáze je to, že do ní lze ukládat jakákoli nestrukturovaná data ve~formátu JSON (JavaScript Object Notation - \verb|http://www.json.org/|) a pak lze s těmito daty nadále manipulovat a provádět nad nimi agregační dotazy. 
+
+Databáze MongoDB byla vybrána hlavně proto, že umí pracovat s jakýmikoli nestrukturovanými daty, to znamená, že cokoliv, co získáme z~facebooku můžeme přímo bez úpravy uložit. Takovéto chování se hodí především k ukládání příspěvků ze~zdi facebookových uživatelů a informací z profilových stránek osob. Nemusíme se starat o to, že někteří uživatelé mají omezenou viditelnost svých přátel nebo skupin. Kvůli těmto důvodům jsem si tedy pro ukládání stahovaných dat vybral databázi MongoDB vhodnou pro tuto úlohu.
+
+Facebook v roce 2010 vyvinul vlastní NoSQL databázi nazvanou Cassandra (\verb|http://en.wikipedia.org/wiki/Apache_Cassandra|), která slouží k vyhledávání nad velkým objemem dat. Facebook tuto databázi později nahradil další nerelační databází  s otevřeným zdrohovým kódem nazvanou HBase (\verb|http://hbase.apache.org/|). Tyto databáze jsou ale určeny především k vyhledávání a jejich výhoda se ukáže až při ukládání mnohem většího množství dat, než bylo pro tento experiment potřeba.
+
+\subsection{Volba webového frameworku}
+
+Jako programovací jazyk bylo pro celou aplikaci zvoleno PHP, jak bylo zmíněno již výše. Pro tento programovací jazyk existuje kvalitní webový framework. Jmenuje se \textbf{Nette Framework} (\verb|http://nette.org/|) a hodí se především na menší aplikace. Jedná se o MVP (Model - View - Presenter) framework z dílny českého autora. Tento framework se stará především o zpracování webových formulářů, obsluhu požadavků webového prohlížeče, vykreslování HTML šablon a celkovou architekturu celé aplikace. Více informací o tomto frameworku je k dispozici v oficiální dokumentaci (\verb|http://doc.nette.org/|). 
 
 Pro webové aplikace, které jsou rozsahem podobně velké jako je naše experimentální aplikace je tento framework ideální. Na internetu se dá najít velké množství návodů k tomuto frameworku v českém jazyce a existuje i početná česká komunita, která se tímto frameworkem zabývá a pomáhá s vývojem. 
 
+
+\section{Architektura celé aplikace}
+
+Díky použití frameworku nette byla celá aplikace rozdělena podle paradigmatu MVP, tedy Model - View - Presenter. V~aplikaci ted jsou samostatně nahraditelné části pro práci s daty = model, šablony pro zobrazování dat = view a část, která se stará o zpracování uživatelských požadavků a propojení Modelu a View = presenter.
+
+V aplikaci existuje pro každou sekci v navigaci samostatný presenter. Každý presenter se stará o vykreslování stránek  a zpracování formulářů pro dané sekce. Dále aplikace obsahuje několik presenterů pro sprváný chod aplikace, například presenter pro zpracování chyb a podobně.
+
+Model naší aplikace sestává ze samostatných servis (Service). Jedná se o oddělené části aplikace starající se o konkrétní části modelu. Důležité jsou servisy pro uživatele (UserService), pro skupin (GroupService) a pro úkoly (TaskService). Tyto se starají o zpracování odeslaných formulářů a ukládání dat do databáze. Poté jsou v aplikaci dvě servisy sloužící pouze k získávání dat ze ostatních stránek. Jedná se o QuoteService a InstagramService. 
+
+Nakonec existují ještě dvě speciální servisy, jde o MongoService, která se stará o ukládání dat do databáze MongoDB. Poslední a nejrozsáhlejší servisa se nazývá WebDriverService, stará se o ovládání programu WebDriver pomocí další knihovny a o stahování a zpracování dat z facebooku. Pro zpracování dat z facebooku slouží třída FbParser.
+
+Vztah mezi třídy modelu a presenteru jsou vidět na obrázku \ref{fig:fcModelPresenter}.
+
+View jsou vyřešeny tak, že pro každý presenter existuje samostatná složka se šablonami. Každá samostatná stránka má svůj soubor se šablonou se jménem odpovídajícím názvu stránky v URL. Pro celkové rozložení stránek existuje speciální šablona s názvem \verb|@layout|. Tato struktura je dána frameworkem Nette a pro zápis šablon se používá nástroj latte, který je součástí tohoto frameworku. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/fcModelPresenter.png}
+\caption{Přehled vztahů mezi třídami presenteru a modelu}
+\label{fig:fcModelPresenter}
+\end{center}
+\end{figure}
+
+\section{Rozdělení aplikace}
+
+Aplikace sloužící pro otestování celého experimentu má dvě základní funkce. První z nich je sbírání dat o uživatelích facebooku z jejich profilů a inforamcí na jejich účtech. Druhou funkcí je ovládní experimentálních účtů, to znamená, nahrávání dat na facebook a interakce s dalšími uživateli. Data uživatelů z facebooku slouží k~analýze a k~dalšímu porovnání.
 
 \section{Stahování informací z facebookových profilů}
 
 Důležitou součástí aplikace je získávání informací o~uživatelích z~jejich facebookových profilů. Jak již bylo zmíněno v předchozí kapitole, vybral jsem pro stahování program Seleinum WebDriver, který je spouštěn pomocí jazyka PHP. Sesbíraná data jsou ukládána do databáze MongoDB nad kterou lze jednoduše vykonávat dotazy pro získání jakýchkoli statistických dat.
 
-O veškeré zpracování stránek facebooku se stará program Selenium WebDriver, pomocí kterého se v prohlížeči Mozilla Firefox načte konkrétní stránka (například zeď anebo přátelé určitého uživatele). Z této stránky se poté přečtou jednotlivé fragmenty (například příspěvek na zdi anebo jméno přítele na facebooku) a tato data jsou pak pomocí PHP zpracována, upravena a uložena do databáze MongoDB. 
-
-Facebook je celosvětovou sociální sítí a je tedy přeložen do velkého množství jazyků (včetně pirátské angličtiny a angličtiny s písmenky obrácenými vzhůru nohy). Facebook je primárně vyvíjen v anglickém jazyce a do ostatních jazyků je celá aplikace přeložena. Překlad do všech jazyků probíhá pomocí speciální facebookové aplikace s názvem Translations \footnote{https://www.facebook.com/?app=1\&sk=translations}, kam mohou své překlady zasílat všichni uživatelé facebooku. (Dříve bylo například poměně dlouhou dobu v českém překladu špatně přeloženo slovo neděle jako slunce - anglicky Sun = slunce a zkratka pro neděli.) Jazyk procházených stránek pomocí programu Selenium WebDriver byl tedy vždy nastaven na anglický, aby nedocházelo k problémům s měnícími se překlady. 
+O veškeré zpracování stránek facebooku se stará program Selenium WebDriver, pomocí kterého se v prohlížeči Mozilla Firefox načte konkrétní stránka (například zeď anebo přátelé určitého uživatele). Z této stránky se poté přečtou jednotlivé fragmenty (například příspěvek na zdi anebo jméno přítele na facebooku) a tato data jsou pak pomocí PHP zpracována, upravena a uložena do databáze MongoDB. O tuto část aplikace se stará WebdriverService.
 
 Pro každý náš facebookový účet uložený v aplikaci je spuštěna následující sekvence operací:
 
@@ -453,7 +549,7 @@ Pro každý náš facebookový účet uložený v aplikaci je spuštěna násled
 
 \subsection{Zpracování stahovaných informací}
 
-Všechny statusy (příspěvky na zdi uživatele), které jsou stahovány ze zdi jsou pročištěny od nedůležitých dat a upravovány do stejné podoby. Data, která jsou získávána z facebooku, jsou někdy zobrazena rozdílně. Například zobrazení like u statusů. Pro analýzu statusů potřebujeme ukládat pouze počet like, které status obdržel. Facebook bohužel ale někdy místo počtu like zobrazuje i jména lidí, kteří like udělili. Stává se tak v případě, že like udělil, někdo z lidí, které má účet v přátelích anebo pokud je u statusu pouze jeden like.
+Všechny statusy (příspěvky na zdi uživatele), které jsou stahovány ze zdi jsou pročištěny od nedůležitých dat a upravovány do stejné podoby. Data, která jsou získávána z facebooku, jsou někdy zobrazena rozdílně. Například zobrazení like u statusů. Pro analýzu statusů potřebujeme ukládat pouze počet like, které status obdržel. Facebook bohužel ale někdy místo počtu like zobrazuje i jména lidí, kteří like udělili. Stává se tak v případě, že like udělil, někdo z lidí, které má účet v přátelích anebo pokud je u statusu pouze jeden like. O veškeré zpracování a úpravu stahovaných informací se stará třída FbParser.
 
 Pro účely experimentu se ukládá ke statusu pouze počet like, což je pro nás nejdůležitější údaj ohledně like. V programu se o získání počtu like stará funkce, která sečte počet jmen a počet like u statusu a vrátí výsledný součet like. 
 
@@ -525,9 +621,6 @@ Poslední stahovanou kolekcí do databáze MongoDB byly profily jednotlivých p�
   \item downloaded - čas stažení profilu
 \end{itemize}
 
-[todo] - stahovani nestihalo 20 kamaradu 2 hodiny, rozdelit na graph API pro stahovani, nejdelsi cas skrolovani nacteni kamaradu - jednou za měsíc
-
-
 Všechny údaje, které začínají velkým písmenkem jsou parsovány přímo z facebookové stránky. Jména klíče se tedy shodují s názvy oddílů na facebookové stránce. Začínají tedy proto velkými písmeny. Pro databázi MongoDB není v rozdílné velikosti písmen u klíčů žádný problém.
 
 Některé z těchto informací nemusí být na profilech dostupné. Záleží vždy na konkrétním uživateli facebooku, zda je ochoten o sobě tyto informace prozradit a zveřejnit.
@@ -541,6 +634,9 @@ Nová verze facebookového vzhledu zavedla na stránce s osobními informacemi n
 \section{Problémy při implementaci}
 
 Při práci na aplikaci jsem postupně narazil na různé problémy a překážky. Facebook je velmi rozsáhlá aplikace a využívá obrovské množství serverů po celém světě, aby mohl obsloužit všechy požadvky od uživatelů. Při správě takto rozsáhlé aplikace je potřeba řešit problémy se synchronizací serverů a postupným zaváděním změn do uživatelského rozhraní.
+
+Facebook je celosvětovou sociální sítí a je tedy přeložen do velkého množství jazyků (včetně pirátské angličtiny a angličtiny s písmenky obrácenými vzhůru nohy). Facebook je primárně vyvíjen v anglickém jazyce a do ostatních jazyků je celá aplikace přeložena. Překlad do všech jazyků probíhá pomocí speciální facebookové aplikace s názvem Translations \footnote{https://www.facebook.com/?app=1\&sk=translations}, kam mohou své překlady zasílat všichni uživatelé facebooku. (Dříve bylo například poměně dlouhou dobu v českém překladu špatně přeloženo slovo neděle jako slunce - anglicky Sun = slunce a zkratka pro neděli.) Jazyk procházených stránek pomocí programu Selenium WebDriver byl tedy vždy nastaven na anglický, aby nedocházelo k problémům s měnícími se překlady. 
+
 
 \subsection{Problémy se stahovaným časem}
 
@@ -593,6 +689,8 @@ Obával jsem se, že při změně vizuálního vzhledu timeline na facebooku bud
 
 Změna timeline, která se částečně týkala i dalších stránek, ale měla jiný dopad. Na starém profilu se zobrazoval počet přátel, které má uživatel přidané na facebooku (pokud to neměl uživatel zakázané v nastavení). Se změnou na novou vizuální verzi timeline, ale tato položka zmizela a údaj o celkovém počtu přátel je dostupný až po přijetí žádosti o přátelství od dotyčného člověka. V této chvíli tedy neexistuje žádný způsob, jak zjistit celkový počet přátel na facebooku u cizích profilů. 
 
+Facebook začal od dubna 2013 povolovat maximálně pouze 100 pozvaných uživatelů na událost najednou a každá událost může mít maximálně 300 nevyřízených pozvánek. Facebook tak nutí organizátory akcí vybírat jen hosty, které bude daná akce zajímat a budou se chtít účastnit \cite{web:fbEventsLimit} \cite{web:fbEventsLimitHelpCenter}.
+
 
 \section{Nahrávání dat na facebookové profily}
 
@@ -617,19 +715,52 @@ Při implementaci jsem se soustředil především na automatické nahrávání 
   \item rsvpEvent(id, [rsvpType]) - přidat se ke konkrétní události na facebooku, parametrem je identifikátor události, druhým parametrem je účast, možné hodnoty jsou: attend (účastnit se), maybe (možná), pokud není druhý parametr uveden, jako výchozí se bere možnost attend
   \item inviteEvent(id) - pozvat všechny facebookové přátele na událost, parametrem je identifikátor události
 \end{itemize}
-[todo] - os
-[todo] - groups
-[todo] - cron
 
-Ostatní typy možností komunikace na facebooku nebyly automaticky zpracovávány. Nebylo by složité doimplementovat některé další funkce jako šťouchnutí všech přátel, ale pro tento experiment jsem se chtěl zaměřit na tyto hlavní funkce. 
+O ukládání těchto úkolů se staral v aplikaci TaskService a vše bylo ukládáno do databáze MongoDB. Ostatní typy možností komunikace na facebooku nebyly automaticky zpracovávány. Nebylo by složité doimplementovat některé další funkce jako šťouchnutí všech přátel, ale pro tento experiment jsem se chtěl zaměřit na tyto hlavní funkce. 
 
-Facebook začal od dubna 2013 povolovat maximálně pouze 100 pozvaných uživatelů na událost najednou a každá událost může mít maximálně 300 nevyřízených pozvánek. Facebook tak nutí organizátory akcí vybírat jen hosty, které bude daná akce zajímat a budou se chtít účastnit \cite{web:fbEventsLimit} \cite{web:fbEventsLimitHelpCenter}.
+Filosofie nahrávání na jednotlivé profily je taková, že v sekci Tasks se uloží všechny akce s volitleným přiřazeným uživatelem. Poté se při přihlášení k jednotlivým facebookovým profilům spustí pro každý profil provedení uložených úkolů na facebooku. Z nabídky se vyberou všechny požadované akce s tím, že jsou upřednostněny akce s nastaveným publikováním pro aktuální účet (akce se zobrazují nejdříve a jsou odděleny od dalších úkolů). Uživatelské rozhraní nahrávání úkolů na facebookový profil je na obrázku \ref{fig:fcUserTask}.
 
-Celá aplikace byla spouštěna lokálně na mém počítači. Teoreticky by se dalo vše nahrát na vzdálený server a ovládat přes internet, ale tím bychom ztratili výhodu kontroly prováděných operací v prohlížeči za použití programu Selenium WebDriver. Existují i internetové služby, které nabízejí pronájem výpočetního času ovládaných prohlížečů, takže lze mít celou aplikaci lokálně a spouštět program Selenium WebDriver přes internet vzdáleně. Problém je ale stejný jako v předchozím případě, nelze tyto prohlížeče ovládat.
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/fcUserTask.png}
+\caption{Uživatelské rozhraní nahrávání úkolů na facebookové profily}
+\label{fig:fcUserTask}
+\end{center}
+\end{figure}
+
+Celý datový model aplikace jsem shrnul na následujících přehledech. První přehled pro databázi MongoDB je na obrázku \ref{fig:mongoDataModel}. Druhý přehled se týká dat v databázi MySQL, ten je na obrázku \ref{fig:mysqlDataModel}.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/mongoDataModel.png}
+\caption{Přehled ukládaných dat do jednotlivých kolekcí v databázi MongoDB}
+\label{fig:mongoDataModel}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5in]{figures/mysqlDataModel.png}
+\caption{Přehled ukládaných dat do jednotlivých tabulek v databázi MySQL}
+\label{fig:mysqlDataModel}
+\end{center}
+\end{figure}
+
+\section{Části aplikace sloužící pro získání dat pro statusy}
+
+Poslední části celé aplikace byly dva pomocné části pro získávání dat z jiných stránek. Jedná se o získání fotografií ze sociální sítě Instagram a získávání citátů z webové stránk citáty.net.
+
+Pro získávání fotek ze stránek instagramu jsem použil oficiální API na adrese \verb|http://instagram.com/developer/|. Vše funguje podobně jako Graph API pro facebook. Pro komunikaci s tímto API jsem na internetu vybral knihovou pro PHP \verb|https://github.com/galen/PHP-Instagram-API|. Přes toto API pak z isntagramu vybíráme fotky s určitým tagem, o vše se v aplikaci stará InstagramService.
+
+Pro načítání citátů ze stránky citaty.net jsem použil knohovnu DOM (Document Object Model), která je součástí jazyka PHP. Vše funguje tak, že se pomocí PHP stáhne stránka s náhodým citátem, která má URL adresu \verb|http://citaty.net/nahodny-citat/|. Ze staženého textu se pak vybere pouze část s citátem, který se vypíše. O tuto funkčnost se v aplikaci stará třída QuoteService.
+
+\section{Běh aplikace}
+
+Celá aplikace byla spouštěna lokálně na mém počítači s operačním systémem Ubuntu Linux 12.04 LTS. Teoreticky by se dalo vše nahrát na vzdálený server a ovládat přes internet, ale tím bychom ztratili výhodu kontroly prováděných operací v prohlížeči za použití programu Selenium WebDriver. Existují i internetové služby, které nabízejí pronájem výpočetního času ovládaných prohlížečů, takže lze mít celou aplikaci lokálně a spouštět program Selenium WebDriver přes internet vzdáleně. Problém je ale stejný jako v předchozím případě, nelze tyto prohlížeče ovládat.
 
 Pokud by se aplikace rozrostla anebo by ji používalo více uživatelů, pravděpodobně by se přenesení na vzdálený server vyplatilo. Přineslo by to ale problémy s nutností správy serveru a přísnějšího ošetřování neočekávaných stavů v aplikaci (například přidání formulářů do stránek, nebo neočekávaná vyskakovací okna).
 
-[todo - screen a popis ui aplikace]
+
 
 
 
@@ -804,7 +935,7 @@ Pro experiment jsem sdílení omezil na přidávání statusů na svou zeď. Jed
 
 Obsah vkládaných statusů byl obecný a neutrální. Jednalo se většinou o citáty a výroky známých i neznámých osobností na internetu, vtipy a neutrální a spontánní komentáře aktuálního dění (například o počasí). Jako zdroj pro statusy citátů sloužila webová stránka: \verb|citaty.net| a jako zdroj vtipných statusů sloužily stránky: \verb|www.vtipy.net|, \verb|vysmatej.cz| a \verb|vtipy.peoplelovepeople.com|. Snažil jsem se vyhýbat rasistickým a politickým vtipům, abych nepobouřil některého z přidaných přátel na facebooku. Spontánní texty statusů jsem vymýšlel sám nebo jsem se inspiroval statusy na zdi ostatních účtů.
 
-Mimo klasických textových statusů byly na účty nahrávány i obrázky doplněny textovým popisem. Na facebooku jsou tyto obrázky velmi oblíbené, existují webové stránky jako \verb|9gag.com| nebo \verb|www.rouming.cz|, které obsahují vtipné obrázky s popisky a facebookoví uživatelé je velmi rádi  sdílejí a dávají jim like. Jako zdroje obrázků pro statusy sloužily obrázky nalezené na ostatních stahovaných profilech nebo na stránkách zmíněných výše. Obzvláště oblíbené jsou v posledních týdnech animované obrázky anebo obrázky doplněné vtipnými texty (takzvané memy).
+Mimo klasických textových statusů byly na účty nahrávány i obrázky doplněny textovým popisem. Na facebooku jsou tyto obrázky velmi oblíbené, existují webové stránky jako \verb|9gag.com| nebo \verb|www.rouming.cz|, které obsahují vtipné obrázky s popisky a facebookoví uživatelé je velmi rádi  sdílejí a dávají jim like. Pro stahování dalších obrázků pak sloužila sociální síť instagram. Jako zdroje obrázků pro statusy sloužily obrázky nalezené na ostatních stahovaných profilech nebo na stránkách zmíněných výše. Obzvláště oblíbené jsou v posledních týdnech animované obrázky anebo obrázky doplněné vtipnými texty (takzvané memy).
 
 [todo]- stahovani friend - friend dat
 
@@ -904,9 +1035,6 @@ Jak k takovému vysokému nárůstu přátel mohlo dojít asi nepůjde dostupný
 %\end{conclusion}
 \chapter{Z{\' a}v{\v e}r}
 
-- Chovani uzivatelu + Metriky
-= 2 zablokovany
-= todo 2 nadpisy za sebou - vsude odddelit
 
 \section{Možné způsoby rozšíření a pokračování v experimentu}
 
@@ -937,20 +1065,7 @@ Kromě získávání nálady ve společnosti by bylo možné i ovlivňovat ostat
 Facebook na podzim roku 2012 zavedl možnost placení za zviditelnění statusů. Na facebooku se nyní nezobrazují všechny statusy od vašich přátel, ale jen vybrané statusy, které facebook považuje pro vás za nejhodnotnější a nejkvalitnější. Vše jde nastavit a ovlivnit skupinami do kterých si přátele zařadíte (algoritmy pro zobrazování příspěvků nejsou veřejné). Nikdy ale nemáte jistotu, že váš příspěvek uvidí všichni (nebo určití) přátelé. Za poplatek \$6.99 (přibližně 140 Kč - duben 2013) pak uživaté facebooku mohou zviditelnit své příspěvky, aby se zobrazily většímu počtu kamarádů. Takto lze promovat příspěvky i u facebookových stránek, kde tato funkce dává větší smysl.
 
 
-[todo] - skupiny uctu
-= pocet muzu a zen v exp
-- odkazy sjednotit http
-- popsat aplikaci, jak se resila, co umi
-- webove rozhrani + screen
-- architektura + navrh
-- pozadavky aplikace
-- diagramy
-- stahovana data - daigramy, datovy model
-- skupiny
-- InstagramAPI?
-- popsat fb - v dubnu 2013 a ne vsichni znaji, sjednoceni
-- experiment
- - cil, co se ocekava, podminky, co se meri, problemy + zajimavosti, vyhodnoceni vzhledem k podminkam
+
 
 \bibliographystyle{csn690}
 \bibliography{mybibliographyfile}

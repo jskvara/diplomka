@@ -9,13 +9,18 @@
 \BOOKMARK [1][-]{section.2.2}{Mo\236nosti ovl\341d\341n\355 webov\351ho rozhran\355 facebooku}{chapter.2}
 \BOOKMARK [1][-]{section.2.3}{Detailn\355 popis programu Selenium}{chapter.2}
 \BOOKMARK [1][-]{section.2.4}{V\375hody a nev\375hody pou\236it\355 programu Selenium WebDriver}{chapter.2}
-\BOOKMARK [1][-]{section.2.5}{Volba programovac\355ho jazyka a datab\341ze}{chapter.2}
-\BOOKMARK [1][-]{section.2.6}{Vyu\236it\355 aplikace}{chapter.2}
+\BOOKMARK [1][-]{section.2.5}{Vyu\236it\355 aplikace}{chapter.2}
 \BOOKMARK [0][-]{chapter.3}{Implementace}{}
-\BOOKMARK [1][-]{section.3.1}{Rozdelen\355 aplikace}{chapter.3}
-\BOOKMARK [1][-]{section.3.2}{Stahov\341n\355 informac\355 z facebookov\375ch profilu}{chapter.3}
-\BOOKMARK [1][-]{section.3.3}{Probl\351my pri implementaci}{chapter.3}
-\BOOKMARK [1][-]{section.3.4}{Nahr\341v\341n\355 dat na facebookov\351 profily}{chapter.3}
+\BOOKMARK [1][-]{section.3.1}{Po\236advky na aplikaci}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{Popis u\236ivatelsk\351ho rozhran\355 v\375sledn\351 aplikace}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Volba technologi\355 pro aplikaci}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{Architektura cel\351 aplikace}{chapter.3}
+\BOOKMARK [1][-]{section.3.5}{Rozdelen\355 aplikace}{chapter.3}
+\BOOKMARK [1][-]{section.3.6}{Stahov\341n\355 informac\355 z facebookov\375ch profilu}{chapter.3}
+\BOOKMARK [1][-]{section.3.7}{Probl\351my pri implementaci}{chapter.3}
+\BOOKMARK [1][-]{section.3.8}{Nahr\341v\341n\355 dat na facebookov\351 profily}{chapter.3}
+\BOOKMARK [1][-]{section.3.9}{C\341sti aplikace slou\236\355c\355 pro z\355sk\341n\355 dat pro statusy}{chapter.3}
+\BOOKMARK [1][-]{section.3.10}{Beh aplikace}{chapter.3}
 \BOOKMARK [0][-]{chapter.4}{Prubeh experimentu}{}
 \BOOKMARK [1][-]{section.4.1}{Prvn\355 generace facebookov\375ch \372ctu}{chapter.4}
 \BOOKMARK [1][-]{section.4.2}{Pr\355prava experimentu}{chapter.4}

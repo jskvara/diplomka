@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.1.22)  4 MAY 2013 00:39
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.1.22)  5 MAY 2013 01:17
 entering extended mode
  %&-line parsing enabled.
 **Skvarjak.tex
@@ -906,7 +906,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 90.
 
-<cvut-logo-bw.pdf, id=135, 91.34125pt x 69.25874pt>
+<cvut-logo-bw.pdf, id=155, 91.34125pt x 69.25874pt>
 File: cvut-logo-bw.pdf Graphic file (type pdf)
  <use cvut-logo-bw.pdf>
 Underfull \hbox (badness 10000) in alignment at lines 90--90
@@ -970,14 +970,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [9
 
 ]
-[10] (./Skvarjak.toc
-Underfull \vbox (badness 1454) has occurred while \output is active []
+[10] (./Skvarjak.toc [11
 
- [11
+]) [12] (./Skvarjak.lof
+Overfull \hbox (0.69632pt too wide) in paragraph at lines 16--16
+ [][] [][]\T1/lmr/m/n/12 P°ehled uk-lá-daných dat do jed-notlivých tab-ulek v d
+atabázi MySQL[] []  
+ []
 
-])
-[12] (./Skvarjak.lof
-Overfull \hbox (4.58624pt too wide) in paragraph at lines 13--13
+
+Overfull \hbox (4.58624pt too wide) in paragraph at lines 21--21
  [][] [][]\T1/lmr/m/n/12 Formulá° na face-booku nabá-da-jící k vy-pln¥ní vys-tu
 -dované st°ední 
  []
@@ -1064,7 +1066,7 @@ Overfull \hbox (6.96857pt too wide) in paragraph at lines 162--163
 tecture/). 
  []
 
-<figures/server-side-diagram.png, id=296, 734.745pt x 525.965pt>
+<figures/server-side-diagram.png, id=338, 734.745pt x 525.965pt>
 File: figures/server-side-diagram.png Graphic file (type png)
 
 <use figures/server-side-diagram.png>
@@ -1194,125 +1196,185 @@ Overfull \hbox (7.74011pt too wide) in paragraph at lines 357--358
 u nevýhodou
  []
 
-[16] [17]
-Overfull \hbox (19.98323pt too wide) in paragraph at lines 381--382
+[16]
+Overfull \hbox (9.56564pt too wide) in paragraph at lines 369--370
+\T1/lmr/m/n/12 ([]\T1/lmtt/m/n/12 http://www.girlfriendhire.com/\T1/lmr/m/n/12 
+, []\T1/lmtt/m/n/12 http://namorofake.com.br/ \T1/lmr/m/n/12 a dal²í). 
+ []
+
+[17]
+Overfull \hbox (6.18811pt too wide) in paragraph at lines 394--395
+\T1/lmr/m/n/12 zákazníky, ko-or-di-naci pub-likování p°ísp¥vk· na více face-boo
+kových stránkách
+ []
+
+[18]
+Overfull \hbox (12.00821pt too wide) in paragraph at lines 422--423
+\T1/lmr/m/n/12 Aplikaci pro ov-lá-dání ú£t· jsem naz-val \T1/lmr/bx/n/12 Face-b
+ook client\T1/lmr/m/n/12 . Uºi-va-tel-ské rozhraní
+ []
+
+[19
+
+] <figures/fcUI.png, id=430, 1168.365pt x 635.37375pt>
+File: figures/fcUI.png Graphic file (type png)
+
+<use figures/fcUI.png> [20 <./figures/fcUI.png>]
+<figures/fcAssignGroup.png, id=436, 1165.35374pt x 323.2075pt>
+File: figures/fcAssignGroup.png Graphic file (type png)
+
+<use figures/fcAssignGroup.png>
+<figures/fcNewTask.png, id=438, 688.5725pt x 626.34pt>
+File: figures/fcNewTask.png Graphic file (type png)
+
+<use figures/fcNewTask.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <./figures/fcAssignGroup.png>]
+<figures/fcTasks.png, id=445, 1307.88625pt x 367.3725pt>
+File: figures/fcTasks.png Graphic file (type png)
+
+<use figures/fcTasks.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (8.40714pt too wide) in paragraph at lines 472--473
+\T1/lmr/m/n/12 sít, kam m·ºete nahrá-vat fotky z mo-bil-ního tele-fonu up-raven
+é po-mocí r·zných
+ []
+
+
+Overfull \hbox (15.19592pt too wide) in paragraph at lines 472--473
+\T1/lmr/m/n/12 ciální sí´ jsem vy-bral pro získávání obrázk· nahrá-vaných jako 
+sta-tusy uloºených
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22 <./figures/fcNewTask.png>] [23 <./figures/fcTasks.png>] [24]
+Overfull \hbox (19.98323pt too wide) in paragraph at lines 499--500
 []\T1/lmr/m/n/12 Databáze Mon-goDB byla vy-brána hlavn¥ proto, ºe umí pra-co-va
 t s jakýmikoli
  []
 
 
-Overfull \hbox (0.15967pt too wide) in paragraph at lines 383--384
+Overfull \hbox (0.15967pt too wide) in paragraph at lines 501--502
 \T1/lmr/m/n/12 HBase ([]\T1/lmtt/m/n/12 http://hbase.apache.org/\T1/lmr/m/n/12 
 ). Tyto databáze jsou ale ur£eny p°ede-
  []
 
-[18] [19]
-Overfull \hbox (6.18811pt too wide) in paragraph at lines 417--418
-\T1/lmr/m/n/12 zákazníky, ko-or-di-naci pub-likování p°ísp¥vk· na více face-boo
-kových stránkách
- []
+[25] <figures/fcModelPresenter.png, id=469, 872.25874pt x 721.69624pt>
+File: figures/fcModelPresenter.png Graphic file (type png)
 
-[20]
+<use figures/fcModelPresenter.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 427.
+(hyperref)                removing `\textasciicaron' on input line 532.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 438.
+(hyperref)                removing `\textring' on input line 536.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21
-
-]
-[22]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
-[24]
-Overfull \hbox (11.6675pt too wide) in paragraph at lines 504--505
+[27 <./figures/fcModelPresenter.png>] [28] [29] [30]
+Overfull \hbox (11.6675pt too wide) in paragraph at lines 600--601
 []\T1/lmr/m/n/12 yearly - d·leºité mezníky v ºiv-ot¥ uºi-vatele se°azené po-dle
  data (narození
  []
 
-[25] [26]
+[31]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 541.
+(hyperref)                removing `\textasciicaron' on input line 634.
 
-[27] <figures/timeDifference.png, id=428, 500.87125pt x 321.2pt>
+[32] [33] <figures/timeDifference.png, id=514, 500.87125pt x 321.2pt>
 File: figures/timeDifference.png Graphic file (type png)
 
-<use figures/timeDifference.png>
+<use figures/timeDifference.png> [34 <./figures/timeDifference.png (PNG copy)>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29 <./figures/timeDifference.png (PNG copy)>]
-Overfull \hbox (3.34462pt too wide) in paragraph at lines 588--589
+Overfull \hbox (3.34462pt too wide) in paragraph at lines 684--685
 []\T1/lmr/m/n/12 B¥hem b°ezna 2013 face-book oznámil novou verzi pro-filové str
 ánky (time-
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31]
-Overfull \hbox (13.85382pt too wide) in paragraph at lines 618--619
+[35] [36] [37]
+Overfull \hbox (13.85382pt too wide) in paragraph at lines 716--717
 []\T1/lmr/m/n/12 inviteEvent(id) - poz-vat v²echny fa-ce-boo-kové p°átele na ud
 álost, parame-
  []
 
+<figures/fcUserTask.png, id=543, 932.48375pt x 438.63875pt>
+File: figures/fcUserTask.png Graphic file (type png)
 
-Overfull \hbox (5.75586pt too wide) in paragraph at lines 628--629
-\T1/lmr/m/n/12 likaci lokáln¥ a spou²t¥t pro-gram Se-le-nium Web-Driver p°es in
--ter-net vzdálen¥.
- []
+<use figures/fcUserTask.png> [38 <./figures/fcUserTask.png>]
+<figures/mongoDataModel.png, id=551, 726.715pt x 648.4225pt>
+File: figures/mongoDataModel.png Graphic file (type png)
 
-[32] [33] [34
+<use figures/mongoDataModel.png>
+<figures/mysqlDataModel.png, id=552, 556.0775pt x 206.7725pt>
+File: figures/mysqlDataModel.png Graphic file (type png)
+
+<use figures/mysqlDataModel.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+C'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 749.
+
+[39 <./figures/mongoDataModel.png (PNG copy)>]
+
+Package hyperref Warning: Composite letter `\textasciicaron+e'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 757.
+
+[40 <./figures/mysqlDataModel.png (PNG copy)>] [41] [42
 
 ]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 636.
+(hyperref)                removing `\textring' on input line 767.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 636.
+(hyperref)                removing `\textasciicaron' on input line 767.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 638.
+(hyperref)                removing `\textasciicaron' on input line 769.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 638.
+(hyperref)                removing `\textring' on input line 769.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 644.
+(hyperref)                removing `\textasciicaron' on input line 775.
 
-[35] <figures/fb-telephone-number2.jpg, id=480, 1022.82124pt x 507.8975pt>
+[43] <figures/fb-telephone-number2.jpg, id=576, 1022.82124pt x 507.8975pt>
 File: figures/fb-telephone-number2.jpg Graphic file (type jpg)
 
-<use figures/fb-telephone-number2.jpg> [36 <./figures/fb-telephone-number2.jpg>
+<use figures/fb-telephone-number2.jpg> [44 <./figures/fb-telephone-number2.jpg>
 ]
-Overfull \hbox (9.17064pt too wide) in paragraph at lines 668--669
+Overfull \hbox (9.17064pt too wide) in paragraph at lines 799--800
 []\T1/lmr/m/n/12 Struktura e-mailových adres byla násle-du-jící: []\T1/lmtt/m/n
 /12 jmenoprijmeni@domena.cz\T1/lmr/m/n/12 .
  []
@@ -1320,151 +1382,148 @@ Overfull \hbox (9.17064pt too wide) in paragraph at lines 668--669
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [37]
-Overfull \hbox (5.92477pt too wide) in paragraph at lines 678--679
+ [45]
+Overfull \hbox (5.92477pt too wide) in paragraph at lines 809--810
 []\T1/lmr/m/n/12 Takovéto in-ter-ne-tové sluºby slouºí p°ede-v²ím jako ochrana 
 proti e-mailové
  []
 
 
-Overfull \hbox (1.31302pt too wide) in paragraph at lines 684--685
+Overfull \hbox (1.31302pt too wide) in paragraph at lines 815--816
 [][]\T1/lmtt/m/n/12 mailinator.com \T1/lmr/m/n/12 - moºnost vy-gen-erovat si ja
 k-oukoli e-mailovou adresu
  []
 
 
-Overfull \hbox (3.63194pt too wide) in paragraph at lines 684--685
+Overfull \hbox (3.63194pt too wide) in paragraph at lines 815--816
 \T1/lmr/m/n/12 na domén¥ []\T1/lmtt/m/n/12 mailinator.com \T1/lmr/m/n/12 nebo [
 ]\T1/lmtt/m/n/12 spamherelots.com\T1/lmr/m/n/12 , k této e-mailové
  []
 
 
-Overfull \hbox (1.88007pt too wide) in paragraph at lines 690--691
+Overfull \hbox (1.88007pt too wide) in paragraph at lines 821--822
 \T1/lmr/m/n/12 mailem (na-p°í-klad za-pomenuté heslo nebo d·vod zablokování fac
 e-bookového
  []
 
-[38]
+[46]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 692.
+(hyperref)                removing `\textasciicaron' on input line 823.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 692.
+(hyperref)                removing `\textring' on input line 823.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 700.
+(hyperref)                removing `\textasciicaron' on input line 831.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 700.
+(hyperref)                removing `\textring' on input line 831.
 
-[39]
-Overfull \hbox (12.48332pt too wide) in paragraph at lines 719--720
+[47]
+Overfull \hbox (12.48332pt too wide) in paragraph at lines 850--851
 \T1/lmr/m/n/12 Pro ex-per-i-men-tální fa-ce-boo-kové ú£ty jsem pro ex-per-i-men
 t vytvo°il p¥t r·zných
  []
 
-[40]
-Overfull \hbox (7.88152pt too wide) in paragraph at lines 728--729
+[48]
+Overfull \hbox (7.88152pt too wide) in paragraph at lines 859--860
 []\T1/lmr/bx/n/12 facebook groups \T1/lmr/m/n/12 - p°idávání skupin na face-boo
 ku a následné p°idávání
  []
 
 
-Overfull \hbox (0.30656pt too wide) in paragraph at lines 731--732
+Overfull \hbox (0.30656pt too wide) in paragraph at lines 862--863
 []\T1/lmr/m/n/12 V²echny ex-per-i-men-tální ú£ty byly za-°azeny do jedné z t¥ch
 to p¥ti skupin.
  []
 
-[41] [42] [43]
-Overfull \hbox (11.27042pt too wide) in paragraph at lines 765--766
+[49] [50] [51]
+Overfull \hbox (11.27042pt too wide) in paragraph at lines 896--897
 \T1/lmr/m/n/12 stránku: []\T1/lmtt/m/n/12 https://www.facebook.com/find-friends
 /browser/\T1/lmr/m/n/12 . Ex-per-i-men-
  []
 
-[44] <figures/confirm-friendship.png, id=525, 498.86375pt x 165.61874pt>
+[52] <figures/confirm-friendship.png, id=621, 498.86375pt x 165.61874pt>
 File: figures/confirm-friendship.png Graphic file (type png)
 
 <use figures/confirm-friendship.png>
-<figures/cantFriend.png, id=527, 494.84875pt x 190.7125pt>
+<figures/cantFriend.png, id=623, 494.84875pt x 190.7125pt>
 File: figures/cantFriend.png Graphic file (type png)
 
-<use figures/cantFriend.png> [45 <./figures/confirm-friendship.png> <./figures/
-cantFriend.png>]
-Overfull \hbox (7.03555pt too wide) in paragraph at lines 807--808
-\T1/lmr/m/n/12 os-tat-ních sta-ho-vaných pro-filech nebo na stránkách zmín¥ných
- vý²e. Obzvlá²t¥
- []
-
-[46] <figures/completeSchool.png, id=540, 544.0325pt x 287.0725pt>
+<use figures/cantFriend.png> [53 <./figures/confirm-friendship.png> <./figures/
+cantFriend.png>] [54]
+<figures/completeSchool.png, id=637, 544.0325pt x 287.0725pt>
 File: figures/completeSchool.png Graphic file (type png)
 
 <use figures/completeSchool.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[47]
+[55]
 Underfull \vbox (badness 3291) has occurred while \output is active []
 
- [48 <./figures/completeSchool.png>]
-<figures/cancelPendingFriendRequests.png, id=553, 569.12625pt x 435.6275pt>
+ [56 <./figures/completeSchool.png>]
+<figures/cancelPendingFriendRequests.png, id=649, 569.12625pt x 435.6275pt>
 File: figures/cancelPendingFriendRequests.png Graphic file (type png)
 
-<use figures/cancelPendingFriendRequests.png> [49 <./figures/cancelPendingFrien
+<use figures/cancelPendingFriendRequests.png> [57 <./figures/cancelPendingFrien
 dRequests.png>]
-<figures/friendRequestsLimitReached.png, id=560, 493.845pt x 146.5475pt>
+<figures/friendRequestsLimitReached.png, id=656, 493.845pt x 146.5475pt>
 File: figures/friendRequestsLimitReached.png Graphic file (type png)
 
-<use figures/friendRequestsLimitReached.png> [50 <./figures/friendRequestsLimit
-Reached.png>] <figures/confirmIdentity.png, id=567, 568.1225pt x 213.79875pt>
+<use figures/friendRequestsLimitReached.png> [58 <./figures/friendRequestsLimit
+Reached.png>] <figures/confirmIdentity.png, id=663, 568.1225pt x 213.79875pt>
 File: figures/confirmIdentity.png Graphic file (type png)
 
 <use figures/confirmIdentity.png>
-<figures/slowDown.png, id=568, 494.84875pt x 146.5475pt>
+<figures/slowDown.png, id=664, 494.84875pt x 146.5475pt>
 File: figures/slowDown.png Graphic file (type png)
 
 <use figures/slowDown.png>
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[51 <./figures/confirmIdentity.png>] [52 <./figures/slowDown.png>] [53]
-[54
+[59 <./figures/confirmIdentity.png>] [60 <./figures/slowDown.png>] [61]
+[62
 
 ]
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 905.
+(hyperref)                removing `\textasciicaron' on input line 1036.
 
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 911.
+(hyperref)                removing `\textring' on input line 1039.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 911.
+(hyperref)                removing `\textasciicaron' on input line 1039.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 911.
+(hyperref)                removing `\textasciicaron' on input line 1039.
 
-[55]
+[63]
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 929.
+(hyperref)                removing `\textasciicaron' on input line 1057.
 
-[56] [57] (./Skvarjak.bbl [58]
+[64] (./Skvarjak.bbl [65] [66
+
+]
 bibitemlist
 
 Underfull \hbox (badness 4303) in paragraph at lines 29--32
@@ -1494,9 +1553,7 @@ Underfull \hbox (badness 3189) in paragraph at lines 43--46
 []\T1/lmr/m/n/12 Opera De-vel-oper News: 300 mil-lion users and move to We-
  []
 
-[59
-
-]
+[67]
 Underfull \hbox (badness 2012) in paragraph at lines 54--56
 \T1/lmr/m/n/12 2009. Dos-tupné z: []$\T1/lmtt/m/n/12 https : / / blog . faceboo
 k . com / blog . php ? post =
@@ -1552,44 +1609,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--74
 equest . php ?
  []
 
-) [60]
+) [68]
 
 Package hyperref Warning: Composite letter `\textring+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textring' on input line 960.
+(hyperref)                removing `\textring' on input line 1075.
 
 
-Overfull \hbox (3.1481pt too wide) in paragraph at lines 969--970
+Overfull \hbox (3.1481pt too wide) in paragraph at lines 1084--1085
 []\T1/lmr/m/n/12 - Jedná se o vir-tuální ka-marád-ství mezi dv¥ma lidmi,
  []
 
 
-Overfull \hbox (12.71466pt too wide) in paragraph at lines 969--970
+Overfull \hbox (12.71466pt too wide) in paragraph at lines 1084--1085
 \T1/lmr/m/n/12 ticky v²e probíhá tak, ºe m·ºeme ko-mukoli na face-booku za-slat
  pozvánku
  []
 
-[61
+[69
 
 ]
-Overfull \hbox (7.0141pt too wide) in paragraph at lines 974--975
+Overfull \hbox (7.0141pt too wide) in paragraph at lines 1089--1090
 []\T1/lmr/m/n/12 - P°ísp¥vek na svou face-bookovou ze¤ od uºi-vatel· (Face-book
  nabádá
  []
 
-[62]
+[70]
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 981.
+(hyperref)                removing `\textasciicaron' on input line 1096.
 
 
 Class memoir Warning: The material used in the headers is too large
 (15.39603pt) for the given head height (14.5pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 996.
+(in both cases you will find help in the memoir manual). on input line 1111.
 
-[63
+[71
 
 ]
 \tf@toc=\write5
@@ -1604,13 +1661,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 10979 strings out of 495061
- 149785 string characters out of 1182621
- 285698 words of memory out of 3000000
- 13734 multiletter control sequences out of 15000+50000
+ 11054 strings out of 495061
+ 151189 string characters out of 1182621
+ 287165 words of memory out of 3000000
+ 13780 multiletter control sequences out of 15000+50000
  85577 words of font info for 56 fonts, out of 3000000 for 9000
  70 hyphenation exceptions out of 8191
- 49i,13n,32p,1468b,1012s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,13n,32p,1468b,1748s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/publ
@@ -1620,9 +1677,9 @@ lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fo
 nts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
 ></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/t
 ype1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Skvarjak.pdf (77 pages, 746830 bytes).
+Output written on Skvarjak.pdf (85 pages, 1189764 bytes).
 PDF statistics:
- 735 PDF objects out of 1000 (max. 8388607)
- 180 named destinations out of 1000 (max. 500000)
- 304 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 837 PDF objects out of 1000 (max. 8388607)
+ 201 named destinations out of 1000 (max. 500000)
+ 384 words of extra memory for PDF output out of 10000 (max. 10000000)
 
