@@ -5,24 +5,24 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Sch\IeC {\'e}ma p\IeC {\v r}ihla\IeC {\v s}ov\IeC {\'a}n\IeC {\'\i } k facebooku pomoc\IeC {\'\i } OAuth}}{7}{figure.2.1}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces U\IeC {\v z}ivatelsk\IeC {\'e} rozhran\IeC {\'\i } v\IeC {\'y}sledn\IeC {\'e} aplikace}}{20}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces P\IeC {\v r}i\IeC {\v r}azov\IeC {\'a}n\IeC {\'\i } ulo\IeC {\v z}en\IeC {\'y}ch u\IeC {\v z}ivatel\IeC {\r u} k jednotliv\IeC {\'y}m skupin\IeC {\'a}m}}{21}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Formul\IeC {\'a}\IeC {\v r} pro p\IeC {\v r}id\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } nov\IeC {\'y}ch \IeC {\'u}kol\IeC {\r u} v aplikaci}}{22}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces P\IeC {\v r}ehled p\IeC {\v r}ipraven\IeC {\'y}ch \IeC {\'u}kol\IeC {\r u} v u\IeC {\v z}ivatelsk\IeC {\'e}m rozhran\IeC {\'\i } aplikace}}{23}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces P\IeC {\v r}ehled vztah\IeC {\r u} mezi t\IeC {\v r}\IeC {\'\i }dami presenteru a modelu}}{27}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces \IeC {\v C}asov\IeC {\'y} rozd\IeC {\'\i }l u atribut\IeC {\r u} title a data-utime u element\IeC {\r u} zobrazuj\IeC {\'\i }c\IeC {\'\i }ch \IeC {\v c}as na facebooku}}{34}{figure.3.6}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces U\IeC {\v z}ivatelsk\IeC {\'e} rozhran\IeC {\'\i } nahr\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } \IeC {\'u}kol\IeC {\r u} na facebookov\IeC {\'e} profily}}{38}{figure.3.7}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces P\IeC {\v r}ehled ukl\IeC {\'a}dan\IeC {\'y}ch dat do jednotliv\IeC {\'y}ch kolekc\IeC {\'\i } v datab\IeC {\'a}zi MongoDB}}{39}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces P\IeC {\v r}ehled ukl\IeC {\'a}dan\IeC {\'y}ch dat do jednotliv\IeC {\'y}ch tabulek v datab\IeC {\'a}zi MySQL}}{40}{figure.3.9}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces P\IeC {\v r}ehled vztah\IeC {\r u} mezi t\IeC {\v r}\IeC {\'\i }dami presenteru a modelu}}{23}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \IeC {\v C}asov\IeC {\'y} rozd\IeC {\'\i }l u atribut\IeC {\r u} title a data-utime u element\IeC {\r u} zobrazuj\IeC {\'\i }c\IeC {\'\i }ch \IeC {\v c}as na facebooku}}{31}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces U\IeC {\v z}ivatelsk\IeC {\'e} rozhran\IeC {\'\i } nahr\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } \IeC {\'u}kol\IeC {\r u} na facebookov\IeC {\'e} profily}}{35}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces P\IeC {\v r}ehled ukl\IeC {\'a}dan\IeC {\'y}ch dat do jednotliv\IeC {\'y}ch kolekc\IeC {\'\i } v datab\IeC {\'a}zi MongoDB}}{36}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces P\IeC {\v r}ehled ukl\IeC {\'a}dan\IeC {\'y}ch dat do jednotliv\IeC {\'y}ch tabulek v datab\IeC {\'a}zi MySQL}}{37}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces U\IeC {\v z}ivatelsk\IeC {\'e} rozhran\IeC {\'\i } v\IeC {\'y}sledn\IeC {\'e} aplikace}}{37}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces P\IeC {\v r}i\IeC {\v r}azov\IeC {\'a}n\IeC {\'\i } ulo\IeC {\v z}en\IeC {\'y}ch u\IeC {\v z}ivatel\IeC {\r u} k jednotliv\IeC {\'y}m skupin\IeC {\'a}m}}{39}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Formul\IeC {\'a}\IeC {\v r} pro p\IeC {\v r}id\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } nov\IeC {\'y}ch \IeC {\'u}kol\IeC {\r u} v aplikaci}}{40}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces P\IeC {\v r}ehled p\IeC {\v r}ipraven\IeC {\'y}ch \IeC {\'u}kol\IeC {\r u} v u\IeC {\v z}ivatelsk\IeC {\'e}m rozhran\IeC {\'\i } aplikace}}{41}{figure.3.9}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Zad\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } telefonn\IeC {\'\i }ho \IeC {\v c}\IeC {\'\i }sla pro ov\IeC {\v e}\IeC {\v r}en\IeC {\'\i } na facebooku}}{44}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Potvrzen\IeC {\'\i } zda se znaj\IeC {\'\i } osoby v re\IeC {\'a}lu p\IeC {\v r}i zas\IeC {\'\i }l\IeC {\'a}n\IeC {\'\i } \IeC {\v z}\IeC {\'a}dosti o p\IeC {\v r}\IeC {\'a}telstv\IeC {\'\i } na facebooku}}{53}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Zru\IeC {\v s}en\IeC {\'\i } \IeC {\v z}\IeC {\'a}dosti o p\IeC {\v r}\IeC {\'a}telstv\IeC {\'\i } na facebooku}}{53}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Formul\IeC {\'a}\IeC {\v r} na facebooku nab\IeC {\'a}daj\IeC {\'\i }c\IeC {\'\i } k vypln\IeC {\v e}n\IeC {\'\i } vystudovan\IeC {\'e} st\IeC {\v r}edn\IeC {\'\i } \IeC {\v s}koly}}{56}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Formul\IeC {\'a}\IeC {\v r} na facebooku pro zru\IeC {\v s}en\IeC {\'\i } nep\IeC {\v r}ijat\IeC {\'y}ch a nepotvrzen\IeC {\'y}ch \IeC {\v z}\IeC {\'a}dost\IeC {\'\i } o p\IeC {\v r}\IeC {\'a}telstv\IeC {\'\i }}}{57}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Informace o dosa\IeC {\v z}en\IeC {\'\i } maxim\IeC {\'a}ln\IeC {\'\i }ho po\IeC {\v c}tu nevy\IeC {\v r}\IeC {\'\i }zen\IeC {\'y}ch \IeC {\v z}\IeC {\'a}dost\IeC {\'\i } o p\IeC {\v r}\IeC {\'a}telstv\IeC {\'\i } na facebooku}}{58}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Formul\IeC {\'a}\IeC {\v r} pro ov\IeC {\v e}\IeC {\v r}en\IeC {\'\i } toto\IeC {\v z}nosti zad\IeC {\'a}n\IeC {\'\i }m data narozen\IeC {\'\i } na facebooku}}{59}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Facebookov\IeC {\'e} upozorn\IeC {\v e}n\IeC {\'\i } kv\IeC {\r u}li p\IeC {\v r}\IeC {\'\i }li\IeC {\v s} rychl\IeC {\'e} interakci}}{60}{figure.4.8}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Zad\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } telefonn\IeC {\'\i }ho \IeC {\v c}\IeC {\'\i }sla pro ov\IeC {\v e}\IeC {\v r}en\IeC {\'\i } na facebooku}}{45}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Potvrzen\IeC {\'\i } zda se znaj\IeC {\'\i } osoby v re\IeC {\'a}lu p\IeC {\v r}i zas\IeC {\'\i }l\IeC {\'a}n\IeC {\'\i } \IeC {\v z}\IeC {\'a}dosti o p\IeC {\v r}\IeC {\'a}telstv\IeC {\'\i } na facebooku}}{54}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Zru\IeC {\v s}en\IeC {\'\i } \IeC {\v z}\IeC {\'a}dosti o p\IeC {\v r}\IeC {\'a}telstv\IeC {\'\i } na facebooku}}{55}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Formul\IeC {\'a}\IeC {\v r} na facebooku nab\IeC {\'a}daj\IeC {\'\i }c\IeC {\'\i } k vypln\IeC {\v e}n\IeC {\'\i } vystudovan\IeC {\'e} st\IeC {\v r}edn\IeC {\'\i } \IeC {\v s}koly}}{57}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Formul\IeC {\'a}\IeC {\v r} na facebooku pro zru\IeC {\v s}en\IeC {\'\i } nep\IeC {\v r}ijat\IeC {\'y}ch a nepotvrzen\IeC {\'y}ch \IeC {\v z}\IeC {\'a}dost\IeC {\'\i } o p\IeC {\v r}\IeC {\'a}telstv\IeC {\'\i }}}{59}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Informace o dosa\IeC {\v z}en\IeC {\'\i } maxim\IeC {\'a}ln\IeC {\'\i }ho po\IeC {\v c}tu nevy\IeC {\v r}\IeC {\'\i }zen\IeC {\'y}ch \IeC {\v z}\IeC {\'a}dost\IeC {\'\i } o p\IeC {\v r}\IeC {\'a}telstv\IeC {\'\i } na facebooku}}{60}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Formul\IeC {\'a}\IeC {\v r} pro ov\IeC {\v e}\IeC {\v r}en\IeC {\'\i } toto\IeC {\v z}nosti zad\IeC {\'a}n\IeC {\'\i }m data narozen\IeC {\'\i } na facebooku}}{61}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Facebookov\IeC {\'e} upozorn\IeC {\v e}n\IeC {\'\i } kv\IeC {\r u}li p\IeC {\v r}\IeC {\'\i }li\IeC {\v s} rychl\IeC {\'e} interakci}}{61}{figure.4.8}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

@@ -44,6 +44,11 @@ s-on-event-invites/}
 \urlprefix\biburl{http://my.opera.com/ODIN/blog/300-million-users-and-move-to-%
 webkit}
 
+\bibitem{web:fbFriendsMedian}
+{Stephen Wolfram}: Data Science of the Facebook World. Duben 2013.
+\urlprefix\biburl{http://blog.stephenwolfram.com/2013/04/data-science-of-the-f%
+acebook-world/}
+
 \bibitem{web:chromiumBlink}
 {The Chromium Blog}: Blink: A rendering engine for the Chromium project. Duben
   2013.

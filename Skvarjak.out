@@ -11,21 +11,23 @@
 \BOOKMARK [1][-]{section.2.4}{V\375hody a nev\375hody pou\236it\355 programu Selenium WebDriver}{chapter.2}
 \BOOKMARK [1][-]{section.2.5}{Vyu\236it\355 aplikace}{chapter.2}
 \BOOKMARK [0][-]{chapter.3}{Implementace}{}
-\BOOKMARK [1][-]{section.3.1}{Po\236advky na aplikaci}{chapter.3}
-\BOOKMARK [1][-]{section.3.2}{Popis u\236ivatelsk\351ho rozhran\355 v\375sledn\351 aplikace}{chapter.3}
-\BOOKMARK [1][-]{section.3.3}{Volba technologi\355 pro aplikaci}{chapter.3}
-\BOOKMARK [1][-]{section.3.4}{Architektura cel\351 aplikace}{chapter.3}
-\BOOKMARK [1][-]{section.3.5}{Rozdelen\355 aplikace}{chapter.3}
-\BOOKMARK [1][-]{section.3.6}{Stahov\341n\355 informac\355 z facebookov\375ch profilu}{chapter.3}
-\BOOKMARK [1][-]{section.3.7}{Probl\351my pri implementaci}{chapter.3}
-\BOOKMARK [1][-]{section.3.8}{Nahr\341v\341n\355 dat na facebookov\351 profily}{chapter.3}
-\BOOKMARK [1][-]{section.3.9}{C\341sti aplikace slou\236\355c\355 pro z\355sk\341n\355 dat pro statusy}{chapter.3}
+\BOOKMARK [1][-]{section.3.1}{Po\236adavky na aplikaci}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{Volba technologi\355 pro aplikaci}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Architektura cel\351 aplikace}{chapter.3}
+\BOOKMARK [1][-]{section.3.4}{Rozdelen\355 aplikace}{chapter.3}
+\BOOKMARK [1][-]{section.3.5}{Stahov\341n\355 informac\355 z facebookov\375ch profilu}{chapter.3}
+\BOOKMARK [1][-]{section.3.6}{Probl\351my pri implementaci}{chapter.3}
+\BOOKMARK [1][-]{section.3.7}{Nahr\341v\341n\355 dat na facebookov\351 profily}{chapter.3}
+\BOOKMARK [1][-]{section.3.8}{C\341sti aplikace slou\236\355c\355 pro z\355sk\341n\355 dat pro statusy}{chapter.3}
+\BOOKMARK [1][-]{section.3.9}{Popis u\236ivatelsk\351ho rozhran\355 v\375sledn\351 aplikace}{chapter.3}
 \BOOKMARK [1][-]{section.3.10}{Beh aplikace}{chapter.3}
 \BOOKMARK [0][-]{chapter.4}{Prubeh experimentu}{}
-\BOOKMARK [1][-]{section.4.1}{Prvn\355 generace facebookov\375ch \372ctu}{chapter.4}
-\BOOKMARK [1][-]{section.4.2}{Pr\355prava experimentu}{chapter.4}
-\BOOKMARK [1][-]{section.4.3}{Probl\351my se zakl\341d\341n\355m facebookov\375ch \372ctu}{chapter.4}
-\BOOKMARK [1][-]{section.4.4}{Skupiny facebookov\375ch \372ctu pro experiment}{chapter.4}
+\BOOKMARK [1][-]{section.4.1}{Hlavn\355 c\355le experimentu}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Prvn\355 generace facebookov\375ch \372ctu}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{Pr\355prava experimentu}{chapter.4}
+\BOOKMARK [1][-]{section.4.4}{Probl\351my se zakl\341d\341n\355m facebookov\375ch \372ctu}{chapter.4}
+\BOOKMARK [1][-]{section.4.5}{Skupiny facebookov\375ch \372ctu pro experiment}{chapter.4}
+\BOOKMARK [1][-]{section.4.6}{Vyhodnocen\355 cel\351ho experimentu}{chapter.4}
 \BOOKMARK [0][-]{chapter.5}{Z\341ver}{}
 \BOOKMARK [1][-]{section.5.1}{Mo\236n\351 zpusoby roz\235\355ren\355 a pokracov\341n\355 v experimentu}{chapter.5}
 \BOOKMARK [1][-]{section.5.2}{Vyhodnocen\355}{chapter.5}

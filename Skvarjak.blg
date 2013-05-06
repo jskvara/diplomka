@@ -30,46 +30,48 @@ Warning--entry type for "web:socialbotNetwork" isn't style-file defined
 --line 96 of file mybibliographyfile.bib
 Warning--entry type for "web:fbCzechUsers" isn't style-file defined
 --line 104 of file mybibliographyfile.bib
+Warning--entry type for "web:fbFriendsMedian" isn't style-file defined
+--line 111 of file mybibliographyfile.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 14 entries,
+You've used 15 entries,
             3151 wiz_defined-function locations,
-            719 strings with 7534 characters,
-and the built_in function-call counts, 3948 in all, are:
-= -- 252
-> -- 98
+            724 strings with 7697 characters,
+and the built_in function-call counts, 4228 in all, are:
+= -- 270
+> -- 105
 < -- 0
-+ -- 43
-- -- 28
-* -- 168
-:= -- 501
-add.period$ -- 28
-call.type$ -- 14
-change.case$ -- 42
++ -- 46
+- -- 30
+* -- 180
+:= -- 536
+add.period$ -- 30
+call.type$ -- 15
+change.case$ -- 45
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 376
-empty$ -- 447
-format.name$ -- 28
-if$ -- 839
+cite$ -- 15
+duplicate$ -- 403
+empty$ -- 479
+format.name$ -- 30
+if$ -- 899
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 84
-newline$ -- 66
-num.names$ -- 28
-pop$ -- 240
+int.to.str$ -- 15
+missing$ -- 90
+newline$ -- 70
+num.names$ -- 30
+pop$ -- 257
 preamble$ -- 1
-purify$ -- 42
+purify$ -- 45
 quote$ -- 0
-skip$ -- 127
+skip$ -- 136
 stack$ -- 0
-substring$ -- 71
-swap$ -- 176
+substring$ -- 76
+swap$ -- 189
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
+type$ -- 60
 warning$ -- 0
-while$ -- 28
-width$ -- 16
-write$ -- 121
-(There were 14 warnings)
+while$ -- 30
+width$ -- 17
+write$ -- 129
+(There were 15 warnings)
