@@ -53,11 +53,12 @@
 \contentsline {subsection}{\numberline {4.5.4}Nahr\IeC {\'a}v\IeC {\'a}n\IeC {\'\i } status\IeC {\r u} k experiment\IeC {\'a}ln\IeC {\'\i }m \IeC {\'u}\IeC {\v c}t\IeC {\r u}m na facebooku}{55}{subsection.4.5.4}
 \contentsline {subsection}{\numberline {4.5.5}Zaj\IeC {\'\i }mavosti na kter\IeC {\'e} jsem b\IeC {\v e}hem experimentu narazil}{56}{subsection.4.5.5}
 \contentsline {section}{\numberline {4.6}Vyhodnocen\IeC {\'\i } cel\IeC {\'e}ho experimentu}{63}{section.4.6}
-\contentsline {chapter}{\chapternumberline {5}Z{\' a}v{\v e}r}{67}{chapter.5}
-\contentsline {section}{\numberline {5.1}Mo\IeC {\v z}n\IeC {\'e} zp\IeC {\r u}soby roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i } a pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } v experimentu}{67}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Automatizace zakl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u}}{67}{subsection.5.1.1}
-\contentsline {section}{\numberline {5.2}Vyhodnocen\IeC {\'\i }}{68}{section.5.2}
-\contentsline {section}{\numberline {5.3}Mo\IeC {\v z}nosti pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } experimentu}{68}{section.5.3}
-\contentsline {chapter}{Literatura}{71}{section*.6}
-\contentsline {appendix}{\chapternumberline {A}Slovn\IeC {\'\i }k pou\IeC {\v z}it\IeC {\'y}ch pojm\IeC {\r u} a zkratek}{73}{appendix.A}
-\contentsline {appendix}{\chapternumberline {B}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD}{75}{appendix.B}
+\contentsline {chapter}{\chapternumberline {5}Z{\' a}v{\v e}r}{71}{chapter.5}
+\contentsline {section}{\numberline {5.1}Shrnut\IeC {\'\i } experimentu}{71}{section.5.1}
+\contentsline {section}{\numberline {5.2}Mo\IeC {\v z}n\IeC {\'e} zp\IeC {\r u}soby roz\IeC {\v s}\IeC {\'\i }\IeC {\v r}en\IeC {\'\i } a pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } v experimentu}{72}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Automatizace zakl\IeC {\'a}d\IeC {\'a}n\IeC {\'\i } facebookov\IeC {\'y}ch \IeC {\'u}\IeC {\v c}t\IeC {\r u}}{72}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Mo\IeC {\v z}nosti pokra\IeC {\v c}ov\IeC {\'a}n\IeC {\'\i } experimentu}{73}{section.5.3}
+\contentsline {chapter}{Literatura}{75}{section*.6}
+\contentsline {appendix}{\chapternumberline {A}Tabulky a grafy dat z experimentu}{77}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Slovn\IeC {\'\i }k pou\IeC {\v z}it\IeC {\'y}ch pojm\IeC {\r u} a zkratek}{85}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Obsah p\IeC {\v r}ilo\IeC {\v z}en\IeC {\'e}ho CD}{87}{appendix.C}
