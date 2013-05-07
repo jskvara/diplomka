@@ -376,6 +376,7 @@ of works or by adapting the Work (including translation), and at the same time m
 	\fi
 
 	\vfill
+	\pagebreak
 
 	\if@abstractcsdefined
 		\chapterstyletitle{Abstrakt}\theabstractcs
