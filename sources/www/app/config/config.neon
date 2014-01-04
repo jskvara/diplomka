@@ -1,0 +1,74 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+common:
+	parameters:
+		instagram:
+			clientId: XXX
+			clientSecret: XXX
+			redirectUri: http://localhost/www/www/instagram/
+
+		mongo:
+			database: diplomka
+			profilesCollection: profiles
+			friendsCollection: friends
+			statusesCollection: statuses
+			queueCollection: queue
+
+	dibi:
+		host: localhost
+		username: root
+		password:
+		database: diplomka
+		lazy: TRUE
+		profiler: TRUE
+
+	php:
+		date.timezone: Europe/Prague
+		zlib.output_compression: yes
+
+	nette:
+		application:
+			errorPresenter: Error
+
+		session:
+			expiration: 14 days
+
+	services:
+		fbParser:
+			class: Model\FbParser
+
+		webdriverService:
+			class: Model\WebDriverService
+
+		mongoService:
+			class: Model\MongoService
+			arguments:
+				- %mongo%
+
+		userService:
+			class: Model\UserService
+
+		groupService:
+			class: Model\GroupService
+
+		taskService:
+			class: Model\TaskService
+
+		quoteService:
+			class: Model\QuoteService
+
+		instagramService:
+			class: Model\InstagramService
+			arguments:
+				- %instagram%
+
+
+	factories:
+
+production < common:
+
+development < common:

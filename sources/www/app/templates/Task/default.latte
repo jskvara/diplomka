@@ -1,0 +1,28 @@
+{block content}
+<h1>Tasks</h1>
+
+<p>
+	<a n:href="new">New</a>
+</p>
+
+<table class="grid">
+<tr>
+	<th>Id</th>
+	<th>Task</th>
+	<th>Params</th>
+	<th>User</th>
+	<th>Time</th>
+	<th>Actions</th>
+</tr>
+{foreach $tasks as $task}
+<tr>
+{* {dump $task} *}
+	<td>{$task["_id"]}</td>
+	<td>{$task["action"]}</td>
+	<td>{$task["param1"]} {ifset $task["param2"]}{$task["param2"]}{/ifset}</td>
+	<td>{$task["user"]}</td>
+	<td>{$task["time"]->sec|date: 'Y-m-d H:i:s'}</td>
+	<td><a n:href="delete, $task['_id']">Delete</a></td>
+</tr>
+{/foreach}
+</table>

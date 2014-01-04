@@ -1,0 +1,9 @@
+{block content}
+<h1 n:block="title">Delete Task</h1>
+
+{if $task}
+	<p>Are you sure that you want to delete '{$task['action']}?</p>
+	{control deleteForm}
+{else}
+	<p>Cannot find task.</p>
+{/if}

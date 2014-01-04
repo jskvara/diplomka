@@ -1,0 +1,13 @@
+# Nette temporary files #
+#########################
+temp/*
+!temp/.htaccess
+!temp/web.config
+
+# Log files and such #
+######################
+log/*
+
+# Ignore Mac .DS_Store file
+######################
+.DS_Store

@@ -1,0 +1,24 @@
+{block content}
+<h1 n:block="title">Users groups</h1>
+
+<p>
+	<a n:href="new">New</a>
+</p>
+
+<table class="grid">
+<tr>
+	<th>ID</th>
+	<th>Name</th>
+	<th>Action</th>
+</tr>
+{foreach $groups as $group}
+<tr>
+	<td>{$group->id}</td>
+	<td>{$group->name}</td>
+	<td>
+		<a n:href="users, $group->id">Assign users</a> &nbsp; 
+		<a n:href="edit, $group->id">Edit</a> &nbsp; 
+		<a n:href="delete, $group->id">Delete</a></td>
+</tr>
+{/foreach}
+</table>

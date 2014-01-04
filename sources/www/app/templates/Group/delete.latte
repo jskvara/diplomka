@@ -1,0 +1,9 @@
+{block content}
+<h1 n:block="title">Delete Group</h1>
+
+{if $group}
+	<p>Are you sure that you want to delete group '{$group->name}’?</p>
+	{control deleteForm}
+{else}
+	<p>Cannot find group.</p>
+{/if}

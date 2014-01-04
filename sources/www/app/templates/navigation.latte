@@ -1,0 +1,23 @@
+<ul>
+	<li><a n:href="User:">Users<a/></li>
+	<li><a n:href="Group:">Users groups<a/></li>
+	<li><a n:href="Task:">Tasks<a/></li>
+	<li><a n:href="Instagram:">Instagram<a/></li>
+	<li><a n:href="Quote:">Quote<a/></li>
+{*  Graph API
+	{ifset $loginUrl}<a href="{$loginUrl}">Login</a><br />{/ifset}
+	{ifset $logoutUrl}<a href="{$logoutUrl}">Logout</a><br />
+	<a href="{link getHome}">Get Home</a><br />
+	<a href="{link getFriends}">Get Friends</a><br />
+	<a href="{link getStatus}">Get Status</a><br />
+	<a href="{link getLikes}">Get Likes</a><br />
+	<a href="{link likeStatus}">Like Status</a><br />
+	<a href="{link commentStatus}">Comment Status</a><br />
+	<a href="{link postStatus}">Post Status</a><br />
+	<a href="{link postPhoto}">Post Photo</a><br />
+	<a href="{link rsvpEvent}">RSVP Event</a><br />
+	<a href="{link inviteEvent}">Invite Event</a><br />
+	<!--<a href="{link likeGroup}">Like Group</a><br />-->
+	{/ifset}
+*}
+</ul>

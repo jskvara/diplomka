@@ -1,0 +1,11 @@
+{block content}
+<h1>Get photos from instagram</h1>
+
+{control tagForm}
+
+{if $image !== FALSE}
+	{$image}<br />
+	<img src="{$image}" />
+{else}
+	No image
+{/if}
